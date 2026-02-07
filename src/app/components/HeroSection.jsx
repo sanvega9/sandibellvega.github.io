@@ -79,11 +79,37 @@ const HeroSection = () => {
           />
         </div>
        </div>
+       {/* Contact Section */}
+      <section className="text-center py-10">
+        <h2 className="text-3xl font-semibold mb-6 text-amber-500">Get in Touch</h2>
+        <p className="text-lg text-gray-300 mb-8">
+          I’m always open to new opportunities and collaborations. Feel free to reach out!
+        </p>
+        
+        <div className="max-w-sm mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="mb-4">
+            <h3 className="text-2xl font-bold text-white">Sandibell Vega</h3>
+            <p className="text-gray-400">AI & Robotics Engineer</p>
+          </div>
+          <div className="mb-4 items-center">
+            <p className="text-gray-300">bellvega1@gmail.com</p>
+          </div>
+          <a
+            href="mailto:bellvega1@gmail.com"
+            className="block w-full text-center py-3 mt-4 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-blue-600 transition-all text-white"
+          >
+            Email Me
+          </a>
+        </div>
+        
+      </section >
     </section>
+    
   );
 };
 
 export default HeroSection;
+
 
 
 
