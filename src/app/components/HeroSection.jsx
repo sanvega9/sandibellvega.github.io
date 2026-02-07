@@ -61,16 +61,30 @@ const HeroSection = () => {
         <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=nBEMyc_e0bvp90qy"
+            src="https://www.youtube.com/embed/wRIXku35z7M?si=l8QYT7Od6XxnaltN"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
       </div>
-
+       <div className="mt-12 flex justify-center">
+        <div
+          className="relative w-full max-w-[680px] md:max-w-[560px]"
+          style={{ aspectRatio: "16 / 9" }}
+        >
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/wRIXku35z7M"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
     </section>
   );
 };
 
 export default HeroSection;
+
