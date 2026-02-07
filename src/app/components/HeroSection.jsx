@@ -45,7 +45,7 @@ const HeroSection = () => {
       </div>
 
       <div className="mt-8 lg:mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
+        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
@@ -58,7 +58,7 @@ const HeroSection = () => {
 
       {/* New Section Below the Video */}
       <div className="mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
+        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
@@ -69,7 +69,7 @@ const HeroSection = () => {
         </div>
       </div>
        <div className="mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
+        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/wRIXku35z7M"
@@ -79,9 +79,7 @@ const HeroSection = () => {
           />
         </div>
        </div>
-    </section>
       {/* Contact Section */}
-      <section className="text-center py-10">
         <h2 className="text-3xl font-semibold mb-6 text-amber-500">Get in Touch</h2>
         <p className="text-lg text-gray-300 mb-8">
           I’m always open to new opportunities and collaborations. Feel free to reach out!
@@ -103,12 +101,13 @@ const HeroSection = () => {
           </a>
         </div>
         
-      </section >
+    </section>
     
   );
 };
 
 export default HeroSection;
+
 
 
 
