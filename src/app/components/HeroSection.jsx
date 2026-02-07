@@ -80,12 +80,12 @@ const HeroSection = () => {
         </div>
        </div>
      {/* Contact Section */}
-<div className="relative text-center py-20 mt-20">
+    <div className="relative text-center py-20 mt-20">
   
   {/* Glow background */}
-  <div className="absolute inset-0 flex justify-center items-center">
-    <div className="w-72 h-72 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 opacity-20 blur-3xl rounded-full"></div>
-  </div>
+     <div className="absolute inset-0 flex justify-center items-center">
+      <div className="w-72 h-72 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 opacity-20 blur-3xl rounded-full"></div>
+    </div>
 
   <h2 className="relative text-4xl font-extrabold mb-4 text-amber-400">
     Get in Touch ✨
@@ -128,6 +128,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
