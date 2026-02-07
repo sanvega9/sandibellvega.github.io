@@ -79,27 +79,48 @@ const HeroSection = () => {
           />
         </div>
        </div>
-      {/* Contact Section */}
-        <h2 className="text-3xl font-semibold mb-6 text-amber-500">Get in Touch</h2>
-        <p className="text-lg text-gray-300 mb-8">
-          I’m always open to new opportunities and collaborations. Feel free to reach out!
-        </p>
-        
-        <div className="max-w-sm mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
-          <div className="mb-4">
-            <h3 className="text-2xl font-bold text-white">Sandibell Vega</h3>
-            <p className="text-gray-400">AI & Robotics Engineer</p>
-          </div>
-          <div className="mb-4 items-center">
-            <p className="text-gray-300">bellvega1@gmail.com</p>
-          </div>
-          <a
-            href="mailto:bellvega1@gmail.com"
-            className="block w-full text-center py-3 mt-4 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-blue-600 transition-all text-white"
-          >
-            Email Me
-          </a>
-        </div>
+     {/* Contact Section */}
+<div className="relative text-center py-20 mt-20">
+  
+  {/* Glow background */}
+  <div className="absolute inset-0 flex justify-center items-center">
+    <div className="w-72 h-72 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 opacity-20 blur-3xl rounded-full"></div>
+  </div>
+
+  <h2 className="relative text-4xl font-extrabold mb-4 text-amber-400">
+    Get in Touch ✨
+  </h2>
+
+  <p className="relative text-lg text-gray-300 mb-10 max-w-xl mx-auto">
+    I’m always open to new opportunities, collaborations, and creative tech projects.
+    Let’s build something meaningful together.
+  </p>
+  
+  <div className="relative max-w-sm mx-auto bg-gray-800/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl 
+                  transform transition duration-300 hover:scale-105 hover:shadow-pink-500/20">
+    
+    <h3 className="text-2xl font-bold text-white mb-1">
+      Sandibell Vega
+    </h3>
+    <p className="text-gray-400 mb-4">
+      AI & Robotics Engineer
+    </p>
+
+    <p className="text-gray-300 mb-6 flex justify-center items-center gap-2">
+      📧 <span>bellvega1@gmail.com</span>
+    </p>
+
+    <a
+      href="mailto:bellvega1@gmail.com"
+      className="block w-full text-center py-3 rounded-full 
+                 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+                 hover:opacity-90 transition-all text-white font-semibold tracking-wide"
+    >
+      Email Me
+    </a>
+  </div>
+</div>
+
         
     </section>
     
@@ -107,6 +128,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
