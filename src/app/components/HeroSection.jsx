@@ -61,7 +61,7 @@ const HeroSection = () => {
         <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/wRIXku35z7M?si=l8QYT7Od6XxnaltN"
+            src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -88,5 +88,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
