@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Footer from "@/components/Footer";
 
 const HeroSection = () => {
   return (
@@ -120,13 +119,12 @@ const HeroSection = () => {
       Email Me
     </a>
   </div>
-</div>
-<Footer/>
-    
+</div>    
   );
 };
 
 export default HeroSection;
+
 
 
 
