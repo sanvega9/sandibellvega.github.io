@@ -82,9 +82,11 @@ const HeroSection = () => {
             allowFullScreen
           />
         </div>
+       </div>
     </section>
   );
 };
 
 export default HeroSection;
+
 
