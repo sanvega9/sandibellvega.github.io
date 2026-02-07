@@ -79,7 +79,8 @@ const HeroSection = () => {
           />
         </div>
        </div>
-       {/* Contact Section */}
+    </section>
+      {/* Contact Section */}
       <section className="text-center py-10">
         <h2 className="text-3xl font-semibold mb-6 text-amber-500">Get in Touch</h2>
         <p className="text-lg text-gray-300 mb-8">
@@ -103,7 +104,6 @@ const HeroSection = () => {
         </div>
         
       </section >
-    </section>
     
   );
 };
