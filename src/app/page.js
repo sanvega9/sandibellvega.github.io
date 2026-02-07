@@ -21,10 +21,8 @@ export default function Home() {
    <div className="absolute inset-0 bg-[#1C1678] opacity-45 z-[-1]"></div>
    <HeroSection/>
    </div>
-  <div className="w-full bg-red-600 text-white text-center py-10 z-50">
 
    <Footer/>
-          </div>
     </main>
   );
 }
