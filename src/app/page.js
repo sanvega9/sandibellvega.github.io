@@ -6,23 +6,33 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0">
+    <main className="relative min-h-screen flex flex-col">
+
+      {/* Background Image */}
+      <div className="fixed inset-0 -z-20">
         <Image
-        src={aiimage}
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        className="z-[-1]"
+          src={aiimage}
+          fill
+          priority
+          alt="AI Background"
+          className="object-cover"
         />
       </div>
-      <Navbar/> 
-   <div class="container mt-24 mx-auto px-5 py-4">
-   <div className="absolute inset-0 bg-[#1C1678] opacity-45 z-[-1]"></div>
-   <HeroSection/>
-   </div>
 
-   <Footer/>
+      {/* Overlay */}
+      <div className="fixed inset-0 bg-[#1C1678] opacity-45 -z-10" />
+
+      <Navbar />
+
+      {/* Main Content */}
+      <div className="container mx-auto px-5 py-4 mt-24 flex-grow">
+        <HeroSection />
+      </div>
+
+      {/* Footer */}
+      <Footer />
+
     </main>
   );
 }
+
