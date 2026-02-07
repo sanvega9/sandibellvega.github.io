@@ -74,7 +74,7 @@ const HeroSection = () => {
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/wRIXku35z7M"
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </div>
@@ -84,6 +84,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
