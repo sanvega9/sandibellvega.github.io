@@ -69,7 +69,7 @@ const HeroSection = () => {
         </div>
       </div>
        <div className="mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: "16 / 9" }}>
+        <div className="relative w-full max-w-[680px] md:max-w[560px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/wRIXku35z7M"
@@ -84,6 +84,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
