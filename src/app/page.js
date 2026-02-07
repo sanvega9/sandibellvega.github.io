@@ -21,10 +21,7 @@ export default function Home() {
    <div className="absolute inset-0 bg-[#1C1678] opacity-45 z-[-1]"></div>
    <HeroSection/>
    </div>
-          <div>
-             <Footer/>
-
-          <div>
+   <Footer/>
     </main>
   );
 }
