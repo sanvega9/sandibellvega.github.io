@@ -71,8 +71,18 @@ const HeroSection = () => {
        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wide
                    rounded-full bg-gradient-to-r from-pink-500 to-purple-500
                    text-white shadow-md">
-    AI Project
+    AI Project 
   </span>
+     <p className="text-gray-300 text-sm leading-relaxed">
+    An intelligent recommendation system that suggests K-Dramas using
+    user preferences and machine learning.</p>
+        {/* Tech Stack */}
+  <div className="flex justify-center gap-2 flex-wrap mt-2">
+    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-pink-300">Python</span>
+    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-purple-300">ML</span>
+    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-blue-300">AI</span>
+  </div>
+</div>
     </div>
   </div>
 
@@ -172,6 +182,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
