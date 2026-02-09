@@ -28,6 +28,63 @@ const skillsData = [
   { name: "C/C++", level: "Proficient", roles: ["Robotics", "Embedded Systems"] },
 
 ];
+const achievements = [
+  {
+    title: "Leadership Award",
+    org: "UAT Production Studio",
+    description: "AI-powered Chatbot Medication System",
+    year: "2021",
+    tag: "AI • Leadership",
+  },
+  {
+    title: "RTX Leadership Academy Completion",
+    org: "Girls Who Code | RTX",
+    year: "2023",
+    tag: "Leadership",
+  },
+  {
+    title: "Certificate of Leadership – Code Tech Fellow",
+    org: "AND101, WEB101",
+    year: "2025",
+    tag: "Teaching • Leadership",
+  },
+  {
+    title: "Best in Chatbots",
+    org: "UAT March Madness Code Jam",
+    year: "2024",
+    tag: "AI • Innovation",
+  },
+  {
+    title: "Pluralsight Work Prep Program",
+    org: "Girls Who Code | Pluralsight",
+    year: "2024",
+    tag: "Career Readiness",
+  },
+  {
+    title: "Intro to Cybersecurity",
+    org: "CodePath",
+    year: "Fall 2024",
+    tag: "Cybersecurity",
+  },
+  {
+    title: "Best Innovation",
+    org: "UAT Summer Mobile App Space",
+    year: "2021",
+    tag: "Innovation • Mobile",
+  },
+  {
+    title: "Most Market Viable",
+    org:"UAT",
+    year:"2021",
+    tag:"AI • Innovation",
+  },
+  {
+    title:"Most Innovative",
+    org:"UAT",
+    year:"2020",
+    tag:"AI • Innovation",
+  }
+];
 
 const roles = [
   "All", "AI", "ML", "Robotics", "IoT", "UI/UX", "Frontend", "Backend", "Full-Stack",
@@ -166,6 +223,52 @@ const About = () => {
             ))}
           </div>
         </section>
+        {/* Achievements */}
+<section className="mb-20 mt-24">
+  <h2 className="text-3xl lg:text-4xl font-extrabold text-center text-purple-400 mb-12">
+    Achievements & Leadership
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {achievements.map((item, index) => (
+      <div
+        key={index}
+        className="relative rounded-2xl bg-[#1e1e1e] border border-white/10 p-6 shadow-lg
+                   hover:-translate-y-1 hover:shadow-purple-500/30 transition-all duration-300"
+      >
+        {/* Glow accent */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-indigo-500/10 opacity-0 hover:opacity-100 transition-opacity" />
+
+        <div className="relative z-10">
+          <h3 className="text-xl font-bold text-white mb-1">
+            {item.title}
+          </h3>
+
+          <p className="text-sm text-gray-400 mb-2">
+            {item.org}
+          </p>
+
+          {item.description && (
+            <p className="text-gray-300 text-sm mb-3">
+              {item.description}
+            </p>
+          )}
+
+          <div className="flex justify-between items-center mt-4">
+            <span className="text-xs px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 font-semibold">
+              {item.tag}
+            </span>
+
+            <span className="text-xs text-gray-400 font-medium">
+              {item.year}
+            </span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       </div>
     </div>
@@ -173,5 +276,6 @@ const About = () => {
 };
 
 export default About;
+
 
 
