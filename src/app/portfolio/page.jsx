@@ -56,16 +56,27 @@ const Portfolio = () => {
             />
 
             <ProjectCard
-              title="Deep Learning Lung Cancer Detection"
+              title="Kibana Dashboard Deep Learning Lung Cancer Detection"
               description="AI-driven deep learning models to assist in lung cancer detection, paired with impactful medical data visualizations."
-              tags={["Deep Learning", "Healthcare AI", "TensorFlow"]}
+              tags={["Data Visualization", "Kibana", "ELK Stack"]}
             />
 
             <ProjectCard
               title="AI IoT Smart Garden"
-              description="An intelligent garden system using AI and IoT sensors to monitor soil health and optimize plant growth."
-              tags={["IoT", "AI", "Data Analysis"]}
+              description="An interactive AI-powered gardening app where users chat with a Garden Assistant, identify plants, and receive personalized care tips through curated video content and intelligent recommendations."
+              tags={["IoT", "AI Chatbot", "React", "Node.js", "UI/UX", "Python"]}
             />
+            <ProjectCard
+              title="Save the Wilderness Chatbot"
+              description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis."
+              tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]}
+            />
+            <ProjectCard
+              title="Fake News Detection"
+              description="Award-winning machine learning project developed for the UAT Data Science Competition (2/15/2020). Built a fake news detection model using Kaggle datasets, performing data cleaning, exploratory data analysis, and testing multiple classification models. The final system allows users to input news content to determine whether it is likely true or fake. Developed and analyzed using Jupyter Notebook in PyCharm."
+              tags={["Machine Learning", "NLP", "Python", "Data Science"]}
+              />
+            
           </div>
         </section>
 
@@ -92,7 +103,7 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* ================= CTA ================= */}
+        {/* ================= link  ================= */}
         <div className="mt-24">
           <a
             href="https://sandibellvega.weebly.com/portfolio.html"
@@ -155,5 +166,6 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
