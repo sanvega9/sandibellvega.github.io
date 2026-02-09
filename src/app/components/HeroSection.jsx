@@ -44,11 +44,11 @@ const HeroSection = () => {
   </h3>
 </div>
       {/* Video Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
-                gap-10 px-4 place-items-center mt-10">
+<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+                gap-10 px-4 place-items-center mt-14">
 
   {/* Card 1 */}
-  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -60,7 +60,7 @@ const HeroSection = () => {
     {/* Video */}
     <div className="relative aspect-video">
       <iframe
-        className="absolute inset-0 w-full h-full rounded-2xl"
+        className="absolute inset-0 w-full h-full rounded-3xl"
         src="https://www.youtube.com/embed/Dog927xBQjg"
         title="K-Drama AI Recommender"
         allowFullScreen
@@ -223,6 +223,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
