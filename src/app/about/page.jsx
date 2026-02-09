@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
-import Navbaricons from '../components/Navicons'; // correct path
+import Navbaricons from '../components/Navicons';
 
-const skilsData = [
+// Skills Data
+const skillsData = [
   { name: "Python", level: "Proficient", roles: ["AI", "Robotics", "Software Developer", "Data Science"] },
   { name: "TensorFlow", level: "Proficient", roles:["AI", "ML"] },
   { name: "PyTorch", level: "Advanced", roles: ["AI", "ML"] },
@@ -17,9 +18,9 @@ const skilsData = [
   { name: "Node.js", level: "Proficient", roles: ["Software Developer", "UI/UX", "Backend"] },
   { name: "SQL", level: "Advanced", roles: ["Data Science", "Software Engineering"] },
   { name: "AWS", level: "Intermediate", roles: ["AI", "ML", "Cybersecurity", "DevOps"] },
-  { name: "HTML", level: "Advanced", roles: ["UI/UX", "Full-stack", "Web Development"] },
+  { name: "HTML", level: "Advanced", roles: ["UI/UX", "Full-Stack", "Web Development"] },
   { name: "CSS", level: "Advanced", roles: ["UI/UX", "Frontend", "Web Designer"] },
-  { name: "JavaScript", level: "Advanced", roles: ["UI/UX", "Full-stack", "Web Development", "Software Developer"] },
+  { name: "JavaScript", level: "Advanced", roles: ["UI/UX", "Full-Stack", "Web Development", "Software Developer"] },
   { name: "Java", level: "Advanced", roles: ["Software Engineer", "Full-Stack", "DevOps"] },
   { name: "Kotlin", level: "Intermediate", roles: ["Android Developer", "Full-Stack", "Mobile Engineer"] },
 ];
@@ -37,34 +38,77 @@ const About = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setVisible(true),
+      ([entry]) => {
+        if(entry.isIntersecting){
+          setVisible(true);
+        }
+      },
       { threshold: 0.2 }
     );
+
     if (techRef.current) observer.observe(techRef.current);
-    return () => observer.disconnect();
+
+    return () => {
+      if(techRef.current) observer.unobserve(techRef.current);
+    };
   }, []);
 
   const filteredSkills =
     activeRole === "All"
-      ? skilsData
-      : skilsData.filter(skill => skill.roles.includes(activeRole));
+      ? skillsData
+      : skillsData.filter(skill => skill.roles.includes(activeRole));
 
   return (
     <div className="relative bg-[#121212] flex min-h-screen flex-col">
       <Navbar />
-      <div className="container mx-auto py-10 mt-20">
 
+      <div className="container mx-auto py-10 mt-20">
         {/* Hero Section */}
         <section className="text-center mb-12 items-center">
           <h1 className="text-4xl font-bold mt-4 mb-2 text-amber-600">About Me</h1>
           <p className="text-lg text-gray-300">
-            Hello! I'm Sandibell Vega, an Artificial Intelligence and Robotics Engineer...
+            Hello! I'm Sandibell Vega, an Artificial Intelligence and Robotics Engineer with a passion for innovation and technology. I hold dual Bachelor of Science degrees in Artificial Intelligence, Robotics, and Embedded Systems from the University of Advancing Technology. My academic journey was enriched by a disciplined approach to learning, where I consistently documented my insights and breakthroughs. This reflective practice has shaped my ability to innovate and adapt in the rapidly evolving tech landscape.
           </p>
         </section>
 
-        <div className="mt-9"><Navbaricons/></div>
+        <div className="mt-9">
+          <Navbaricons/>
+        </div>
 
-        {/* Tech Stack Section */}
+        {/* Degrees */}
+        <section className="mb-12 flex flex-col items-center">
+          <h2 className="text-3xl font-semibold mb-6 text-red-700 text-center">Degrees Received</h2>
+          <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-2 text-white">University of Advancing Technology</h3>
+            <p className="text-gray-400">Bachelor of Science in Robotics and Embedded Systems, 2021</p>
+            <p className="text-gray-400">Bachelor of Science in Artificial Intelligence, 2021</p>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6 text-amber-500">Skills & Qualifications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-2 text-white">Programming Languages</h3>
+              <p className="text-gray-400">Proficient in Python, C/C++, Java, HTML, CSS, JavaScript, ReactJS, Node.js, SQL, and R.</p>
+            </div>
+            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-2 text-white">Artificial Intelligence & Machine Learning</h3>
+              <p className="text-gray-400">
+                Skilled in AI, Machine Learning, Deep Learning, Scikit-Learn, TensorFlow, PyTorch, NLP, and Data Science.
+              </p>
+            </div>
+            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-2 text-white">Tools & Frameworks</h3>
+              <p className="text-gray-400">
+                Experienced with Node.js, React.js, Tableau, Jupyter Notebook, Visual Studio, PyCharm, SPSS, MATLAB, AWS, Power BI, and MySQL.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Tech Stack */}
         <section ref={techRef} className="mb-20 mt-24">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-center text-pink-400 mb-10">
             Tech Stack
@@ -122,10 +166,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-
-
-
-
