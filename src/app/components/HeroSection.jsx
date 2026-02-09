@@ -44,10 +44,11 @@ const HeroSection = () => {
   </h3>
 </div>
       {/* Video Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+                gap-10 px-4 place-items-center">
 
-  {/* Video 1 */}
-  <div className="group relative rounded-2xl overflow-hidden
+  {/* Card 1 */}
+  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -66,14 +67,12 @@ const HeroSection = () => {
     </div>
 
     <div className="relative p-4 text-center">
-      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-        K-Drama AI Recommender
-      </p>
+      <p className="text-white font-semibold text-lg">K-Drama AI Recommender</p>
     </div>
   </div>
 
-  {/* Video 2 */}
-  <div className="group relative rounded-2xl overflow-hidden
+  {/* Card 2 */}
+  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -92,42 +91,35 @@ const HeroSection = () => {
     </div>
 
     <div className="relative p-4 text-center">
-      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-        K-POP Fan App
-      </p>
+      <p className="text-white font-semibold text-lg">K-POP Fan App</p>
     </div>
   </div>
 
-  {/* Bottom Center Video */}
-  <div className="md:col-span-2 lg:col-span-3 flex justify-center">
-    <div className="group relative w-full max-w-2xl rounded-2xl overflow-hidden
-                    bg-white/5 backdrop-blur-xl border border-white/10
-                    shadow-xl transition-all duration-500
-                    hover:-translate-y-2 hover:shadow-pink-500/30">
+  {/* Card 3 (centered, same size) */}
+  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
+                  bg-white/5 backdrop-blur-xl border border-white/10
+                  shadow-xl transition-all duration-500
+                  hover:-translate-y-2 hover:shadow-pink-500/30">
 
-      <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
-                      opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
 
-      <div className="relative aspect-video">
-        <iframe
-          className="absolute inset-0 w-full h-full rounded-2xl"
-          src="https://www.youtube.com/embed/wRIXku35z7M"
-          title="Covid-19 IFTTT Bot"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+    <div className="relative aspect-video">
+      <iframe
+        className="absolute inset-0 w-full h-full rounded-2xl"
+        src="https://www.youtube.com/embed/wRIXku35z7M"
+        title="Covid-19 IFTTT Bot"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
 
-      <div className="relative p-4 text-center">
-        <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-          Covid-19 IFTTT Bot
-        </p>
-      </div>
+    <div className="relative p-4 text-center">
+      <p className="text-white font-semibold text-lg">Covid-19 IFTTT Bot</p>
     </div>
   </div>
 
 </div>
-
 
      {/* Contact Section */}
     <div className="relative text-center py-20 mt-20">
@@ -175,6 +167,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
