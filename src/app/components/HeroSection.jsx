@@ -76,22 +76,34 @@ const HeroSection = () => {
       </p>
     </div>
   </div>
+<div className="group relative w-full rounded-2xl overflow-hidden
+                  bg-white/5 backdrop-blur-xl border border-white/10
+                  shadow-xl transition-all duration-500
+                  hover:-translate-y-2 hover:shadow-pink-500/30">
 
+    {/* Gradient Glow */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+   <div
+      className="relative w-full"
+      style={{ aspectRatio: "16 / 9" }}
+    >
+      <iframe
+        className="absolute inset-0 w-full h-full rounded-2xl"
+        src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
+        title="K-Drama AI Recommender"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+
+    {/* Caption */}
+    <div className="relative p-4 text-center">
+      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
+        K-POP Fan App 
+      </p>
+    </div>
 </div>
-
-
-      {/* New Section Below the Video */}
-      <div className="mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
        <div className="mt-12 flex justify-center">
         <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
@@ -149,6 +161,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
