@@ -2,6 +2,32 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import Navbaricons from '../components/Navicons'; // Ensure this path is correct
+{/* */}
+const skilsData=[
+  { name: "Python", level: "Proficient", roles: ["AI", "Robotics", "Software Developer", "Data Science"] },
+  { name: "TensorFlow", level: "Proficient", roles:["AI", "ML"] },
+  { name: "PyTorch", level: "Advanced", roles: ["AI", "ML"] },
+  { name: "Scikit-Learn", level: "Proficient", roles: ["AI", "Data Science"] },
+  { name: "Pandas", level: "Proficient", roles: ["AI", "Data Science", "ML"] },
+  { name: "Tkinter", level: "Proficient", roles: ["AI", "Data Science", "Software Developer"] },
+  { name: "PyQt", level: "Proficient", roles: ["AI", "Data Science", "Software Developer"] },
+  { name: "Arduino", level: "Advanced", roles: ["Robotics", "IoT"] },
+  { name: "Sensors / IoT", level: "Proficient", roles: ["Robotics","IoT"] },
+  { name: "React", level: "Advanced", roles: ["Software Developer", "UI/UX", "Full-Stack"] },
+  { name: "Next.js", level: "Intermediate", roles: ["Software Developer", "UI/UX", "Full-Stack"] },
+  { name: "Node.js", level: "Proficient", roles: ["Software Developer", "UI/UX", "Backend"] },
+  { name: "SQL", level: "Advanced", roles: ["Data Science", "Software Engineering"] },
+  { name: "AWS", level: "Intermediate", roles: ["AI", "ML", "Cybersecurity", "DevOps"] },
+  { name: "Html", level: "Advanced", roles: ["UI/UX", "Full-stack", "Web Development"] },
+  { name: "CSS", level: "Advanced", roles: ["UI/UX", "Frontend", "Web Designer"] },
+  { name: "Js", level: "Advanced", roles: ["UI/UX", "Full-stack", "Web Development", "Software Developer"] },
+  { name: "Java", level: "Advanced", roles: ["Software Engineer", "Full Stack", "DevOps"] },
+  { name: "Kotlin", level: "Intermediate", roles: ["Android Developer", "Full Stack", "Mobile Engineer"] },
+];
+const roles=["All", "AI", "UI/UX", "Full-stack", "Web Development", "Data Science", "Software Engineering", 
+             "Software Developer", "Android Developer", "Mobile Engineer", "AI", "ML", "Cybersecurity", 
+             "DevOps", "Robotics", "Web Designer"
+            ];
 
 const About = () => {
   return (
@@ -142,5 +168,6 @@ const About = () => {
 };
 
 export default About;
+
 
 
