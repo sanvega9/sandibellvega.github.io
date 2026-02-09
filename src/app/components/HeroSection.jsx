@@ -120,6 +120,17 @@ const HeroSection = () => {
         Mobile App
       </span>
       <h4 className="text-white font-extrabold text-xl">K-POP Fan App</h4>
+        <div className="w-12 h-1 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
+      <p className="text-gray-300 text-sm leading-relaxed">
+  A React Native social platform for K-Pop and K-Drama fans to connect,
+  share posts, explore idol news, and discover recommended accounts
+  with similar interests.
+</p>
+<div className="flex justify-center gap-2 flex-wrap pt-2">
+  <span className="px-2 py-1 text-xs bg-white/10 text-blue-300 rounded-md">React Native</span>
+  <span className="px-2 py-1 text-xs bg-white/10 text-purple-300 rounded-md">Social</span>
+  <span className="px-2 py-1 text-xs bg-white/10 text-pink-300 rounded-md">UI/UX</span>
+</div>
     </div>
   </div>
 
@@ -199,6 +210,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
