@@ -43,32 +43,28 @@ const HeroSection = () => {
     Recent Project
   </h3>
 </div>
-
-{/* Video Grid */}
+      {/* Video Grid */}
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
 
   {/* Video 1 */}
-  <div className="group relative w-full rounded-2xl overflow-hidden
+  <div className="group relative rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
 
-    {/* Gradient Glow */}
-    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
-                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
 
-    {/* Video */}
-    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
+    <div className="relative aspect-video">
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
-        src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
+        src="https://www.youtube.com/embed/Dog927xBQjg"
         title="K-Drama AI Recommender"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
     </div>
 
-    {/* Caption */}
     <div className="relative p-4 text-center">
       <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
         K-Drama AI Recommender
@@ -77,18 +73,18 @@ const HeroSection = () => {
   </div>
 
   {/* Video 2 */}
-  <div className="group relative w-full rounded-2xl overflow-hidden
+  <div className="group relative rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
 
-    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
-                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
 
-    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
+    <div className="relative aspect-video">
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
-        src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
+        src="https://www.youtube.com/embed/A_GdFHpMQ7k"
         title="K-POP Fan App"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -102,38 +98,36 @@ const HeroSection = () => {
     </div>
   </div>
 
-</div> {/* end of grid */}
+  {/* Bottom Center Video */}
+  <div className="md:col-span-2 lg:col-span-3 flex justify-center">
+    <div className="group relative w-full max-w-2xl rounded-2xl overflow-hidden
+                    bg-white/5 backdrop-blur-xl border border-white/10
+                    shadow-xl transition-all duration-500
+                    hover:-translate-y-2 hover:shadow-pink-500/30">
 
-{/* Full-width Video Card (outside the grid) */}
-<div className="mt-12 flex justify-center">
-  <div className="group relative w-full max-w-[680px] md:max-w-[570px] rounded-2xl overflow-hidden
-                  bg-white/5 backdrop-blur-xl border border-white/10
-                  shadow-xl transition-all duration-500
-                  hover:-translate-y-2 hover:shadow-pink-500/30">
+      <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                      opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
 
-    {/* Gradient Glow */}
-    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
-                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+      <div className="relative aspect-video">
+        <iframe
+          className="absolute inset-0 w-full h-full rounded-2xl"
+          src="https://www.youtube.com/embed/wRIXku35z7M"
+          title="Covid-19 IFTTT Bot"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
 
-    {/* Video */}
-    <div className="relative w-full" style={{ aspectRatio: '16 / 9' }}>
-      <iframe
-        className="absolute top-0 left-0 w-full h-full rounded-2xl"
-        src="https://www.youtube.com/embed/wRIXku35z7M"
-        title="Covid-19 IFTTT Bot"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
-
-    {/* Caption */}
-    <div className="relative p-4 text-center">
-      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-        Covid-19 IFTTT Bot
-      </p>
+      <div className="relative p-4 text-center">
+        <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
+          Covid-19 IFTTT Bot
+        </p>
+      </div>
     </div>
   </div>
+
 </div>
+
 
      {/* Contact Section */}
     <div className="relative text-center py-20 mt-20">
@@ -181,6 +175,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
