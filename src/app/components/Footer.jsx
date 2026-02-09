@@ -1,6 +1,6 @@
 "use client";
 
-import { FaTiktok, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -25,22 +25,25 @@ export default function Footer() {
           <h2 className="text-3xl font-bold mb-4">Get Involved</h2>
 
           <p className="text-gray-300 max-w-3xl mx-auto mb-8">
-            Have questions about technology or coding? Don’t hesitate to reach out!
-            <span className="font-semibold text-pink-300"> AI Bell Vega </span>
+            Have questions about technology or coding? Don’t hesitate to reach out!{" "}
+            <span className="font-semibold text-pink-300">AI Bell Vega</span>{" "}
             is here to support you every step of the way.
           </p>
 
           <div className="flex justify-center gap-6 text-3xl mb-8">
-            <a href= "https://www.youtube.com/@aibellvega" 
-              target="_blank"
-              rel="noopener noreferrer">
-              <FaYoutube className="hover:text-pink-400 cursor-pointer" />
-            </a>
-            <a href= "href="https://www.linkedin.com/in/sandibell-vega-953889180/"
+            <a
+              href="https://www.youtube.com/@aibellvega"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <FaLinkedin className="hover:text-pink-400 cursor-pointer" />
+              <FaYoutube className="hover:text-pink-400 cursor-pointer" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sandibell-vega-953889180/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="hover:text-pink-400 cursor-pointer" />
             </a>
           </div>
 
