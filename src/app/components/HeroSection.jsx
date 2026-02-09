@@ -36,7 +36,8 @@ const HeroSection = () => {
         </div>
 
       </div>
-      <div className="mt-12 lg:mt-16 flex justify-center">
+      {/* Section Title */}
+<div className="mt-12 lg:mt-16 flex justify-center">
   <h3 className="text-[#F0A8D0] mb-8 text-4xl lg:text-6xl font-extrabold tracking-wide">
     Recent Project
   </h3>
@@ -67,7 +68,17 @@ const HeroSection = () => {
         allowFullScreen
       />
     </div>
-      </div>
+
+    {/* Caption */}
+    <div className="relative p-4 text-center">
+      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
+        AI Quiz Game in Python
+      </p>
+    </div>
+  </div>
+
+</div>
+
 
       {/* New Section Below the Video */}
       <div className="mt-12 flex justify-center">
@@ -138,6 +149,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
