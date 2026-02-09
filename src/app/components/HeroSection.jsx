@@ -103,19 +103,29 @@ const HeroSection = () => {
       </p>
     </div>
   </div>
+  {/* Full-width Video Card */}
+<div className="mt-12 flex justify-center">
+  <div className="group relative w-full max-w-[680px] md:max-w-[570px] rounded-2xl overflow-hidden
+                  bg-white/5 backdrop-blur-xl border border-white/10
+                  shadow-xl transition-all duration-500
+                  hover:-translate-y-2 hover:shadow-pink-500/30">
+
+    {/* Gradient Glow */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+
+    {/* Video */}
+    <div className="relative w-full" style={{ aspectRatio: '16 / 9' }}>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full rounded-2xl"
+        src="https://www.youtube.com/embed/wRIXku35z7M"
+        title="Covid-19 IFTTT Bot"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
 
 </div>
-
-       <div className="mt-12 flex justify-center">
-        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/wRIXku35z7M"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
        </div>
      {/* Contact Section */}
     <div className="relative text-center py-20 mt-20">
@@ -163,6 +173,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
