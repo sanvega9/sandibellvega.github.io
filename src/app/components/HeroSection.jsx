@@ -16,6 +16,8 @@ const HeroSection = () => {
               sequence={[
                 "Sandibell Vega",
                 1000,
+                "Coding Educator",
+                1000,
                 "Artificial Intelligence",
                 1000,
                 "Robotics and Embedded Systems",
@@ -29,8 +31,10 @@ const HeroSection = () => {
           
           <p className="text-white text-lg lg:text-xl">
             Hello! I'm Sandibell Vega, a dedicated technologist with a deep passion for innovation and a commitment to improving lives through technology. 
-            I hold dual Bachelor of Science degrees in Artificial Intelligence, Robotics, and Embedded Systems from the University of Advancing Technology, class of 2021.
-            My academic experience was enriched by a disciplined approach to learning, where I consistently documented my insights and breakthroughs. This reflective practice has shaped my ability to innovate and adapt in the rapidly evolving tech landscape. My work is driven by a passion for pushing the limits of technology to create meaningful and impactful solutions.
+            I hold dual B.S. degrees in Artificial Intelligence, Robotics, and Embedded Systems from the University of Advancing Technology (Class of 2021).
+            I have hands-on experience designing, building, and implementing solutions in AI, robotics, and embedded systems. 
+            Through practical projects, I have honed my ability to solve complex problems, innovate under constraints, and adapt to emerging technologies.
+            
           </p>
 
         </div>
@@ -223,6 +227,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
