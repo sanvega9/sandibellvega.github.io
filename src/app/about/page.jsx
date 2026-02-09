@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Navbaricons from '../components/Navicons';
@@ -166,3 +167,4 @@ const About = () => {
 };
 
 export default About;
+
