@@ -68,6 +68,11 @@ const HeroSection = () => {
 
     <div className="relative p-4 text-center">
       <p className="text-white font-semibold text-lg">K-Drama AI Recommender</p>
+       <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wide
+                   rounded-full bg-gradient-to-r from-pink-500 to-purple-500
+                   text-white shadow-md">
+    AI Project
+  </span>
     </div>
   </div>
 
@@ -167,6 +172,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
