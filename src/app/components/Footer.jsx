@@ -31,10 +31,17 @@ export default function Footer() {
           </p>
 
           <div className="flex justify-center gap-6 text-3xl mb-8">
-            <FaTiktok className="hover:text-pink-400 cursor-pointer" />
-            <FaInstagram className="hover:text-pink-400 cursor-pointer" />
-            <FaYoutube className="hover:text-pink-400 cursor-pointer" />
+            <a href= "https://www.youtube.com/@aibellvega" 
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaYoutube className="hover:text-pink-400 cursor-pointer" />
+            </a>
+            <a href= "href="https://www.linkedin.com/in/sandibell-vega-953889180/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <FaLinkedin className="hover:text-pink-400 cursor-pointer" />
+            </a>
           </div>
 
           <p className="text-sm text-gray-400">
