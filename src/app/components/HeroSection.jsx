@@ -48,7 +48,7 @@ const HeroSection = () => {
                 gap-10 px-4 place-items-center mt-14">
 
   {/* Card 1 */}
-  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-3xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -97,7 +97,7 @@ const HeroSection = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-3xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -135,7 +135,7 @@ const HeroSection = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-3xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -223,6 +223,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
