@@ -36,20 +36,37 @@ const HeroSection = () => {
         </div>
 
       </div>
-      <div className="mt-8 lg:mt-12 flex justify-center">
-        <h3 className="text-[#F0A8D0] mb-4 text-4xl lg:text-6xl font-extrabold">Recent Project</h3>
-      </div>
+      <div className="mt-12 lg:mt-16 flex justify-center">
+  <h3 className="text-[#F0A8D0] mb-8 text-4xl lg:text-6xl font-extrabold tracking-wide">
+    Recent Project
+  </h3>
+</div>
 
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+{/* Video Grid */}
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+  
+  <div className="group relative w-full rounded-2xl overflow-hidden
+                  bg-white/5 backdrop-blur-xl border border-white/10
+                  shadow-xl transition-all duration-500
+                  hover:-translate-y-2 hover:shadow-pink-500/30">
+
+    {/* Gradient Glow */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
+                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
+
+    {/* Video */}
+    <div
+      className="relative w-full"
+      style={{ aspectRatio: "16 / 9" }}
+    >
+      <iframe
+        className="absolute inset-0 w-full h-full rounded-2xl"
+        src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
+        title="AI Quiz Game in Python"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
       </div>
 
       {/* New Section Below the Video */}
@@ -121,6 +138,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
