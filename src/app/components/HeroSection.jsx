@@ -37,7 +37,7 @@ const HeroSection = () => {
 
       </div>
       {/* Section Title */}
-<div className="mt-12 lg:mt-16 flex justify-center">
+      <div className="mt-12 lg:mt-16 flex justify-center">
   <h3 className="text-[#F0A8D0] mb-8 text-4xl lg:text-6xl font-extrabold tracking-wide">
     Recent Project
   </h3>
@@ -45,7 +45,8 @@ const HeroSection = () => {
 
 {/* Video Grid */}
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-  
+
+  {/* Video 1 */}
   <div className="group relative w-full rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
@@ -56,10 +57,7 @@ const HeroSection = () => {
                     opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
 
     {/* Video */}
-    <div
-      className="relative w-full"
-      style={{ aspectRatio: "16 / 9" }}
-    >
+    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
         src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
@@ -76,7 +74,9 @@ const HeroSection = () => {
       </p>
     </div>
   </div>
-<div className="group relative w-full rounded-2xl overflow-hidden
+
+  {/* Video 2 */}
+  <div className="group relative w-full rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -84,14 +84,13 @@ const HeroSection = () => {
     {/* Gradient Glow */}
     <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
                     opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
-   <div
-      className="relative w-full"
-      style={{ aspectRatio: "16 / 9" }}
-    >
+
+    {/* Video */}
+    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
         src="https://www.youtube.com/embed/A_GdFHpMQ7k?si=68GmDHr9yt-o553j"
-        title="K-Drama AI Recommender"
+        title="K-POP Fan App"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
@@ -100,10 +99,13 @@ const HeroSection = () => {
     {/* Caption */}
     <div className="relative p-4 text-center">
       <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-        K-POP Fan App 
+        K-POP Fan App
       </p>
     </div>
+  </div>
+
 </div>
+
        <div className="mt-12 flex justify-center">
         <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
@@ -161,6 +163,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
