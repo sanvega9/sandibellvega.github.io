@@ -97,7 +97,7 @@ const HeroSection = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -107,7 +107,7 @@ const HeroSection = () => {
 
     <div className="relative aspect-video">
       <iframe
-        className="absolute inset-0 w-full h-full rounded-2xl"
+        className="absolute inset-0 w-full h-full rounded-3xl"
         src="https://www.youtube.com/embed/A_GdFHpMQ7k"
         title="K-POP Fan App"
         allowFullScreen
@@ -135,7 +135,7 @@ const HeroSection = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
+  <div className="group relative w-full max-w-xl rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
@@ -145,7 +145,7 @@ const HeroSection = () => {
 
     <div className="relative aspect-video">
       <iframe
-        className="absolute inset-0 w-full h-full rounded-2xl"
+        className="absolute inset-0 w-full h-full rounded-3xl"
         src="https://www.youtube.com/embed/wRIXku35z7M"
         title="Covid-19 IFTTT Bot"
         allowFullScreen
@@ -223,6 +223,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
