@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-
+import VideoCard from "./components/VideoCard"
 const HeroSection = () => {
   return (
     <section>
@@ -37,9 +37,14 @@ const HeroSection = () => {
         </div>
 
       </div>
-
-
-
+      <div className="mt-16 text-center"> 
+        <h3 className="text-[#F0A8D0] mb-10 text-4xl lg:text-6xl font-extrabold"> Recent Projects </h3> 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center"> 
+          <VideoCard title="AI K-Drama Recommender" description="An AI-powered recommender system using Python, TF-IDF, and cosine similarity to suggest K-Dramas based on user input." videoId=" Dog927xBQjg" />
+           <VideoCard title="Python Coding Projects" description="Beginner-friendly Python projects designed to teach core programming concepts through hands-on building." videoId="A_GdFHpMQ7k" />
+            <VideoCard title="Coding Vision Board 2026" description="Manifesting my future in AI, programming, and growth—documenting goals, mindset, and the journey ahead." videoId="wRIXku35z7M" /> 
+            </div> 
+            </div>
       <div className="mt-8 lg:mt-12 flex justify-center">
         <h3 className="text-[#F0A8D0] mb-4 text-4xl lg:text-6xl font-extrabold">Recent Project</h3>
       </div>
@@ -119,7 +124,8 @@ const HeroSection = () => {
       Email Me
     </a>
   </div>
-</div>    
+</div> 
+</section>
   );
 };
 

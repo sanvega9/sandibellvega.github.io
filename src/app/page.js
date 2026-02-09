@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import aiimage from "./image/ai.jpg";
-import Footer from "@/components/Footer";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -28,10 +28,7 @@ export default function Home() {
       <div className="container mx-auto px-5 py-4 mt-24 flex-grow">
         <HeroSection />
       </div>
-
-      {/* Footer */}
-      <Footer />
-
+      <Footer/>
     </main>
   );
 }
