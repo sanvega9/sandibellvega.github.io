@@ -155,9 +155,22 @@ const HeroSection = () => {
     <div className="relative p-5 text-center space-y-2">
       <span className="inline-block px-3 py-1 text-xs rounded-full
                        bg-gradient-to-r from-green-500 to-teal-500 text-white">
-        Automation Bot
+        IoT Project
       </span>
       <h4 className="text-white font-extrabold text-xl">Covid-19 IFTTT Bot</h4>
+        <div className="w-12 h-1 mx-auto bg-gradient-to-r from-green-500 to-teal-500 rounded-full" />
+
+      <p className="text-gray-300 text-sm leading-relaxed">
+  An IoT-based social distancing system that detects motion and alerts users
+  via chatbot message or call when someone gets too close, using M5StickC,
+  a PIR sensor, and Arduino.
+</p>
+     <div className="flex justify-center gap-2 flex-wrap pt-2">
+    <span className="px-2 py-1 text-xs bg-white/10 text-green-300 rounded-md">Arduino</span>
+    <span className="px-2 py-1 text-xs bg-white/10 text-teal-300 rounded-md">IoT</span>
+    <span className="px-2 py-1 text-xs bg-white/10 text-blue-300 rounded-md">Sensors</span>
+  </div>  
+
     </div>
   </div>
 
@@ -210,6 +223,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
