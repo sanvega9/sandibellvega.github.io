@@ -5,31 +5,34 @@ import Navbaricons from '../components/Navicons';
 
 // Skills Data
 const skillsData = [
-  { name: "Python", level: "Proficient", roles: ["AI", "Robotics", "Software Developer", "Data Science"] },
+  { name: "Python", level: "Advanced", roles: ["AI", "Robotics", "Software Developer", "Data Science"] },
   { name: "TensorFlow", level: "Proficient", roles:["AI", "ML"] },
-  { name: "PyTorch", level: "Advanced", roles: ["AI", "ML"] },
-  { name: "Scikit-Learn", level: "Proficient", roles: ["AI", "Data Science"] },
-  { name: "Pandas", level: "Proficient", roles: ["AI", "Data Science", "ML"] },
-  { name: "Tkinter", level: "Proficient", roles: ["AI", "Data Science", "Software Developer"] },
-  { name: "PyQt", level: "Proficient", roles: ["AI", "Data Science", "Software Developer"] },
-  { name: "Arduino", level: "Advanced", roles: ["Robotics", "IoT"] },
-  { name: "Sensors / IoT", level: "Proficient", roles: ["Robotics","IoT"] },
+  { name: "PyTorch", level: "Proficient", roles: ["AI", "ML"] },
+  { name: "Scikit-Learn", level: "Advanced", roles: ["AI", "Data Science"] },
+  { name: "Pandas", level: "Advanced", roles: ["AI", "Data Science", "ML"] },
+  { name: "Tkinter", level: "Advanced", roles: ["AI", "Data Science", "Software Developer"] },
+  { name: "PyQt", level: "Advanced", roles: ["AI", "Data Science", "Software Developer"] },
+  { name: "Arduino", level: "Proficient", roles: ["Robotics", "IoT"] },
+  { name: "OpenCV", level: "Proficient", roles: ["Robotics", "AI", "Computer Vision"] },
+  { name: "Sensors / IoT", level: "Advanced", roles: ["Robotics","IoT"] },
   { name: "React", level: "Advanced", roles: ["Software Developer", "UI/UX", "Full-Stack"] },
   { name: "Next.js", level: "Intermediate", roles: ["Software Developer", "UI/UX", "Full-Stack"] },
   { name: "Node.js", level: "Proficient", roles: ["Software Developer", "UI/UX", "Backend"] },
-  { name: "SQL", level: "Advanced", roles: ["Data Science", "Software Engineering"] },
+  { name: "SQL", level: "Proficient", roles: ["Data Science", "Software Engineering"] },
   { name: "AWS", level: "Intermediate", roles: ["AI", "ML", "Cybersecurity", "DevOps"] },
   { name: "HTML", level: "Advanced", roles: ["UI/UX", "Full-Stack", "Web Development"] },
   { name: "CSS", level: "Advanced", roles: ["UI/UX", "Frontend", "Web Designer"] },
   { name: "JavaScript", level: "Advanced", roles: ["UI/UX", "Full-Stack", "Web Development", "Software Developer"] },
   { name: "Java", level: "Advanced", roles: ["Software Engineer", "Full-Stack", "DevOps"] },
   { name: "Kotlin", level: "Intermediate", roles: ["Android Developer", "Full-Stack", "Mobile Engineer"] },
+  { name: "C/C++", level: "Proficient", roles: ["Robotics", "Embedded Systems"] },
+
 ];
 
 const roles = [
   "All", "AI", "ML", "Robotics", "IoT", "UI/UX", "Frontend", "Backend", "Full-Stack",
   "Web Development", "Data Science", "Software Engineering", "Software Developer",
-  "Android Developer", "Mobile Engineer", "Cybersecurity", "DevOps", "Web Designer"
+  "Android Developer", "Mobile Engineer", "Cybersecurity", "DevOps", "Web Designer","Computer Vision"
 ];
 
 const About = () => {
@@ -79,11 +82,14 @@ const About = () => {
         {/* Degrees */}
         <section className="mb-12 flex flex-col items-center">
           <h2 className="text-3xl font-semibold mb-6 text-red-700 text-center">Degrees Received</h2>
-          <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-2 text-white">University of Advancing Technology</h3>
-            <p className="text-gray-400">Bachelor of Science in Robotics and Embedded Systems, 2021</p>
-            <p className="text-gray-400">Bachelor of Science in Artificial Intelligence, 2021</p>
+          <div className = "relative bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 p-1 rounded-3xl shadow-xl hover:scale-105 transform transition-all duration-500">
+             <div className="bg-[#1e1e1e] p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-3xl font-bold mb-3 text-white">University of Advancing Technology</h3>
+            <p className="text-gray-400 mb-1">Bachelor of Science in Robotics and Embedded Systems, 2021</p>
+            <p className="text-gray-400 mb-1">Bachelor of Science in Artificial Intelligence, 2021</p>
           </div>
+          </div>
+         
         </section>
 
         {/* Skills Section */}
@@ -167,4 +173,5 @@ const About = () => {
 };
 
 export default About;
+
 
