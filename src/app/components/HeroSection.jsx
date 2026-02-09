@@ -37,7 +37,8 @@ const HeroSection = () => {
 
       </div>
       {/* Section Title */}
-      <div className="mt-12 lg:mt-16 flex justify-center">
+      {/* Section Title */}
+<div className="mt-12 lg:mt-16 flex justify-center">
   <h3 className="text-[#F0A8D0] mb-8 text-4xl lg:text-6xl font-extrabold tracking-wide">
     Recent Project
   </h3>
@@ -81,11 +82,9 @@ const HeroSection = () => {
                   shadow-xl transition-all duration-500
                   hover:-translate-y-2 hover:shadow-pink-500/30">
 
-    {/* Gradient Glow */}
     <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
                     opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></div>
 
-    {/* Video */}
     <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
@@ -96,14 +95,16 @@ const HeroSection = () => {
       />
     </div>
 
-    {/* Caption */}
     <div className="relative p-4 text-center">
       <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
         K-POP Fan App
       </p>
     </div>
   </div>
-  {/* Full-width Video Card */}
+
+</div> {/* end of grid */}
+
+{/* Full-width Video Card (outside the grid) */}
 <div className="mt-12 flex justify-center">
   <div className="group relative w-full max-w-[680px] md:max-w-[570px] rounded-2xl overflow-hidden
                   bg-white/5 backdrop-blur-xl border border-white/10
@@ -125,8 +126,15 @@ const HeroSection = () => {
       />
     </div>
 
+    {/* Caption */}
+    <div className="relative p-4 text-center">
+      <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
+        Covid-19 IFTTT Bot
+      </p>
+    </div>
+  </div>
 </div>
-       </div>
+
      {/* Contact Section */}
     <div className="relative text-center py-20 mt-20">
   
@@ -173,6 +181,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
