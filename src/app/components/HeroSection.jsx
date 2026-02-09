@@ -44,47 +44,62 @@ const HeroSection = () => {
   </h3>
 </div>
       {/* Video Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
-                gap-10 px-4 place-items-center">
 
-  {/* Card 1 */}
-  <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
-                  bg-white/5 backdrop-blur-xl border border-white/10
-                  shadow-xl transition-all duration-500
-                  hover:-translate-y-2 hover:shadow-pink-500/30">
+    {/* Card 1 */}
+<div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
+                bg-white/5 backdrop-blur-xl border border-white/10
+                shadow-xl transition-all duration-500
+                hover:-translate-y-2 hover:shadow-pink-500/30">
 
-    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
-                    opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
+  {/* Glow */}
+  <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                  opacity-0 group-hover:opacity-30 blur-xl transition duration-500" />
 
-    <div className="relative aspect-video">
-      <iframe
-        className="absolute inset-0 w-full h-full rounded-2xl"
-        src="https://www.youtube.com/embed/Dog927xBQjg"
-        title="K-Drama AI Recommender"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+  {/* Video */}
+  <div className="relative aspect-video">
+    <iframe
+      className="absolute inset-0 w-full h-full rounded-2xl"
+      src="https://www.youtube.com/embed/Dog927xBQjg"
+      title="K-Drama AI Recommender"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+
+  {/* Content */}
+  <div className="relative p-5 text-center space-y-3">
+
+    {/* Badge */}
+    <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wide
+                     rounded-full bg-gradient-to-r from-pink-500 to-purple-500
+                     text-white shadow-md">
+      AI Project
+    </span>
+
+    {/* Title */}
+    <h4 className="text-white font-extrabold text-xl">
+      K-Drama AI Recommender
+    </h4>
+
+    {/* Divider */}
+    <div className="w-12 h-1 mx-auto bg-gradient-to-r from-pink-500 to-purple-500 rounded-full" />
+
+    {/* Description */}
+    <p className="text-gray-300 text-sm leading-relaxed">
+      An intelligent recommendation system that suggests K-Dramas
+      using user preferences and machine learning.
+    </p>
+
+    {/* Tech Stack */}
+    <div className="flex justify-center gap-2 flex-wrap pt-2">
+      <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-pink-300">Python</span>
+      <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-purple-300">ML</span>
+      <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-blue-300">AI</span>
     </div>
 
-    <div className="relative p-4 text-center">
-      <p className="text-white font-semibold text-lg">K-Drama AI Recommender</p>
-       <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wide
-                   rounded-full bg-gradient-to-r from-pink-500 to-purple-500
-                   text-white shadow-md">
-    AI Project 
-  </span>
-     <p className="text-gray-300 text-sm leading-relaxed">
-    An intelligent recommendation system that suggests K-Dramas using
-    user preferences and machine learning.</p>
-        {/* Tech Stack */}
-  <div className="flex justify-center gap-2 flex-wrap mt-2">
-    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-pink-300">Python</span>
-    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-purple-300">ML</span>
-    <span className="px-2 py-1 text-xs rounded-md bg-white/10 text-blue-300">AI</span>
   </div>
 </div>
-    </div>
-  </div>
+
 
   {/* Card 2 */}
   <div className="group relative w-full max-w-sm rounded-2xl overflow-hidden
@@ -182,6 +197,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
