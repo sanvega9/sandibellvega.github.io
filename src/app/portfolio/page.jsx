@@ -1,85 +1,110 @@
-import React from 'react';
-import Navbar from '../components/Navbar'; // Import Navbar component
-import Image from 'next/image';
-import background from '../image/background.jpg';
-import Navbaricons from '../components/Navicons';
+"use client";
+import React from "react";
+import Navbar from "../components/Navbar";
+import Navbaricons from "../components/Navicons";
+import Image from "next/image";
+import background from "../image/background.jpg";
 
 const Portfolio = () => {
   return (
-    <div className="relative flex min-h-screen flex-col bg-portfolio-bg bg-cover bg-center">
-      <div className="absolute inset-0 z-[-1]">
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-[-2]">
         <Image
           src={background}
-          layout='fill'
-          objectFit='cover'
+          alt="Background"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
-      {/* Include Navbar */}
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#0e0061]/80 via-black/70 to-black/90" />
+
       <Navbar />
-         <div className="absolute inset-0 bg-[#0e0061] opacity-55 z-[-1]"></div>
 
-      <div className="relative container mx-auto py-10 mt-20 flex flex-col items-center justify-center px-4 lg:px-20 text-center">
-        {/* Center content */}
-        <h1 className="text-5xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-pink-700">AI & Robotics Portfolio</h1>
+      <div className="container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
+        {/* Page Title */}
+        <h1 className="text-5xl lg:text-6xl font-extrabold mb-6
+          bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600
+          text-transparent bg-clip-text">
+          AI & Robotics Portfolio
+        </h1>
 
-        {/* AI Projects Section */}
-        <section className="mb-12 w-full">
-          <h2 className="text-3xl font-extrabold mb-6 text-amber-500">AI Projects</h2>
-          <div className="flex flex-wrap justify-center gap-8"> {/* Center grid items */}
-            {/* AI Project 1 */}
-            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center text-center w-full sm:w-[48%] lg:w-[30%]"> {/* Responsive width */}
-              <h3 className="text-2xl font-bold mb-2 text-white">AI K-Drama Recommender</h3>
-              <p className="text-gray-400">
-                A machine learning-based recommendation system that suggests K-Dramas based on user input. Utilizes cosine similarity and TF-IDF vectorization.
-              </p>
-            </div>
+        <p className="text-gray-300 max-w-3xl mx-auto mb-12 text-lg">
+          A curated collection of my work in Artificial Intelligence, Robotics,
+          Embedded Systems, and innovative software solutions.
+        </p>
 
-            {/* AI Project 2 */}
-            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center text-center w-full sm:w-[48%] lg:w-[30%]"> {/* Responsive width */}
-              <h3 className="text-2xl font-bold mb-2 text-white">Deepfakes Lung Cancer Detection</h3>
-              <p className="text-gray-400">
-                An AI-driven project focusing on detecting lung cancer using deep learning models, showcased through impactful data visualizations.
-              </p>
-            </div>
-            {/*AI Project 3 */}
-            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center text-center w-full sm:w-[48%] lg:w-[30%]"> {/* Responsive width */}
-              <h3 className="text-2xl font-bold mb-2 text-white">AI IoT Garden</h3>
-              <p className="text-gray-400">
-                A smart garden project utilizing AI for monitoring and optimizing plant growth through IoT devices and data analysis.
-              </p>
-            </div>
+        <Navbaricons />
 
+        {/* ================= AI PROJECTS ================= */}
+        <section className="mt-20">
+          <h2 className="text-4xl font-extrabold mb-12
+            bg-gradient-to-r from-amber-400 to-pink-500
+            text-transparent bg-clip-text">
+            AI Projects
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-10">
+            {/* Card */}
+            <ProjectCard
+              title="AI K-Drama Recommender"
+              description="Machine learning recommendation system using TF-IDF and cosine similarity to personalize K-Drama suggestions."
+              tags={["Machine Learning", "NLP", "Python"]}
+            />
+
+            <ProjectCard
+              title="Deep Learning Lung Cancer Detection"
+              description="AI-driven deep learning models to assist in lung cancer detection, paired with impactful medical data visualizations."
+              tags={["Deep Learning", "Healthcare AI", "TensorFlow"]}
+            />
+
+            <ProjectCard
+              title="AI IoT Smart Garden"
+              description="An intelligent garden system using AI and IoT sensors to monitor soil health and optimize plant growth."
+              tags={["IoT", "AI", "Data Analysis"]}
+            />
           </div>
         </section>
 
-        {/* Robotics Projects Section */}
-        <section className="mb-12 w-full">
-          <h2 className="text-3xl font-extrabold mb-6 text-amber-500">Robotics Projects</h2>
-          <div className="flex flex-wrap justify-center gap-8"> {/* Center grid items */}
-            {/* Robotics Project 1 */}
-            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center text-center w-full sm:w-[48%] lg:w-[30%]"> {/* Responsive width */}
-              <h3 className="text-2xl font-bold mb-2 text-white">Underwater Robot</h3>
-              <p className="text-gray-400">
-                The robot's primary task was to drive underwater and navigate through a series of obstacles. One of the key challenges was ensuring that the robot could align itself 90 or 180 degrees away from a gate and divide the gate evenly (50% left, 50% right).
-              </p>
-            </div>
+        {/* ================= ROBOTICS PROJECTS ================= */}
+        <section className="mt-28">
+          <h2 className="text-4xl font-extrabold mb-12
+            bg-gradient-to-r from-emerald-400 to-cyan-500
+            text-transparent bg-clip-text">
+            Robotics Projects
+          </h2>
 
-            {/* Robotics Project 2 */}
-            <div className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-center items-center text-center w-full sm:w-[48%] lg:w-[30%]"> {/* Responsive width */}
-              <h3 className="text-2xl font-bold mb-2 text-white">Embedded Systems in Healthcare</h3>
-              <p className="text-gray-400">
-                Created a healthcare device using embedded systems to monitor patient vitals, showcasing the intersection of robotics and healthcare technology.
-              </p>
-            </div>
+          <div className="flex flex-wrap justify-center gap-10">
+            <ProjectCard
+              title="Underwater Autonomous Robot"
+              description="Designed and programmed an underwater robot capable of navigating obstacles and aligning itself precisely using spatial calculations."
+              tags={["Robotics", "Embedded C++", "Sensors"]}
+            />
+
+            <ProjectCard
+              title="Embedded Healthcare Monitoring System"
+              description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
+              tags={["Embedded Systems", "Healthcare", "IoT"]}
+            />
           </div>
         </section>
 
-        <div className="flex justify-center mt-8">
-          <a href="https://sandibellvega.weebly.com/portfolio.html">
-          <button className="px-6 py-3 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-blue-600 transition-all text-white">
-            See More Projects
-          </button>
+        {/* ================= CTA ================= */}
+        <div className="mt-24">
+          <a
+            href="https://sandibellvega.weebly.com/portfolio.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-10 py-4 rounded-full text-lg font-bold text-white
+              bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+              hover:scale-105 hover:shadow-xl hover:shadow-pink-500/40
+              transition-all duration-300">
+              View Full Portfolio →
+            </button>
           </a>
         </div>
       </div>
@@ -87,4 +112,48 @@ const Portfolio = () => {
   );
 };
 
+/* ================= PROJECT CARD COMPONENT ================= */
+const ProjectCard = ({ title, description, tags }) => {
+  return (
+    <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
+      {/* Glow */}
+      <div className="absolute -inset-0.5 rounded-3xl
+        bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
+        opacity-30 blur transition group-hover:opacity-80" />
+
+      <div className="relative bg-[#111] backdrop-blur-xl p-8 rounded-3xl
+        shadow-xl transition-all duration-300
+        group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
+
+        <h3 className="text-2xl font-bold mb-4 text-white">
+          {title}
+        </h3>
+
+        <p className="text-gray-400 text-sm mb-6">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="text-xs px-3 py-1 rounded-full
+                bg-white/10 text-gray-300 font-semibold"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <span className="text-sm font-semibold text-pink-400
+          opacity-0 group-hover:opacity-100 transition">
+          View Project →
+        </span>
+      </div>
+    </div>
+  );
+};
+
 export default Portfolio;
+
+
