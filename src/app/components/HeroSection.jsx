@@ -40,7 +40,7 @@ const HeroSection = () => {
         <h3 className="text-[#F0A8D0] mb-4 text-4xl lg:text-6xl font-extrabold">Recent Project</h3>
       </div>
 
-      <div className="mt-8 lg:mt-12 flex justify-center">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div className="relative w-full max-w-[680px] md:max-w-[570px]" style={{ aspectRatio: '16 / 9' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
@@ -121,6 +121,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
