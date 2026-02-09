@@ -63,7 +63,7 @@ const HeroSection = () => {
       <iframe
         className="absolute inset-0 w-full h-full rounded-2xl"
         src="https://www.youtube.com/embed/Dog927xBQjg?si=YID7c5HSaFJn5C_N"
-        title="AI Quiz Game in Python"
+        title="K-Drama AI Recommender"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
@@ -72,7 +72,7 @@ const HeroSection = () => {
     {/* Caption */}
     <div className="relative p-4 text-center">
       <p className="text-white font-semibold text-lg group-hover:text-pink-300 transition">
-        AI Quiz Game in Python
+        K-Drama AI Recommender
       </p>
     </div>
   </div>
@@ -149,6 +149,7 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
 
