@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import Navbaricons from "../components/Navicons";
 import Image from "next/image";
 import background from "../image/background.jpg";
+import kdrama from "../image/kdrama.png";
+
 
 const Portfolio = () => {
   return (
@@ -53,7 +55,7 @@ const Portfolio = () => {
               image && (
           <div className="relative h-44 w-full">
             <Image
-              src={image}
+              src={kdrama}
               alt={title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -202,6 +204,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
