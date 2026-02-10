@@ -50,6 +50,16 @@ const Portfolio = () => {
           <div className="flex flex-wrap justify-center gap-10">
             {/* Card */}
             <ProjectCard
+              image && (
+          <div className="relative h-44 w-full">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        )
               title="AI K-Drama Recommender"
               description="Machine learning recommendation system using TF-IDF and cosine similarity to personalize K-Drama suggestions."
               tags={["Machine Learning", "NLP", "Python"]}
@@ -192,6 +202,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
