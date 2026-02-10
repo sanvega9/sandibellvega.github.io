@@ -29,7 +29,7 @@ const Portfolio = () => {
         <h1 className="text-5xl lg:text-6xl font-extrabold mb-6
           bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600
           text-transparent bg-clip-text">
-          AI & Robotics Portfolio
+          Portfolio
         </h1>
 
         <p className="text-gray-300 max-w-3xl mx-auto mb-12 text-lg">
@@ -102,6 +102,32 @@ const Portfolio = () => {
             />
           </div>
         </section>
+        {/* ================= ROBOTICS PROJECTS ================= */}
+        <section className="mt-28">
+          <h2 className="text-4xl font-extrabold mb-12
+            bg-gradient-to-r from-emerald-400 to-cyan-500
+            text-transparent bg-clip-text">
+            Biomedical Engineering Projects
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-10">
+            <ProjectCard
+              title="Image Processing Diabetes Retinopathy"
+              description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. 
+The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. 
+A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
+              tags={["Biomedical Engineering","Computer Vision","Diabetic Retinopathy","Image Processing","ML","DL","FFT","Wavelet Analysis"]}
+            />
+
+            <ProjectCard
+              title="Embedded Healthcare Monitoring System"
+              description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
+The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, 
+then applies machine learning models to deliver accurate predictions.An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
+              tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+            />
+          </div>
+        </section>
 
         {/* ================= link  ================= */}
         <div className="mt-24">
@@ -166,6 +192,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
