@@ -39,7 +39,7 @@ const Portfolio = () => {
 
         <Navbaricons />
 
-        {/* ================= AI PROJECTS ================= */}
+        {/*  AI PROJECTS*/}
         <section className="mt-20">
           <h2 className="text-4xl font-extrabold mb-12
             bg-gradient-to-r from-amber-400 to-pink-500
@@ -80,7 +80,7 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* ================= ROBOTICS PROJECTS ================= */}
+        {/* ROBOTICS PROJECTS */}
         <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
             bg-gradient-to-r from-emerald-400 to-cyan-500
@@ -102,11 +102,11 @@ const Portfolio = () => {
             />
           </div>
         </section>
-        {/* ================= ROBOTICS PROJECTS ================= */}
+        {/* BIOMEDICAL ENGINEERING PROJECTS */}
         <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-            bg-gradient-to-r from-emerald-400 to-cyan-500
-            text-transparent bg-clip-text">
+  bg-gradient-to-r from-violet-400 via-fuchsia-500 to-cyan-400
+  text-transparent bg-clip-text">
             Biomedical Engineering Projects
           </h2>
 
@@ -129,7 +129,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
           </div>
         </section>
 
-        {/* ================= link  ================= */}
+        {/*  link */}
         <div className="mt-24">
           <a
             href="https://sandibellvega.weebly.com/portfolio.html"
@@ -149,7 +149,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
   );
 };
 
-/* ================= PROJECT CARD COMPONENT ================= */
+/* PROJECT CARD COMPONENT */
 const ProjectCard = ({ title, description, tags }) => {
   return (
     <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
@@ -192,6 +192,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
