@@ -120,10 +120,10 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
 
             <ProjectCard
-              title="Embedded Healthcare Monitoring System"
+              title="AI Heart Disease Prediction System"
               description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
-The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, 
-then applies machine learning models to deliver accurate predictions.An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
+              The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
+              An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
               tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
             />
           </div>
@@ -192,6 +192,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
