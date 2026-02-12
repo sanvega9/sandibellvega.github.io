@@ -12,6 +12,7 @@ import kpop from "../image/ai bell Vega.gif"
 import robotics from "../image/robotics.jpg"
 import fake from "../image/project5.png"
 import iot from "../image/iot1.jpg"
+import processing from "../image/image processing.png"
 
 const Portfolio = () => {
   return (
@@ -128,6 +129,7 @@ const Portfolio = () => {
           <div className="flex flex-wrap justify-center gap-10">
             <ProjectCard
               title="Image Processing Diabetes Retinopathy"
+              image={processing}
               description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. 
 The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. 
 A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
@@ -145,7 +147,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
         </section>
          <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-  bg-gradient-to-r from-rose-400 via-indigo-500 to-cyan-400
+  bg-gradient-to-r from-indigo-500 via-pink-500 to-cyan-400
   text-transparent bg-clip-text">
             Full-Stack Development Projects
           </h2>
@@ -242,6 +244,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
