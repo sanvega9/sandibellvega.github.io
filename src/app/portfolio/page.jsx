@@ -163,12 +163,13 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
 
             <ProjectCard
-              title="AI Heart Disease Prediction System"
-              description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
-              The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
-              An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
+              title="Diabetes Chatbot & Chatbot Medication AI"
+              description="An AI-powered mobile healthcare assistant developed using React Native, and Python, that helps users manage diabetes through intelligent medication reminders, personalized health insights, and educational support. The system leverages machine learning and deep learning models to analyze user health data, predict diabetes risk, and provide guidance to improve adherence and awareness. Designed to support individuals who struggle with medication consistency,
+              the application promotes proactive health management and informed decision-making."
               tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+              <span className="inline-block mb-3 text-xs px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-300 font-semibold"> 🏆 Leadership Award </span>
             />
+            
           </div>
         </section>
 
@@ -246,6 +247,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
