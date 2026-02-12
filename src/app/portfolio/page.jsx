@@ -9,6 +9,7 @@ import Lung from "../image/Lung Cancer Detection.png"
 import AIiot from "../image/AI IoT Garden.png"
 import project4 from "../image/project4.png"
 import kpop from "../image/ai bell Vega.gif"
+import robotics from "../image/robotics.jpg"
 
 const Portfolio = () => {
   return (
@@ -100,6 +101,7 @@ const Portfolio = () => {
           <div className="flex flex-wrap justify-center gap-10">
             <ProjectCard
               title="Underwater Autonomous Robot"
+              image={robotics}
               description="Designed and programmed an underwater robot capable of navigating obstacles and aligning itself precisely using spatial calculations."
               tags={["Robotics", "Embedded C++", "Sensors"]}
             />
@@ -236,6 +238,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
