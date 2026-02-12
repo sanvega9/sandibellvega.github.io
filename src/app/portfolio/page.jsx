@@ -11,6 +11,8 @@ import project4 from "../image/project4.png"
 import kpop from "../image/ai bell Vega.gif"
 import robotics from "../image/robotics.jpg"
 import fake from "../image/project5.png"
+import iot2 from "../image/iot2.jpg"
+
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -109,6 +111,7 @@ const Portfolio = () => {
 
             <ProjectCard
               title="Embedded Healthcare Monitoring System"
+              image={iot2}
               description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
               tags={["Embedded Systems", "Healthcare", "IoT"]}
             />
@@ -239,6 +242,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
