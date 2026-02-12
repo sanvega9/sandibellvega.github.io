@@ -153,7 +153,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 };
 
 /* PROJECT CARD COMPONENT */
-const ProjectCard = ({ title, description, tags }) => {
+const ProjectCard = ({ title, description, tags, image }) => {
   return (
     <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
       {/* Glow */}
@@ -204,6 +204,7 @@ const ProjectCard = ({ title, description, tags }) => {
 };
 
 export default Portfolio;
+
 
 
 
