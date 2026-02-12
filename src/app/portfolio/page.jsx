@@ -164,9 +164,9 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
             <ProjectCard
               title="Diabetes Chatbot & Chatbot Medication AI"
-              description="An AI-powered mobile healthcare assistant developed using React Native, and Python, that helps users manage diabetes through intelligent medication reminders, personalized health insights, and educational support. The system leverages machine learning and deep learning models to analyze user health data, predict diabetes risk, and provide guidance to improve adherence and awareness. Designed to support individuals who struggle with medication consistency,
-              the application promotes proactive health management and informed decision-making."
-              tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+              description="AI-powered mobile healthcare assistant built with React Native and Python that helps users 
+              manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction."
+              tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App"]}
             />
             
           </div>
@@ -246,6 +246,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
