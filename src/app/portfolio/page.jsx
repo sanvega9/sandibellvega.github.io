@@ -11,7 +11,7 @@ import project4 from "../image/project4.png"
 import kpop from "../image/ai bell Vega.gif"
 import robotics from "../image/robotics.jpg"
 import fake from "../image/project5.png"
-import iot2 from "../image/iot2.jpg"
+import iot from "../image/iot2.jpg"
 
 const Portfolio = () => {
   return (
@@ -96,7 +96,7 @@ const Portfolio = () => {
         {/* ROBOTICS PROJECTS */}
         <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-            bg-gradient-to-r from-pink-500 to-rose-500
+            bg-gradient-to-r from-sky-500 to-indigo-600
             text-transparent bg-clip-text">
             Robotics Projects
           </h2>
@@ -111,7 +111,7 @@ const Portfolio = () => {
 
             <ProjectCard
               title="Embedded Healthcare Monitoring System"
-              image={iot2}
+              image={iot}
               description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
               tags={["Embedded Systems", "Healthcare", "IoT"]}
             />
@@ -242,6 +242,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
