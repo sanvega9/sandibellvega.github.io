@@ -13,6 +13,7 @@ import robotics from "../image/robotics.jpg"
 import fake from "../image/project5.png"
 import iot from "../image/iot1.jpg"
 import processing from "../image/image processing.png"
+import heart from "../image/heart disease.png"
 
 const Portfolio = () => {
   return (
@@ -138,6 +139,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
             <ProjectCard
               title="AI Heart Disease Prediction System"
+              image={heart}
               description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
               The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
               An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
@@ -147,7 +149,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
         </section>
          <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-  bg-gradient-to-r from-rose-500 via-pink-500 to-cyan-500
+  bg-gradient-to-r from-rose-500 via-fushia-400 to-pink-500
   text-transparent bg-clip-text">
             Full-Stack Development Projects
           </h2>
@@ -244,6 +246,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
