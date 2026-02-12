@@ -96,7 +96,7 @@ const Portfolio = () => {
         {/* ROBOTICS PROJECTS */}
         <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-            bg-gradient-to-r from-emerald-400 to-cyan-500
+            bg-gradient-to-r from-pink-500 to-rose-500
             text-transparent bg-clip-text">
             Robotics Projects
           </h2>
@@ -131,7 +131,7 @@ const Portfolio = () => {
               description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. 
 The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. 
 A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
-              tags={["Biomedical Engineering","Computer Vision","Diabetic Retinopathy","Image Processing","ML","DL","FFT","Wavelet Analysis"]}
+              tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis"]}
             />
 
             <ProjectCard
@@ -242,6 +242,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
