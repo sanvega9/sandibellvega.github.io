@@ -149,7 +149,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
         </section>
          <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-  bg-gradient-to-r from-rose-500 via-fuchsia-400 to-pink-500
+  bg-gradient-to-r from-rose-500 via-fuchsia-500 to-pink-500
   text-transparent bg-clip-text">
             Full-Stack Development Projects
           </h2>
@@ -246,6 +246,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
