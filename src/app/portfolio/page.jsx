@@ -167,7 +167,6 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               description="An AI-powered mobile healthcare assistant developed using React Native, and Python, that helps users manage diabetes through intelligent medication reminders, personalized health insights, and educational support. The system leverages machine learning and deep learning models to analyze user health data, predict diabetes risk, and provide guidance to improve adherence and awareness. Designed to support individuals who struggle with medication consistency,
               the application promotes proactive health management and informed decision-making."
               tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
-              <span className="inline-block mb-3 text-xs px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-300 font-semibold"> 🏆 Leadership Award </span>
             />
             
           </div>
@@ -247,6 +246,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
