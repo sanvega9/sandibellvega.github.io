@@ -166,7 +166,7 @@ const ProjectCard = ({ title, description, tags, image }) => {
         group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
         {image && (
-          <div className"relative w-full h-44 mb-6 rounded x1 overflow-hidden">
+          <div className="relative w-full h-44 mb-6 rounded x1 overflow-hidden">
             <Image
               scr= {image}
               alt={title}
@@ -204,6 +204,7 @@ const ProjectCard = ({ title, description, tags, image }) => {
 };
 
 export default Portfolio;
+
 
 
 
