@@ -173,7 +173,7 @@ const ProjectCard = ({ title, description, tags, image }) => {
               fill
               className = "object-cover group-hover:scale-110 transition duration-500"
           </div>
-
+      )}
         <h3 className="text-2xl font-bold mb-4 text-white">
           {title}
         </h3>
@@ -204,6 +204,7 @@ const ProjectCard = ({ title, description, tags, image }) => {
 };
 
 export default Portfolio;
+
 
 
 
