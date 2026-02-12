@@ -10,7 +10,7 @@ import AIiot from "../image/AI IoT Garden.png"
 import project4 from "../image/project4.png"
 import kpop from "../image/ai bell Vega.gif"
 import robotics from "../image/robotics.jpg"
-
+import fake from "../image/project5.png"
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -83,6 +83,7 @@ const Portfolio = () => {
             />
             <ProjectCard
               title="Fake News Detection"
+              image={fake}
               description="Award-winning machine learning project developed for the UAT Data Science Competition (2/15/2020). Built a fake news detection model using Kaggle datasets, performing data cleaning, exploratory data analysis, and testing multiple classification models. The final system allows users to input news content to determine whether it is likely true or fake. Developed and analyzed using Jupyter Notebook in PyCharm."
               tags={["Machine Learning", "NLP", "Python", "Data Science"]}
               />
@@ -238,6 +239,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
