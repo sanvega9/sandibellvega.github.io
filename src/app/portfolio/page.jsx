@@ -8,6 +8,7 @@ import kdrama from "../image/kdrama.png";
 import Lung from "../image/Lung Cancer Detection.png"
 import AIiot from "../image/AI IoT Garden.png"
 import project4 from "../image/project4.png"
+import kpop from "../image/ai bell Vega.gif"
 
 const Portfolio = () => {
   return (
@@ -146,6 +147,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
           <div className="flex flex-wrap justify-center gap-10">
             <ProjectCard
               title="K-POP Fan App"
+              image{kpop}
               description="A React Native social platform for K-Pop and K-Drama fans to connect, share posts, explore idol news, and discover recommended accounts with similar interests."
               tags={["React Native", "Mobile App", "Social Platform", "Node.js", "Authentication"]}
             />
@@ -234,5 +236,6 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
