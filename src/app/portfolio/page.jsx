@@ -5,7 +5,9 @@ import Navbaricons from "../components/Navicons";
 import Image from "next/image";
 import background from "../image/background.jpg";
 import kdrama from "../image/kdrama.png";
-
+import Lung from "../image/Lung Cancer Detection.png"
+import AIiot from "../image/AI IoT Garden.png"
+import project4 from "../image/project4.png"
 
 const Portfolio = () => {
   return (
@@ -60,17 +62,20 @@ const Portfolio = () => {
 
             <ProjectCard
               title="Kibana Dashboard Deep Learning Lung Cancer Detection"
+              image={Lung}
               description="AI-driven deep learning models to assist in lung cancer detection, paired with impactful medical data visualizations."
               tags={["Data Visualization", "Kibana", "ELK Stack"]}
             />
 
             <ProjectCard
               title="AI IoT Smart Garden"
+              image={AIiot}
               description="An interactive AI-powered gardening app where users chat with a Garden Assistant, identify plants, and receive personalized care tips through curated video content and intelligent recommendations."
               tags={["IoT", "AI Chatbot", "React", "Node.js", "UI/UX", "Python"]}
             />
             <ProjectCard
               title="Save the Wilderness Chatbot"
+              image={project4}
               description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis."
               tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]}
             />
@@ -206,3 +211,4 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
