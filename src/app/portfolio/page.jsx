@@ -136,6 +136,29 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
           </div>
         </section>
+         <section className="mt-28">
+          <h2 className="text-4xl font-extrabold mb-12
+  bg-gradient-to-r from-violet-400 via-fuchsia-500 to-cyan-400
+  text-transparent bg-clip-text">
+            Full-Stack Development Projects
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-10">
+            <ProjectCard
+              title="K-POP Fan App"
+              description="A React Native social platform for K-Pop and K-Drama fans to connect, share posts, explore idol news, and discover recommended accounts with similar interests."
+              tags={["React Native", "Mobile App", "Social Platform", "Node.js", "Authentication"]}
+            />
+
+            <ProjectCard
+              title="AI Heart Disease Prediction System"
+              description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
+              The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
+              An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
+              tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+            />
+          </div>
+        </section>
 
         {/*  link */}
         <div className="mt-24">
@@ -211,4 +234,5 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
