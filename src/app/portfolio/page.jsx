@@ -96,7 +96,7 @@ const Portfolio = () => {
         {/* ROBOTICS PROJECTS */}
         <section className="mt-28">
           <h2 className="text-4xl font-extrabold mb-12
-            bg-gradient-to-r from-blue-400 via-cyan-400 to-sky-500
+            bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-500
             text-transparent bg-clip-text">
             Robotics Projects
           </h2>
@@ -242,6 +242,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
