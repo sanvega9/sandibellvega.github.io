@@ -15,6 +15,7 @@ import iot from "../image/iot1.jpg"
 import processing from "../image/image processing.png"
 import heart from "../image/heart disease.png"
 
+
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -166,7 +167,13 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               title="Diabetes Chatbot & Chatbot Medication AI"
               description="AI-powered mobile healthcare assistant built with React Native and Python that helps users 
               manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction."
-              tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App"]}
+              tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX"]}
+            />
+            <ProjectCard
+              title="AI Space"
+              image= {}
+              description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
+              tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]}
             />
             
           </div>
@@ -246,6 +253,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
