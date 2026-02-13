@@ -14,7 +14,8 @@ import fake from "../image/project5.png"
 import iot from "../image/iot1.jpg"
 import processing from "../image/image processing.png"
 import heart from "../image/heart disease.png"
-
+import aispace from "../image/AI SPACE.gif"
+import appmedication from "../image/production-studio.png"
 
 const Portfolio = () => {
   return (
@@ -253,6 +254,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
