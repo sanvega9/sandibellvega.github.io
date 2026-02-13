@@ -180,7 +180,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
             <ProjectCard
               title="AI Astronaut"
-              image={aispace}
+              image={ai}
               description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
               tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]}
             />
@@ -262,6 +262,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
