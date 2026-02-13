@@ -177,6 +177,12 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
               tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]}
             />
+            <ProjectCard
+              title="AI Astronaut"
+              image={aispace}
+              description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
+              tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]}
+            />
             
           </div>
         </section>
@@ -255,6 +261,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
