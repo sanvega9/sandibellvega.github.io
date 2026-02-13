@@ -1,4 +1,4 @@
-"use client";
+{"use client";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Navbaricons from "../components/Navicons";
@@ -171,7 +171,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
             <ProjectCard
               title="AI Space"
-              image= {}
+              
               description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
               tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]}
             />
@@ -253,6 +253,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
