@@ -1,4 +1,4 @@
-{"use client";
+"use client";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Navbaricons from "../components/Navicons";
@@ -253,6 +253,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
