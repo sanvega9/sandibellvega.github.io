@@ -186,6 +186,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               description="AI-powered mobile healthcare assistant built with React Native and Python that helps users 
               manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction."
               tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]}
+              award= "Leadership Award (Production Studio Chatbot Medication AI)"
             />
             <ProjectCard
               title="AI Space"
@@ -308,6 +309,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
