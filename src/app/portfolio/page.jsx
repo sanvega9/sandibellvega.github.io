@@ -19,6 +19,7 @@ import appmedication from "../image/production-studio.png"
 import ai from "../image/AI.gif"
 import chatbot from "../image/chatbot.png"
 import kpopquiz from "../image/kpop quiz.png"
+import tetris from "../image/tetris.png"
 
 const Portfolio = () => {
   return (
@@ -101,6 +102,12 @@ const Portfolio = () => {
               image={chatbot}
               description="Emergency Chatbot Assistant is a conversational system that detects urgent user messages, provides real-time safety guidance, and logs interactions securely for documentation and review."
               tags={["Emergency System", "AI Chatbot", "C++", "File Handling"]}
+            />
+            <ProjectCard
+              title="Tic-Tac-Toe"
+              image={chatbot}
+              description="A classic Tic-Tac-Toe game built in Python where a human player competes against a strategic AI that can win, block moves, and make intelligent positional decisions."
+              tags={["Python", "AI", "Game Dev", "OOP"]}
             />
           </div>
         </section>
@@ -210,12 +217,10 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             />
 
             <ProjectCard
-              title="AI Heart Disease Prediction System"
-              image={heart}
-              description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
-              The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
-              An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
-              tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+              title="Tetris"
+              image={tetris}
+              description="A fully functional classic Tetris game built with Python and Pygame, featuring real-time controls, collision detection, scoring mechanics, and dynamic gameplay."
+              tags={["Python", "Pygame", "Game Dev", "OOP", "Game Loop"]}
             />
           </div>
         </section>
@@ -294,6 +299,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
