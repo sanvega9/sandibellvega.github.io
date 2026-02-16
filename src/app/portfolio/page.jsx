@@ -249,16 +249,63 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
   );
 };
 
-  const ProjectCard = ({ title, description, tags, image, award, status, features}) => {
+const ProjectCard = ({
+ title,
+ description,
+ tags,
+ image,
+ award,
+ status,
+ features,
+ teamType
+}) => {
+
+  const statusColors = {
+    "Completed": "bg-green-500/20 text-green-300",
+    "In Progress": "bg-yellow-500/20 text-yellow-300",
+    "Research Prototype": "bg-purple-500/20 text-purple-300",
+    "Award Winner": "bg-pink-500/20 text-pink-300"
+  };
+
+  const teamColors = {
+    "Solo": "bg-blue-500/20 text-blue-300",
+    "Group": "bg-cyan-500/20 text-cyan-300",
+    "Team Lead": "bg-orange-500/20 text-orange-300",
+    "Collaborative": "bg-indigo-500/20 text-indigo-300"
+  };
+
   return (
     <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
+
       {/* Glow */}
       <div className="absolute -inset-0.5 rounded-3xl
         bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
         opacity-30 blur transition group-hover:opacity-80" />
+
       <div className="relative bg-[#111] backdrop-blur-xl p-8 rounded-3xl
         shadow-xl transition-all duration-300
         group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
+
+        {/* Status + Team Badges */}
+        {(status || teamType) && (
+          <div className="absolute top-4 left-4 flex flex-wrap gap-2 max-w-[80%]">
+            
+            {status && (
+              <span className={`text-xs px-3 py-1 rounded-full font-semibold ${statusColors[status]}`}>
+                {status}
+              </span>
+            )}
+
+            {teamType && (
+              <span className={`text-xs px-3 py-1 rounded-full font-semibold ${teamColors[teamType]}`}>
+                {teamType}
+              </span>
+            )}
+
+          </div>
+        )}
+
+        {/* Image */}
         {image && (
           <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
             <Image
@@ -278,6 +325,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
           {description}
         </p>
 
+        {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag, index) => (
             <span
@@ -289,24 +337,29 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             </span>
           ))}
         </div>
-         {/* Award Badge */}
+
+        {/* Award Badge */}
         {award && (
-         <div className= "mb-4 flex justify-center">
-           <div className="px-4 py-1 rounded-full
-            bg-gradient-to-r from-yellow-300 via amber-400 to-orange-500
-            text-black font-bold shadow-md animate-pulse">
-            🏆 {Array.isArray(award) ? award[0] : award}
+          <div className="mb-4 flex justify-center">
+            <div className="px-4 py-1 rounded-full
+              bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-500
+              text-black font-bold shadow-md animate-pulse">
+              🏆 {Array.isArray(award) ? award[0] : award}
+            </div>
           </div>
-         </div>
         )}
+
         <span className="text-sm font-semibold text-pink-400
           opacity-0 group-hover:opacity-100 transition">
           View Project →
         </span>
+
       </div>
     </div>
   );
 };
 
 
+
 export default Portfolio;
+
