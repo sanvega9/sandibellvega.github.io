@@ -18,6 +18,7 @@ import aispace from "../image/AI Space (2).gif"
 import appmedication from "../image/production-studio.png"
 import ai from "../image/AI.gif"
 import chatbot from "../image/chatbot.png"
+import kpopquiz from "../image/kpop quiz.png"
 
 const Portfolio = () => {
   return (
@@ -268,6 +269,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
