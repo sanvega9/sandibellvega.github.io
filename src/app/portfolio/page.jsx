@@ -198,7 +198,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               image={ai}
               description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
               tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]}
-              award={["1st place Space Jam 2 mobile development contest"]}
+              award="1st place Space Jam 2 mobile development contest"
             />
             
           </div>
@@ -247,7 +247,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
   );
 };
 
-  const ProjectCard = ({ title, description, tags, image }) => {
+  const ProjectCard = ({ title, description, tags, image, award }) => {
   return (
     <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
       {/* Glow */}
@@ -262,8 +262,8 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
         {award && (
           <div className="absolute top-4 right-4 text-xs px-3 py-1 rounded-full
             bg-gradient-to-r from-yellow-400 to-orange-500
-            text-black font-bold shadow-md">
-            🏆 {award}
+            text-black font-bold shadow-md animate-pulse">
+            🏆 {Array.isArray(award) ? award[0] : award}
           </div>
         )}
         {image && (
@@ -308,6 +308,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
