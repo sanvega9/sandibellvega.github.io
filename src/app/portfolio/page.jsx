@@ -198,6 +198,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               image={ai}
               description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
               tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]}
+              award={["1st place Space Jam 2 mobile development contest"]}
             />
             
           </div>
@@ -257,7 +258,14 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
       <div className="relative bg-[#111] backdrop-blur-xl p-8 rounded-3xl
         shadow-xl transition-all duration-300
         group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
-
+         {/* Award Badge */}
+        {award && (
+          <div className="absolute top-4 right-4 text-xs px-3 py-1 rounded-full
+            bg-gradient-to-r from-yellow-400 to-orange-500
+            text-black font-bold shadow-md">
+            🏆 {award}
+          </div>
+        )}
         {image && (
           <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
             <Image
@@ -300,6 +308,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
