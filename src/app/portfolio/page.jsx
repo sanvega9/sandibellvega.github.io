@@ -254,6 +254,9 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
       <div className="absolute -inset-0.5 rounded-3xl
         bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
         opacity-30 blur transition group-hover:opacity-80" />
+      <div className="relative bg-[#111] backdrop-blur-xl p-8 rounded-3xl
+        shadow-xl transition-all duration-300
+        group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
         {image && (
           <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
             <Image
@@ -303,6 +306,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
