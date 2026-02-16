@@ -318,10 +318,12 @@ const ProjectCard = ({
       {/* Status + Team Badges */}
      {(status || teamType) && (
       <div
-       className="absolute top-3 left-1/2 -translate-x-1/2
-       flex gap-2 backdrop-blur-md
-       bg-white/5 border border-white/10
-       px-3 py-1.5 rounded-full shadow-lg"
+       className="absolute top-4 left-1/2 -translate-x-1/2
+       flex gap-2
+       bg-black/40 backdrop-blur-sm
+       border border-white/10
+       px-4 py-1.5 rounded-full
+       shadow-md
       >
     {status && (
       <span
@@ -384,6 +386,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
