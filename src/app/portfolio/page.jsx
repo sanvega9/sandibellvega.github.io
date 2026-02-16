@@ -194,6 +194,31 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
             
           </div>
         </section>
+          <section className="mt-28">
+          <h2 className="text-4xl font-extrabold mb-12
+  bg-gradient-to-r from-violet-400 via-fuchsia-500 to-cyan-400
+  text-transparent bg-clip-text">
+            Interactive & Game Applications Projects
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-10">
+            <ProjectCard
+              title="Kpop Trivia Quiz"
+              image={kpopquiz}
+              description="An interactive K-Pop quiz game built with Python and PyQt5, featuring multiple-choice questions, real-time scoring, and a dynamic GUI that tests players’ knowledge of groups, idols, songs, and K-Pop history."
+              tags={["GUI", "Python", "PyQt5", "OOP", "Game Dev"]}
+            />
+
+            <ProjectCard
+              title="AI Heart Disease Prediction System"
+              image={heart}
+              description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. 
+              The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
+              An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
+              tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+            />
+          </div>
+        </section>
 
         {/*  link */}
         <div className="mt-24">
@@ -269,6 +294,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
