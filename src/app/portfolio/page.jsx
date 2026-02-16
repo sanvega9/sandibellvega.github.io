@@ -72,6 +72,8 @@ const Portfolio = () => {
               image={kdrama}
               description="Machine learning recommendation system using TF-IDF and cosine similarity to personalize K-Drama suggestions."
               tags={["Machine Learning", "NLP", "Python"]}
+              status="Completed"
+              teamType"Solo"
             />
 
             <ProjectCard
@@ -154,8 +156,9 @@ const Portfolio = () => {
 The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. 
 A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
               tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis"]}
+              status="Research Prototype"
+              teamType="Solo"
             />
-
             <ProjectCard
               title="AI Heart Disease Prediction System"
               image={heart}
@@ -163,6 +166,8 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions.
               An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback."
               tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]}
+              status="Research Prototype"
+              teamType="Solo"
             />
           </div>
         </section>
@@ -179,6 +184,8 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               image={kpop}
               description="A React Native social platform for K-Pop and K-Drama fans to connect, share posts, explore idol news, and discover recommended accounts with similar interests."
               tags={["React Native", "Mobile App", "Social Platform", "Node.js", "Authentication"]}
+              status="Completed"
+              teamType="Solo"
             />
 
             <ProjectCard
@@ -188,12 +195,16 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction."
               tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]}
               award= "Leadership Award (Production Studio Chatbot Medication AI)"
+              status="Completed"
+              teamType="Team Lead"
             />
             <ProjectCard
               title="AI Space"
               image={aispace}
               description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
               tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]}
+              status="Completed"
+              TeamType="Solo"
             />
             <ProjectCard
               title="AI Astronaut"
@@ -201,6 +212,8 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
               tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]}
               award="1st place Space Jam 2 mobile development contest"
+              status="Completed"
+              teamType="Solo"
             />
             
           </div>
@@ -362,4 +375,5 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
