@@ -276,7 +276,7 @@ const ProjectCard = ({
   const statusColors = {
     "Completed": "bg-green-500/20 text-green-300",
     "In Progress": "bg-yellow-500/20 text-yellow-300",
-    "Research Prototype": "bg-emerald-500/20 text-emerald-300",
+    "Research Prototype": "bg-indigo-500/20 text-indigo-300",
     "Award Winner": "bg-pink-500/20 text-pink-300"
   };
 
@@ -316,27 +316,33 @@ const ProjectCard = ({
         </h3>
         
       {/* Status + Team Badges */}
-{(status || teamType) && (
-  <div className="absolute top-3 left-1/2 -translate-x-1/2
-    flex gap-2 backdrop-blur-md
-    bg-white/5 border border-white/10
-    px-3 py-1.5 rounded-full shadow-lg">
-
+     {(status || teamType) && (
+      <div
+       className="absolute top-3 left-1/2 -translate-x-1/2
+       flex gap-2 backdrop-blur-md
+       bg-white/5 border border-white/10
+       px-3 py-1.5 rounded-full shadow-lg"
+      >
     {status && (
-      <span className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${statusColors[status] || "bg-gray-500/20 text-gray-300"}`}>
+      <span
+        className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide
+        bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 text-fuchsia-300`}
+      >
         {status}
       </span>
     )}
 
     {teamType && (
-      <span className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${teamColors[teamType] || "bg-gray-500/20 text-gray-300"}`}>
+      <span
+        className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${
+          teamColors[teamType] || "bg-gray-500/20 text-gray-300"
+        }`}
+      >
         {teamType}
       </span>
     )}
   </div>
 )}
-
-
         <p className="text-gray-400 text-sm mb-6">
           {description}
         </p>
@@ -378,6 +384,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
