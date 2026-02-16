@@ -73,7 +73,7 @@ const Portfolio = () => {
               description="Machine learning recommendation system using TF-IDF and cosine similarity to personalize K-Drama suggestions."
               tags={["Machine Learning", "NLP", "Python"]}
               status="Completed"
-              teamType"Solo"
+              teamType="Solo"
             />
 
             <ProjectCard
@@ -375,5 +375,6 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
