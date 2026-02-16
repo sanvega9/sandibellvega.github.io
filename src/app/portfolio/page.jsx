@@ -204,7 +204,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
               description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
               tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]}
               status="Completed"
-              TeamType="Solo"
+              teamType="Solo"
             />
             <ProjectCard
               title="AI Astronaut"
@@ -326,17 +326,21 @@ const ProjectCard = ({
        shadow-md
       >
     {status && (
-      <span
-        className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide
-        bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 text-fuchsia-300`}
-      >
-        {status}
-      </span>
+     <span
+  className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide ${
+    status === "Research Prototype"
+      ? "bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 text-fuchsia-300"
+      : statusColors[status] || "bg-gray-500/20 text-gray-300"
+  }`}
+>
+  {status}
+</span>
+
     )}
 
     {teamType && (
       <span
-        className={`text-[11px] px-4 py-3 rounded-full font-semibold tracking-wide ${
+        className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${
           teamColors[teamType] || "bg-gray-500/20 text-gray-300"
         }`}
       >
@@ -386,6 +390,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
