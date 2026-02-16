@@ -315,24 +315,27 @@ const ProjectCard = ({
           {title}
         </h3>
         
-        {/* Status + Team Badges */}
-        {(status || teamType) && (
-          <div className="absolute top-4 left-4 flex flex-wrap gap-2 max-w-[80%]">
-            
-            {status && (
-              <span className={`text-xs px-3 py-1 rounded-full font-semibold ${statusColors[status]}`}>
-                {status}
-              </span>
-            )}
+      {/* Status + Team Badges */}
+{(status || teamType) && (
+  <div className="absolute top-3 left-1/2 -translate-x-1/2
+    flex gap-2 backdrop-blur-md
+    bg-white/5 border border-white/10
+    px-3 py-1.5 rounded-full shadow-lg">
 
-            {teamType && (
-              <span className={`text-xs px-3 py-1 rounded-full font-semibold ${teamColors[teamType]}`}>
-                {teamType}
-              </span>
-            )}
+    {status && (
+      <span className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${statusColors[status] || "bg-gray-500/20 text-gray-300"}`}>
+        {status}
+      </span>
+    )}
 
-          </div>
-        )}
+    {teamType && (
+      <span className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${teamColors[teamType] || "bg-gray-500/20 text-gray-300"}`}>
+        {teamType}
+      </span>
+    )}
+  </div>
+)}
+
 
         <p className="text-gray-400 text-sm mb-6">
           {description}
