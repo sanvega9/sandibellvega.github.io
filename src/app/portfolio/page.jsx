@@ -17,6 +17,7 @@ import heart from "../image/heart disease.png"
 import aispace from "../image/AI Space (2).gif"
 import appmedication from "../image/production-studio.png"
 import ai from "../image/AI.gif"
+import chatbot from "../image/chatbot.png"
 
 const Portfolio = () => {
   return (
@@ -94,7 +95,12 @@ const Portfolio = () => {
               description="Award-winning machine learning project developed for the UAT Data Science Competition (2/15/2020). Built a fake news detection model using Kaggle datasets, performing data cleaning, exploratory data analysis, and testing multiple classification models. The final system allows users to input news content to determine whether it is likely true or fake. Developed and analyzed using Jupyter Notebook in PyCharm."
               tags={["Machine Learning", "NLP", "Python", "Data Science"]}
               />
-            
+             <ProjectCard
+              title="Chatbot Alerting"
+              image={chatbot}
+              description="Emergency Chatbot Assistant is a conversational system that detects urgent user messages, provides real-time safety guidance, and logs interactions securely for documentation and review."
+              tags={["Emergency System", "AI Chatbot", "C++", "File Handling"]}
+            />
           </div>
         </section>
 
@@ -262,6 +268,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
