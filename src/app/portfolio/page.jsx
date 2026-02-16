@@ -326,8 +326,8 @@ const ProjectCard = ({
        shadow-md
       >
     {status && (
-     <span
-  className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide ${
+    <span
+  className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide transition transform hover:scale-105 ${
     status === "Research Prototype"
       ? "bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 text-fuchsia-300"
       : statusColors[status] || "bg-gray-500/20 text-gray-300"
@@ -336,13 +336,15 @@ const ProjectCard = ({
   {status}
 </span>
 
+</span>
+
     )}
 
     {teamType && (
       <span
-        className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${
-          teamColors[teamType] || "bg-gray-500/20 text-gray-300"
-        }`}
+        className={`text-xs px-3 py-1 rounded-full font-semibold tracking-wide ${
+  teamColors[teamType] || "bg-gray-500/20 text-gray-300"
+}`}
       >
         {teamType}
       </span>
@@ -390,6 +392,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
