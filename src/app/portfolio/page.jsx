@@ -336,7 +336,7 @@ const ProjectCard = ({
 
     {teamType && (
       <span
-        className={`text-[11px] px-3 py-1 rounded-full font-semibold tracking-wide ${
+        className={`text-[11px] px-4 py-3 rounded-full font-semibold tracking-wide ${
           teamColors[teamType] || "bg-gray-500/20 text-gray-300"
         }`}
       >
@@ -386,6 +386,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
