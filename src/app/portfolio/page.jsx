@@ -299,6 +299,22 @@ const ProjectCard = ({
         shadow-xl transition-all duration-300
         group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
+        {/* Image */}
+        {image && (
+          <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-110 transition duration-500"
+            />
+          </div>
+        )}
+
+        <h3 className="text-2xl font-bold mb-4 text-white">
+          {title}
+        </h3>
+        
         {/* Status + Team Badges */}
         {(status || teamType) && (
           <div className="absolute top-4 left-4 flex flex-wrap gap-2 max-w-[80%]">
@@ -317,22 +333,6 @@ const ProjectCard = ({
 
           </div>
         )}
-
-        {/* Image */}
-        {image && (
-          <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="object-cover group-hover:scale-110 transition duration-500"
-            />
-          </div>
-        )}
-
-        <h3 className="text-2xl font-bold mb-4 text-white">
-          {title}
-        </h3>
 
         <p className="text-gray-400 text-sm mb-6">
           {description}
@@ -375,6 +375,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
