@@ -276,7 +276,7 @@ const ProjectCard = ({
   const statusColors = {
     "Completed": "bg-green-500/20 text-green-300",
     "In Progress": "bg-yellow-500/20 text-yellow-300",
-    "Research Prototype": "bg-purple-500/20 text-purple-300",
+    "Research Prototype": "bg-emerald-500/20 text-emerald-300",
     "Award Winner": "bg-pink-500/20 text-pink-300"
   };
 
@@ -378,6 +378,7 @@ const ProjectCard = ({
 
 
 export default Portfolio;
+
 
 
 
