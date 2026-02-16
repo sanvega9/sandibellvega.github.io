@@ -110,7 +110,6 @@ const Portfolio = () => {
   );
 };
 
-/* ---------------- SECTION COMPONENT ---------------- */
 
 const Section = ({ title, children }) => (
   <section className="mt-28">
@@ -124,7 +123,6 @@ const Section = ({ title, children }) => (
   </section>
 );
 
-/* ---------------- PROJECT CARD ---------------- */
 
 const ProjectCard = ({
   title,
@@ -234,3 +232,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
