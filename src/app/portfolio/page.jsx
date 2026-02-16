@@ -289,11 +289,13 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
         </div>
          {/* Award Badge */}
         {award && (
-          <div className="absolute top-4 right-4 text-xs px-3 py-1 rounded-full
-            bg-gradient-to-r from-yellow-400 to-orange-500
+         <div className= "mb-4 flex justify-center">
+           <div className="px-4 py-1 rounded-full
+            bg-gradient-to-r from-yellow-300 via amber-400 to-orange-500
             text-black font-bold shadow-md animate-pulse">
             🏆 {Array.isArray(award) ? award[0] : award}
           </div>
+         </div>
         )}
         <span className="text-sm font-semibold text-pink-400
           opacity-0 group-hover:opacity-100 transition">
@@ -306,6 +308,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
