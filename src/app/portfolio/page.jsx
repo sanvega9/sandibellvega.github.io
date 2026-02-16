@@ -21,6 +21,7 @@ import chatbot from "../image/chatbot.png"
 import kpopquiz from "../image/kpop quiz.png"
 import tetris from "../image/tetris.png"
 import tictactoe from "../image/tic-tac-toe.png"
+import { FaGithub, FaExternalLinkAlt, FaTrophy } from "react-icons/fa";
 
 const Portfolio = () => {
   return (
@@ -248,7 +249,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
   );
 };
 
-  const ProjectCard = ({ title, description, tags, image, award }) => {
+  const ProjectCard = ({ title, description, tags, image, award, status, features}) => {
   return (
     <div className="group relative w-full sm:w-[48%] lg:w-[30%]">
       {/* Glow */}
@@ -309,47 +310,3 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
