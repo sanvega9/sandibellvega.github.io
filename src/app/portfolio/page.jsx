@@ -20,6 +20,7 @@ import ai from "../image/AI.gif"
 import chatbot from "../image/chatbot.png"
 import kpopquiz from "../image/kpop quiz.png"
 import tetris from "../image/tetris.png"
+import tictactoe from "../image/tic-tac-toe.png"
 
 const Portfolio = () => {
   return (
@@ -105,7 +106,7 @@ const Portfolio = () => {
             />
             <ProjectCard
               title="Tic-Tac-Toe"
-              image={chatbot}
+              image={tictactoe}
               description="A classic Tic-Tac-Toe game built in Python where a human player competes against a strategic AI that can win, block moves, and make intelligent positional decisions."
               tags={["Python", "AI", "Game Dev", "OOP"]}
             />
@@ -299,6 +300,7 @@ A deep learning model classifies images as DR or non-DR, with results saved for 
 
 
 export default Portfolio;
+
 
 
 
