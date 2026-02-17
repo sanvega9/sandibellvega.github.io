@@ -121,7 +121,7 @@ const About = () => {
     };
   }, []);
   useEffect(() => {
-  fetch('https://api.github.com/users/sandibell-vega/repos?sort=updated&per_page=6')
+  fetch('https://api.github.com/users/sanvega/repos?sort=updated&per_page=6')
     .then(res => res.json())
     .then(data => setGithubRepos(data))
     .catch(err => console.error(err));
@@ -322,6 +322,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
