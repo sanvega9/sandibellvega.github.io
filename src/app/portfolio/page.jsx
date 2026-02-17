@@ -21,6 +21,7 @@ import chatbot from "../image/chatbot.png";
 import kpopquiz from "../image/kpop quiz.png";
 import tetris from "../image/tetris.png";
 import tictactoe from "../image/tic-tac-toe.png";
+import manga from "../image/manga.png";
 
 const Portfolio = () => {
   return (
@@ -148,15 +149,7 @@ const Portfolio = () => {
         </Section>
 
         {/* FULL STACK */}
-        <Section title="Full-Stack Projects">
-          <ProjectCard
-            title="K-POP Fan App"
-            image={kpop}
-            description="React Native social platform for K-Pop and K-Drama fans."
-            tags={["React Native", "Node.js", "Mobile App"]}
-            status="Completed"
-            teamType="Solo"
-          />
+        <Section title="Full-Stack & SWE Projects ">
           <ProjectCard
             title="K-POP Fan App"
             image={kpop}
@@ -182,7 +175,23 @@ const Portfolio = () => {
             status="Completed" 
             teamType="Solo"
             />
-          
+          <ProjectCard 
+            title="AI Astronaut" 
+            image={ai} 
+            description="AI Astronaut is an interactive app that lets users explore space knowledge, chat with an AI assistant, and access mission guidelines and status updates."
+            tags={["AI", "Space Tech", "React Native", "Space Tech", "STEM Education", "Chatbot", "Mobile App"]} 
+            award="1st place Space Jam 2 mobile development contest" 
+            status="Completed" 
+            teamType="Solo" 
+            />
+          <ProjectCard 
+            title="Manga Book Management System"
+            image={manga}
+            description= "A fully functional C++ management system that simulates a digital manga library. Features include CRUD operations, keyword-based search, inventory tracking, borrowing/return logic, and persistent data storage using file handling. Designed with modular OOP architecture for scalability and maintainability."
+            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System"]}
+            status="Completed"
+            teamType="Solo"
+            />
         </Section>
         <Section title="Interactive & Game Applications Projects">
           <ProjectCard title="Kpop Trivia Quiz" 
@@ -329,3 +338,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
