@@ -232,14 +232,15 @@ const ProjectCard = ({
         {/* Status & Team */}
         {(status || teamType) && (
           <div className="absolute top-4 left-1/2 -translate-x-1/2 
-            flex flex-wrap justify-center gap-2
-            bg-black/40 backdrop-blur-sm
+            flex items-center gap-3
+            px-5 py-2
+            bg-black/50 backdrop-blur-md
             border border-white/10
-            px-4 py-1.5 rounded-2xl
-            shadow-xl">
+            rounded-2xl
+            shadow-lg">
             {status && (
               <span
-        className={`text-sm px-4 py-2.5 rounded-full font-semibold whitespace-nowrap ${
+        className={`text-sm px-4 py-2.5 rounded-full font-semibold whitespace-wide ${
           status === "Research Prototype"
             ? "bg-gradient-to-r from-violet-500/30 to-fuchsia-500/30 text-fuchsia-300"
             : statusColors[status] || "bg-gray-500/20 text-gray-300"
@@ -302,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
