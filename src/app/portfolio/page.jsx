@@ -220,7 +220,7 @@ const ProjectCard = ({
         {/* Image */}
         {image && (
           <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
-            <reImage
+            <Image
               src={image}
               alt={title}
               fill
@@ -303,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
