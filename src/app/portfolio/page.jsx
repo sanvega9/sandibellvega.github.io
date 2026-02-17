@@ -231,12 +231,15 @@ const ProjectCard = ({
 
         {/* Status & Team */}
         {(status || teamType) && (
-          <div className="absolute top-3 left-1/2 -translate-x-1/2 
-            flex flex-wrap justify-center gap-2 
-            px-4 py-2
-            bg-black/50 backdrop-blur-md  
+          <div className="absolute top-4 left-1/2 -translate-x-1/2 
+            flex flex-wrap justify-center gap-3 
+            px-6 py-3
+            min-w-[260px]
+            max-w-[95%]
+            bg-black/40 backdrop-blur-xl
             border border-white/10
-            rounded-full shadow-lg">
+            rounded-2xl
+            shadow-xl"">
             {status && (
               <span
                 className={`text-xs px-3 py-1 rounded-full font-semibold ${
@@ -300,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
