@@ -102,7 +102,7 @@ const Portfolio = () => {
             description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis." 
             tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]} 
             status="Completed"
-            teamType="Solo"
+            teamType="Team Lead"
             />
           <ProjectCard 
             title="Chatbot Alerting" 
@@ -191,6 +191,11 @@ const Portfolio = () => {
             tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System"]}
             status="Completed"
             teamType="Solo"
+            />
+          <ProjectCard 
+            title="Rock Paper & Scissors Web Game"
+            description"A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
+            
             />
         </Section>
         <Section title="Interactive & Game Applications Projects">
@@ -338,4 +343,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
