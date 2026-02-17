@@ -24,6 +24,8 @@ import tictactoe from "../image/tic-tac-toe.png";
 import manga from "../image/manga.png";
 import rock from "../image/rock paper.png"
 import pacman from "../image/pac-man.png"
+import aidiabetes from "../image/ai diabetes cardio.png"
+import todolist from"../image/To-Do List.png"
 
 const Portfolio = () => {
   return (
@@ -134,6 +136,12 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
             /> 
+          <ProjectCard
+            title="Simon Memory Game"
+            tags={["Tinkercad", "A"]}
+            status="Completed"
+            TeamType="Solo"
+            />
         </Section>
         <Section title="Biomedical Engineering Projects">
           <ProjectCard
@@ -204,6 +212,22 @@ const Portfolio = () => {
             description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
             tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
             status= "Completed"
+            teamType="Solo"
+            />
+          <ProjectCard
+            title="AI Diabetes Cardio"
+            image={aidiabetes}
+            description="A React Native app that leverages AI to provide users with information, guidance, and interactive support for diabetes and cardiovascular health. Features include a friendly AI chatbot for lifestyle tips, health monitoring insights, and actionable recommendations to promote wellness and preventive care."
+            tags={["React Native", "AI Chatbot", "HealthTech", "Mobile App"]}
+            status="Completed"
+            teamType="Solo"
+            />
+          <ProjectCard
+            title="To-Do List App"
+            image={todolist}
+            description="A desktop productivity app built with Python and Tkinter for managing tasks. Users can add, delete, and mark tasks as completed, while a persistent history log tracks all task changes. Features include real-time task management, interactive GUI elements, and file-based data persistence for long-term task tracking."
+            tags={["Python", "Tkinter", "GUI", "File I/O", "Task Management"]}
+            status="Completed"
             teamType="Solo"
             />
         </Section>
@@ -368,6 +392,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
