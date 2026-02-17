@@ -157,6 +157,32 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
           />
+          <ProjectCard
+            title="K-POP Fan App"
+            image={kpop}
+            description="React Native social platform for K-Pop and K-Drama fans."
+            tags={["React Native", "Node.js", "Mobile App"]}
+            status="Completed"
+            teamType="Solo"
+          />
+          <ProjectCard 
+            title="Diabetes Chatbot & Chatbot Medication AI"
+            image={appmedication} 
+            description="AI-powered mobile healthcare assistant built with React Native and Python that helps users manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction." 
+            tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]} 
+            award="Leadership Award (Production Studio Chatbot Medication AI)" 
+            status="Completed" 
+            teamType="Team Lead" 
+            />
+          <ProjectCard 
+            title="AI Space" 
+            image={aispace} 
+            description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
+            tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]} 
+            status="Completed" 
+            teamType="Solo"
+            />
+          
         </Section>
         <Section title="Interactive & Game Applications Projects">
           <ProjectCard title="Kpop Trivia Quiz" 
@@ -303,16 +329,3 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
-
-
-
-
-
-
-
-
-
-
-
-
-
