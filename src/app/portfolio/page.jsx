@@ -142,7 +142,7 @@ const Portfolio = () => {
             image={simon}
             tags={["Tinkercad", "Arduino", "Robotics", "Memory Game", "Embedded Systems"]}
             status="Completed"
-            TeamType="Solo"
+            teamType="Solo"
             />
         </Section>
         <Section title="Biomedical Engineering Projects">
@@ -261,7 +261,7 @@ const Portfolio = () => {
         </Section>
         <Section title="Data Engineering & Analytics Projects">
           <ProjectCard
-            title="UAT Student Programming Skill Analysis (Star Schema & ETL"
+            title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
             description= "ETL and star schema project analyzing UAT students’ programming skills using MySQL Workbench and Talend for structured data insights."
             tags={["MySQL", "ETL", "Talend", "Data Warehouse", "Star Schema", "Data Analysis"]}
             status="Completed"
@@ -403,6 +403,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
