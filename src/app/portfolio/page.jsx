@@ -242,13 +242,15 @@ const ProjectCard = ({
             shadow-xl"">
             {status && (
               <span
-                className={`text-xs px-3 py-1 rounded-full font-semibold ${
-                  statusColors[status] || "bg-gray-500/20 text-gray-300"
-                }`}
-              >
-                {status}
-              </span>
-            )}
+        className={`text-sm px-4 py-1.5 rounded-full font-semibold whitespace-nowrap ${
+          status === "Research Prototype"
+            ? "bg-gradient-to-r from-violet-500/30 to-fuchsia-500/30 text-fuchsia-300"
+            : statusColors[status] || "bg-gray-500/20 text-gray-300"
+        }`}
+      >
+        {status}
+      </span>
+    )}
 
             {teamType && (
               <span
@@ -303,6 +305,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
