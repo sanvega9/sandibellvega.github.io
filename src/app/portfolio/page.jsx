@@ -204,7 +204,7 @@ const Portfolio = () => {
             description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
             tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
             status= "Completed"
-            teamType="Solo
+            teamType="Solo"
             />
         </Section>
         <Section title="Interactive & Game Applications Projects">
@@ -365,6 +365,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
