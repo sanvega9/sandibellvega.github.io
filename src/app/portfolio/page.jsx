@@ -22,6 +22,7 @@ import kpopquiz from "../image/kpop quiz.png";
 import tetris from "../image/tetris.png";
 import tictactoe from "../image/tic-tac-toe.png";
 import manga from "../image/manga.png";
+import rock from "../image/rock paper.png"
 
 const Portfolio = () => {
   return (
@@ -194,19 +195,28 @@ const Portfolio = () => {
             />
           <ProjectCard 
             title="Rock Paper & Scissors Web Game"
-            description"A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
-            
+            image={rock}
+            description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
+            tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
+            status= "Completed"
+            teamType="Solo
             />
         </Section>
         <Section title="Interactive & Game Applications Projects">
           <ProjectCard title="Kpop Trivia Quiz" 
             image={kpopquiz} 
             description="An interactive K-Pop quiz game built with Python and PyQt5, featuring multiple-choice questions, real-time scoring, and a dynamic GUI that tests players’ knowledge of groups, idols, songs, and K-Pop history." 
-            tags={["GUI", "Python", "PyQt5", "OOP", "Game Dev"]} /> 
+            tags={["GUI", "Python", "PyQt5", "OOP", "Game Dev"]} 
+            status="Completed"
+            teamType="Solo"
+            /> 
           <ProjectCard title="Tetris"
             image={tetris} 
             description="A fully functional classic Tetris game built with Python and Pygame, featuring real-time controls, collision detection, scoring mechanics, and dynamic gameplay." 
-            tags={["Python", "Pygame", "Game Dev", "OOP", "Game Loop"]} />
+            tags={["Python", "Pygame", "Game Dev", "OOP", "Game Loop"]}
+            status="Completed"
+            teamType="Solo"
+            />
         </Section>
       </div>
     </div>
@@ -343,5 +353,6 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
