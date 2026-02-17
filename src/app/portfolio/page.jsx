@@ -240,7 +240,7 @@ const ProjectCard = ({
             shadow-lg">
             {status && (
               <span
-        className={`text-sm px-4 py-2.5 rounded-full font-semibold whitespace-wide ${
+        className={`text-sm sm:text-sm px-4 py-1.5 rounded-full font-semibold tracking-wide ${
           status === "Research Prototype"
             ? "bg-gradient-to-r from-violet-500/30 to-fuchsia-500/30 text-fuchsia-300"
             : statusColors[status] || "bg-gray-500/20 text-gray-300"
@@ -303,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
