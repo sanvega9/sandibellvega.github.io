@@ -62,24 +62,55 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
           />
+          <ProjectCard 
+            title="Kibana Dashboard Deep Learning Lung Cancer Detection" 
+            image={Lung} 
+            description="AI-driven deep learning models to assist in lung cancer detection, paired with impactful medical data visualizations." 
+            tags={["Data Visualization", "Kibana", "ELK Stack"]}
+            status="Completed"
+            teamType="Solo"
+            />
 
           <ProjectCard
             title="Fake News Detection"
             image={fake}
             description="Award-winning ML project built using Kaggle datasets. Performs data cleaning, EDA, and classification modeling."
             tags={["Machine Learning", "NLP", "Python", "Data Science"]}
-            status="Award Winner"
+            status="Completed"
             teamType="Solo"
           />
+          <ProjectCard title="AI IoT Smart Garden" 
+            image={AIiot} 
+            description="An interactive AI-powered gardening app where users chat with a Garden Assistant, identify plants, and receive personalized care tips through curated video content and intelligent recommendations." 
+            tags={["IoT", "AI Chatbot", "React", "Node.js", "UI/UX", "Python"]}
+            status="Completed"
+            teamType="Solo"
+            />
 
           <ProjectCard
             title="Tic-Tac-Toe AI"
             image={tictactoe}
             description="Python AI game where the computer makes optimal strategic decisions."
-            tags={["Python", "AI", "Game Dev"]}
+            tags={["Python", "AI", "Game Dev", "OOP"]}
             status="Completed"
             teamType="Solo"
           />
+          <ProjectCard
+            title="Save the Wilderness Chatbot" 
+            image={project4} 
+            description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis." 
+            tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]} 
+            status="Completed"
+            teamType="Solo"
+            />
+          <ProjectCard 
+            title="Chatbot Alerting" 
+            image={chatbot} 
+            description="Emergency Chatbot Assistant is a conversational system that detects urgent user messages, provides real-time safety guidance, and logs interactions securely for documentation and review." 
+            tags={["Emergency System", "AI Chatbot", "C++", "File Handling"]} 
+            status="Completed"
+            teamType="Solo"
+            />
         </Section>
 
         {/* ROBOTICS */}
@@ -92,6 +123,28 @@ const Portfolio = () => {
             status="Completed"
             teamType="Group"
           />
+          <ProjectCard title="Embedded Healthcare Monitoring System" 
+            image={iot} description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
+            tags={["Embedded Systems", "Healthcare", "IoT"]} 
+            /> 
+        </Section>
+        <Section title="Biomedical Engineering Projects">
+          <ProjectCard
+            title="Image Processing Diabetes Retinopathy" 
+            image={processing} 
+            description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
+            tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis"]} 
+            status="Research Prototype" 
+            teamType="Solo"
+            />
+          <ProjectCard 
+            title="AI Heart Disease Prediction System" 
+            image={heart} 
+            description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions. An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback." 
+            tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]} 
+            status="Research Prototype"
+            teamType="Solo" />
+        
         </Section>
 
         {/* FULL STACK */}
@@ -104,6 +157,16 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
           />
+        </Section>
+        <Section title="Interactive & Game Applications Projects">
+          <ProjectCard title="Kpop Trivia Quiz" 
+            image={kpopquiz} 
+            description="An interactive K-Pop quiz game built with Python and PyQt5, featuring multiple-choice questions, real-time scoring, and a dynamic GUI that tests players’ knowledge of groups, idols, songs, and K-Pop history." 
+            tags={["GUI", "Python", "PyQt5", "OOP", "Game Dev"]} /> 
+          <ProjectCard title="Tetris"
+            image={tetris} 
+            description="A fully functional classic Tetris game built with Python and Pygame, featuring real-time controls, collision detection, scoring mechanics, and dynamic gameplay." 
+            tags={["Python", "Pygame", "Game Dev", "OOP", "Game Loop"]} />
         </Section>
       </div>
     </div>
@@ -232,4 +295,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
