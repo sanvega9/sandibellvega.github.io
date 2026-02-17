@@ -23,6 +23,7 @@ import tetris from "../image/tetris.png";
 import tictactoe from "../image/tic-tac-toe.png";
 import manga from "../image/manga.png";
 import rock from "../image/rock paper.png"
+import pacman from "../image/pac-man.png"
 
 const Portfolio = () => {
   return (
@@ -125,9 +126,13 @@ const Portfolio = () => {
             status="Completed"
             teamType="Group"
           />
-          <ProjectCard title="Embedded Healthcare Monitoring System" 
-            image={iot} description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
+          <ProjectCard 
+            title="Embedded Healthcare Monitoring System" 
+            image={iot} 
+            description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
             tags={["Embedded Systems", "Healthcare", "IoT"]} 
+            status="Completed"
+            teamType="Solo"
             /> 
         </Section>
         <Section title="Biomedical Engineering Projects">
@@ -203,20 +208,27 @@ const Portfolio = () => {
             />
         </Section>
         <Section title="Interactive & Game Applications Projects">
-          <ProjectCard title="Kpop Trivia Quiz" 
+          <ProjectCard 
+            title="Kpop Trivia Quiz" 
             image={kpopquiz} 
             description="An interactive K-Pop quiz game built with Python and PyQt5, featuring multiple-choice questions, real-time scoring, and a dynamic GUI that tests players’ knowledge of groups, idols, songs, and K-Pop history." 
             tags={["GUI", "Python", "PyQt5", "OOP", "Game Dev"]} 
             status="Completed"
             teamType="Solo"
             /> 
-          <ProjectCard title="Tetris"
+          <ProjectCard 
+            title="Tetris"
             image={tetris} 
             description="A fully functional classic Tetris game built with Python and Pygame, featuring real-time controls, collision detection, scoring mechanics, and dynamic gameplay." 
             tags={["Python", "Pygame", "Game Dev", "OOP", "Game Loop"]}
             status="Completed"
             teamType="Solo"
             />
+          <ProjectCard
+            title="Pac-Man"
+            image={pacman}
+            description="Classic Pac-Man remake using Python and Pygame with AI and collision logic."
+            tags={["Python", "Pygame", "Game Dev", "AI", "OOP"]}
         </Section>
       </div>
     </div>
@@ -353,6 +365,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
