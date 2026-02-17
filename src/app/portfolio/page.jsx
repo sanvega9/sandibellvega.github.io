@@ -239,7 +239,7 @@ const ProjectCard = ({
             bg-black/40 backdrop-blur-xl
             border border-white/10
             rounded-2xl
-            shadow-xl"">
+            shadow-xl">
             {status && (
               <span
         className={`text-sm px-4 py-1.5 rounded-full font-semibold whitespace-nowrap ${
@@ -305,6 +305,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
