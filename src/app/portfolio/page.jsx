@@ -134,7 +134,7 @@ const Portfolio = () => {
             image={processing} 
             description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
             tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis"]} 
-            status="Research Prototype" 
+            status="Research" 
             teamType="Solo"
             />
           <ProjectCard 
@@ -142,7 +142,7 @@ const Portfolio = () => {
             image={heart} 
             description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions. An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback." 
             tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]} 
-            status="Research Prototype"
+            status="Research"
             teamType="Solo" />
         
         </Section>
@@ -199,7 +199,7 @@ const ProjectCard = ({
   const statusColors = {
     Completed: "bg-green-500/20 text-green-300",
     "In Progress": "bg-yellow-500/20 text-yellow-300",
-    "Research Prototype": "bg-indigo-500/20 text-indigo-300",
+    "Research": "bg-indigo-500/20 text-indigo-300",
     "Award Winner": "bg-pink-500/20 text-pink-300"
   };
 
@@ -220,7 +220,7 @@ const ProjectCard = ({
         {/* Image */}
         {image && (
           <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
-            <Image
+            <reImage
               src={image}
               alt={title}
               fill
@@ -241,7 +241,7 @@ const ProjectCard = ({
             {status && (
               <span
         className={`text-sm sm:text-sm px-4 py-1.5 rounded-full font-semibold tracking-wide ${
-          status === "Research Prototype"
+          status === "Research"
             ? "bg-gradient-to-r from-violet-500/30 to-fuchsia-500/30 text-fuchsia-300"
             : statusColors[status] || "bg-gray-500/20 text-gray-300"
         }`}
@@ -303,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
