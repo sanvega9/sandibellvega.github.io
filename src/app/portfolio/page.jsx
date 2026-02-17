@@ -26,6 +26,7 @@ import rock from "../image/rock paper.png"
 import pacman from "../image/pac-man.png"
 import aidiabetes from "../image/ai diabetes cardio.png"
 import todolist from"../image/To-Do List.png"
+import simon from "../image/simon memory.png"
 
 const Portfolio = () => {
   return (
@@ -138,7 +139,8 @@ const Portfolio = () => {
             /> 
           <ProjectCard
             title="Simon Memory Game"
-            tags={["Tinkercad", "A"]}
+            image={simon}
+            tags={["Tinkercad", "Arduino", "Robotics", "Memory Game", "Embedded Systems"]}
             status="Completed"
             TeamType="Solo"
             />
@@ -253,6 +255,15 @@ const Portfolio = () => {
             image={pacman}
             description="Classic Pac-Man remake using Python and Pygame with AI and collision logic."
             tags={["Python", "Pygame", "Game Dev", "AI", "OOP"]}
+            status="Completed"
+            teamType="Solo"
+            />
+        </Section>
+        <Section title="Data Engineering & Analytics Projects">
+          <ProjectCard
+            title="UAT Student Programming Skill Analysis (Star Schema & ETL"
+            description= "ETL and star schema project analyzing UAT students’ programming skills using MySQL Workbench and Talend for structured data insights."
+            tags={["MySQL", "ETL", "Talend", "Data Warehouse", "Star Schema", "Data Analysis"]}
             status="Completed"
             teamType="Solo"
             />
@@ -392,6 +403,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
