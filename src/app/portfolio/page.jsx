@@ -234,8 +234,6 @@ const ProjectCard = ({
           <div className="absolute top-4 left-1/2 -translate-x-1/2 
             flex flex-wrap justify-center gap-3 
             px-6 py-3
-            min-w-[260px]
-            max-w-[95%]
             bg-black/40 backdrop-blur-xl
             border border-white/10
             rounded-2xl
@@ -305,6 +303,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
