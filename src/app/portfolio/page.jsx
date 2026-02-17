@@ -229,6 +229,9 @@ const Portfolio = () => {
             image={pacman}
             description="Classic Pac-Man remake using Python and Pygame with AI and collision logic."
             tags={["Python", "Pygame", "Game Dev", "AI", "OOP"]}
+            status="Completed"
+            teamType="Solo"
+            />
         </Section>
       </div>
     </div>
@@ -365,6 +368,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
