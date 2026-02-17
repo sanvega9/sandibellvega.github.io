@@ -2,6 +2,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Navbaricons from '../components/Navicons';
+const [githubRepos, setGithubRepos] = useState([]);
+
+useEffect(() => {
+  fetch('https://api.github.com/users/sandibell-vega/repos?sort=updated&per_page=6')
+    .then(res => res.json())
+    .then(data => setGithubRepos(data))
+    .catch(err => console.error(err));
+}, []);
 
 // Skills Data
 const skillsData = [
@@ -30,23 +38,10 @@ const skillsData = [
 ];
 const achievements = [
   {
-    title: "Leadership Award",
-    org: "UAT Production Studio",
-    description: "AI-powered Chatbot Medication System",
-    year: "2021",
-    tag: "AI • Leadership",
-  },
-  {
-    title: "RTX Leadership Academy Completion",
-    org: "Girls Who Code | RTX",
-    year: "2023",
-    tag: "Leadership",
-  },
-  {
     title: "Certificate of Leadership – Code Tech Fellow",
     org: "AND101, WEB101",
     year: "2025",
-    tag: "Teaching • Leadership",
+    tag: "Teaching • Leadership • SWE",
   },
   {
     title: "Best in Chatbots",
@@ -66,17 +61,36 @@ const achievements = [
     year: "Fall 2024",
     tag: "Cybersecurity",
   },
+    {
+    title: "RTX Leadership Academy Completion",
+    org: "Girls Who Code | RTX",
+    year: "2023",
+    tag: "Leadership",
+  },
   {
     title: "Best Innovation",
     org: "UAT Summer Mobile App Space",
     year: "2021",
     tag: "Innovation • Mobile",
   },
+   {
+    title: "Leadership Award",
+    org: "UAT Production Studio",
+    description: "AI-powered Chatbot Medication System",
+    year: "2021",
+    tag: "AI • Leadership",
+  },
   {
     title: "Most Market Viable",
     org:"UAT",
     year:"2021",
     tag:"AI • Innovation",
+  },
+  {
+    title:"NPWEE Certificate of Participation",
+    org:"L'Space",
+    year:"2021",
+    tag:"Certificate • NASA • L'Space • STEM • Workshop • Space Exploration",
   },
   {
     title:"Most Innovative",
@@ -268,7 +282,41 @@ const About = () => {
     ))}
   </div>
 </section>
+        {/* GitHub Projects */}
+<section className="mb-20 mt-24">
+  <h2 className="text-3xl lg:text-4xl font-extrabold text-center text-cyan-400 mb-12">
+    GitHub Projects
+  </h2>
 
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {githubRepos.map((repo, index) => (
+      <div
+        key={index}
+        className="relative rounded-2xl bg-[#1e1e1e] border border-white/10 p-6 shadow-lg
+                   hover:-translate-y-1 hover:shadow-cyan-500/30 transition-all duration-300"
+      >
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 opacity-0 hover:opacity-100 transition-opacity" />
+        
+        <div className="relative z-10">
+          <h3 className="text-xl font-bold text-white mb-1">{repo.name}</h3>
+          <p className="text-gray-400 text-sm mb-2">{repo.description}</p>
+          <div className="flex justify-between items-center mt-4">
+            <span className="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 font-semibold">
+              {repo.language}
+            </span>
+            <a
+              href={repo.html_url}
+              target="_blank"
+              className="text-xs text-gray-400 font-medium hover:text-cyan-400 transition"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       </div>
     </div>
@@ -276,6 +324,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
