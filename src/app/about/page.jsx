@@ -2,14 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Navbaricons from '../components/Navicons';
-const [githubRepos, setGithubRepos] = useState([]);
-
-useEffect(() => {
-  fetch('https://api.github.com/users/sandibell-vega/repos?sort=updated&per_page=6')
-    .then(res => res.json())
-    .then(data => setGithubRepos(data))
-    .catch(err => console.error(err));
-}, []);
 
 // Skills Data
 const skillsData = [
@@ -109,6 +101,7 @@ const roles = [
 const About = () => {
   const [activeRole, setActiveRole] = useState("All");
   const [visible, setVisible] = useState(false);
+  const [githubRepos, setGithubRepos]=useState([]);
   const techRef = useRef(null);
 
   useEffect(() => {
@@ -127,7 +120,12 @@ const About = () => {
       if(techRef.current) observer.unobserve(techRef.current);
     };
   }, []);
-
+  useEffect(() => {
+  fetch('https://api.github.com/users/sandibell-vega/repos?sort=updated&per_page=6')
+    .then(res => res.json())
+    .then(data => setGithubRepos(data))
+    .catch(err => console.error(err));
+}, []);
   const filteredSkills =
     activeRole === "All"
       ? skillsData
@@ -324,6 +322,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
