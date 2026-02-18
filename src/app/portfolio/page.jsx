@@ -176,13 +176,12 @@ const Portfolio = () => {
             teamType="Solo"
           />
           <ProjectCard 
-            title="Diabetes Chatbot & Chatbot Medication AI"
-            image={appmedication} 
-            description="AI-powered mobile healthcare assistant built with React Native and Python that helps users manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction." 
-            tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]} 
-            award="Leadership Award (Production Studio Chatbot Medication AI)" 
-            status="Completed" 
-            teamType="Team Lead" 
+            title="Rock Paper & Scissors Web Game"
+            image={rock}
+            description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
+            tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
+            status= "Completed"
+            teamType="Solo"
             />
           <ProjectCard 
             title="AI Space" 
@@ -209,14 +208,6 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
             />
-          <ProjectCard 
-            title="Rock Paper & Scissors Web Game"
-            image={rock}
-            description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
-            tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
-            status= "Completed"
-            teamType="Solo"
-            />
           <ProjectCard
             title="AI Diabetes Cardio"
             image={aidiabetes}
@@ -224,6 +215,15 @@ const Portfolio = () => {
             tags={["React Native", "AI Chatbot", "HealthTech", "Mobile App"]}
             status="Completed"
             teamType="Solo"
+            />
+           <ProjectCard 
+            title="Diabetes Chatbot & Chatbot Medication AI"
+            image={appmedication} 
+            description="AI-powered mobile healthcare assistant built with React Native and Python that helps users manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction." 
+            tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]} 
+            award="Leadership Award (Production Studio Chatbot Medication AI)" 
+            status="Completed" 
+            teamType="Team Lead" 
             />
           <ProjectCard
             title="To-Do List App"
@@ -404,6 +404,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
