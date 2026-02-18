@@ -140,6 +140,7 @@ const Portfolio = () => {
           <ProjectCard
             title="Simon Memory Game"
             image={simon}
+            description="An interactive memory game built in Tinkercad using Arduino, LEDs, push buttons, and a buzzer. The system generates randomized light sequences that the player must replicate, increasing in difficulty with each round."
             tags={["Tinkercad", "Arduino", "Robotics", "Memory Game", "Embedded Systems"]}
             status="Completed"
             teamType="Solo"
@@ -403,6 +404,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
