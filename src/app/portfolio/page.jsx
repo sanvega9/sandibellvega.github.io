@@ -125,7 +125,7 @@ const Portfolio = () => {
             title="Underwater Autonomous Robot"
             image={robotics}
             description="Obstacle-avoiding autonomous robot with spatial alignment calculations."
-            tags={["Robotics", "Embedded C++", "Sensors"]}
+            tags={["Robotics", "Embedded C++", "Sensors", "Control Systems", "Navigation Algorithms"]}
             status="Completed"
             teamType="Group"
           />
@@ -133,7 +133,7 @@ const Portfolio = () => {
             title="Embedded Healthcare Monitoring System" 
             image={iot} 
             description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
-            tags={["Embedded Systems", "Healthcare", "IoT"]} 
+            tags={["Embedded Systems", "Healthcare Technology", "IoT", "Arduino", "Sensor Integration", "Microcontrollers"]} 
             status="Completed"
             teamType="Solo"
             /> 
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
