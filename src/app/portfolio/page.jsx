@@ -255,7 +255,7 @@ const Portfolio = () => {
           <ProjectCard
             title="Pac-Man"
             image={pacman}
-            description="Classic Pac-Man remake using Python and Pygame with AI and collision logic."
+            description="Developed a Pac-Man style game using Python and Pygame with AI-driven enemies, structured OOP architecture, and responsive gameplay mechanics. Highlights strong problem-solving, algorithm design, and interactive system development skills."
             tags={["Python", "Pygame", "Game Dev", "AI", "OOP"]}
             status="Completed"
             teamType="Solo"
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
