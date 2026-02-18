@@ -191,6 +191,14 @@ const Portfolio = () => {
             status="Completed" 
             teamType="Solo"
             />
+            <ProjectCard
+            title="To-Do List App"
+            image={todolist}
+            description="A desktop productivity app built with Python and Tkinter for managing tasks. Users can add, delete, and mark tasks as completed, while a persistent history log tracks all task changes. Features include real-time task management, interactive GUI elements, and file-based data persistence for long-term task tracking."
+            tags={["Python", "Tkinter", "GUI", "File I/O", "Task Management"]}
+            status="Completed"
+            teamType="Solo"
+            />
           <ProjectCard 
             title="AI Astronaut" 
             image={ai} 
@@ -200,15 +208,7 @@ const Portfolio = () => {
             status="Completed" 
             teamType="Solo" 
             />
-          <ProjectCard 
-            title="Manga Book Management System"
-            image={manga}
-            description= "A fully functional C++ management system that simulates a digital manga library. Features include CRUD operations, keyword-based search, inventory tracking, borrowing/return logic, and persistent data storage using file handling. Designed with modular OOP architecture for scalability and maintainability."
-            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System"]}
-            status="Completed"
-            teamType="Solo"
-            />
-          <ProjectCard
+           <ProjectCard
             title="AI Diabetes Cardio"
             image={aidiabetes}
             description="A React Native app that leverages AI to provide users with information, guidance, and interactive support for diabetes and cardiovascular health. Features include a friendly AI chatbot for lifestyle tips, health monitoring insights, and actionable recommendations to promote wellness and preventive care."
@@ -225,14 +225,15 @@ const Portfolio = () => {
             status="Completed" 
             teamType="Team Lead" 
             />
-          <ProjectCard
-            title="To-Do List App"
-            image={todolist}
-            description="A desktop productivity app built with Python and Tkinter for managing tasks. Users can add, delete, and mark tasks as completed, while a persistent history log tracks all task changes. Features include real-time task management, interactive GUI elements, and file-based data persistence for long-term task tracking."
-            tags={["Python", "Tkinter", "GUI", "File I/O", "Task Management"]}
+          <ProjectCard 
+            title="Manga Book Management System"
+            image={manga}
+            description= "A fully functional C++ management system that simulates a digital manga library. Features include CRUD operations, keyword-based search, inventory tracking, borrowing/return logic, and persistent data storage using file handling. Designed with modular OOP architecture for scalability and maintainability."
+            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System"]}
             status="Completed"
             teamType="Solo"
             />
+
         </Section>
         <Section title="Interactive & Game Applications Projects">
           <ProjectCard 
@@ -404,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
