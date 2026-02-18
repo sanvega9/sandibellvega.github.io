@@ -229,7 +229,7 @@ const Portfolio = () => {
             title="Manga Book Management System"
             image={manga}
             description= "A fully functional C++ management system that simulates a digital manga library. Features include CRUD operations, keyword-based search, inventory tracking, borrowing/return logic, and persistent data storage using file handling. Designed with modular OOP architecture for scalability and maintainability."
-            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System"]}
+            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures"]}
             status="Completed"
             teamType="Solo"
             />
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
