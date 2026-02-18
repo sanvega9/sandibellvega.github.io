@@ -101,14 +101,6 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
           />
-          <ProjectCard
-            title="Save the Wilderness Chatbot" 
-            image={project4} 
-            description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis." 
-            tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]} 
-            status="Completed"
-            teamType="Team Lead"
-            />
           <ProjectCard 
             title="Chatbot Alerting" 
             image={chatbot} 
@@ -116,6 +108,14 @@ const Portfolio = () => {
             tags={["Emergency System", "AI Chatbot", "C++", "File Handling"]} 
             status="Completed"
             teamType="Solo"
+            />
+          <ProjectCard
+            title="Save the Wilderness Chatbot" 
+            image={project4} 
+            description="An AI-driven chatbot designed to analyze wildfire-related data and assist users located in forested areas. The chatbot enables users to communicate their location, receive safety guidance, and access real-time information during wildfire threats. Served as the lead programmer, overseeing core chatbot logic and data analysis." 
+            tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]} 
+            status="Completed"
+            teamType="Team Lead"
             />
         </Section>
 
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
