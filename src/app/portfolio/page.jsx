@@ -96,7 +96,7 @@ const Portfolio = () => {
           <ProjectCard
             title="Tic-Tac-Toe AI"
             image={tictactoe}
-            description="Python AI game where the computer makes optimal strategic decisions."
+            description= "A classic Tic-Tac-Toe game built in Python where a human competes against a rule-based AI. The AI strategically tries to win, block the player, control the center, and prioritize corners for competitive gameplay."
             tags={["Python", "AI", "Game Dev", "OOP"]}
             status="Completed"
             teamType="Solo"
@@ -150,7 +150,7 @@ const Portfolio = () => {
             title="Image Processing Diabetes Retinopathy" 
             image={processing} 
             description="Designed a user-friendly desktop application that automatically loads, processes, and analyzes retinal fundus images for diabetic retinopathy detection. The system visually highlights blood vessels, microaneurysms (early DR indicators), and exudates (severity markers), while also performing FFT and wavelet-based texture analysis. A deep learning model classifies images as DR or non-DR, with results saved for clinical review."
-            tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis"]} 
+            tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis", "Python"]} 
             status="Research" 
             teamType="Solo"
             />
@@ -158,7 +158,7 @@ const Portfolio = () => {
             title="AI Heart Disease Prediction System" 
             image={heart} 
             description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions. An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback." 
-            tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application"]} 
+            tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application", "Python", "Data analysis"]} 
             status="Research"
             teamType="Solo" />
         
@@ -403,6 +403,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
