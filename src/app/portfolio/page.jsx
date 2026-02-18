@@ -132,7 +132,7 @@ const Portfolio = () => {
           <ProjectCard 
             title="Embedded Healthcare Monitoring System" 
             image={iot} 
-            description="Healthcare device leveraging embedded systems to monitor patient vitals and support real-time medical decision-making."
+            description="Designed and implemented a real-time embedded healthcare monitoring system with sensor-driven data acquisition, Arduino-based control, and IoT connectivity. Demonstrates advanced embedded engineering, biomedical technology integration, and intelligent health data processing."
             tags={["Embedded Systems", "Healthcare Technology", "IoT", "Arduino", "Sensor Integration", "Microcontrollers"]} 
             status="Completed"
             teamType="Solo"
@@ -141,7 +141,7 @@ const Portfolio = () => {
             title="Simon Memory Game"
             image={simon}
             description="An interactive memory game built in Tinkercad using Arduino, LEDs, push buttons, and a buzzer. The system generates randomized light sequences that the player must replicate, increasing in difficulty with each round."
-            tags={["Tinkercad", "Arduino", "Robotics", "Memory Game", "Embedded Systems"]}
+            tags={["Tinkercad", "Arduino", "Robotics", "Memory Game", "Embedded Systems", "Circuit Design", "Game Logic", "Electronics"]}
             status="Completed"
             teamType="Solo"
             />
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
