@@ -171,7 +171,7 @@ const Portfolio = () => {
             title="K-POP Fan App"
             image={kpop}
             description= "A social platform built with React Native for K-Pop and K-Drama enthusiasts. Users can connect, share posts, like and comment, and engage with fan communities in real-time."
-            tags={["React Native", "Node.js", "Mobile App"]}
+            tags={["React Native", "Node.js", "Mobile App", "Frontend", "Backend", "Social Platform", "UI/UX"]}
             status="Completed"
             teamType="Solo"
           />
@@ -404,6 +404,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
