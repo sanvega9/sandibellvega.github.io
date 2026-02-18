@@ -64,7 +64,7 @@ const Portfolio = () => {
             title="AI K-Drama Recommender"
             image={kdrama}
             description="Machine learning recommendation system using TF-IDF and cosine similarity to personalize K-Drama suggestions."
-            tags={["Machine Learning", "NLP", "Python"]}
+            tags={["Machine Learning", "NLP", "Python", "Python", "TF-IDF", "Data Analysis", "Recommender Systems", "AI"]}
             status="Completed"
             teamType="Solo"
           />
@@ -72,7 +72,7 @@ const Portfolio = () => {
             title="Kibana Dashboard Deep Learning Lung Cancer Detection" 
             image={Lung} 
             description="AI-driven deep learning models to assist in lung cancer detection, paired with impactful medical data visualizations." 
-            tags={["Data Visualization", "Kibana", "ELK Stack"]}
+            tags={["Data Visualization", "Kibana", "ELK Stack", "AI for Healthcare", "Predictive Analytics"]}
             status="Completed"
             teamType="Solo"
             />
@@ -404,6 +404,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
