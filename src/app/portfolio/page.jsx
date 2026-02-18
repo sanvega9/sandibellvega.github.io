@@ -124,7 +124,7 @@ const Portfolio = () => {
           <ProjectCard
             title="Underwater Autonomous Robot"
             image={robotics}
-            description="Obstacle-avoiding autonomous robot with spatial alignment calculations."
+            description="Designed and developed an underwater autonomous robot capable of obstacle avoidance and spatial alignment using sensor-driven navigation algorithms and embedded C++ control systems. Demonstrates robotics engineering, real-time decision logic, and hardware–software integration."
             tags={["Robotics", "Embedded C++", "Sensors", "Control Systems", "Navigation Algorithms"]}
             status="Completed"
             teamType="Group"
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
