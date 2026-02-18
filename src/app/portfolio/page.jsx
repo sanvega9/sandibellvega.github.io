@@ -27,7 +27,7 @@ import pacman from "../image/pac-man.png"
 import aidiabetes from "../image/ai diabetes cardio.png"
 import todolist from"../image/To-Do List.png"
 import simon from "../image/simon memory.png"
-
+import star from "../image/STAR Schema.png"
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -264,6 +264,7 @@ const Portfolio = () => {
         <Section title="Data Engineering & Analytics Projects">
           <ProjectCard
             title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
+            image={star}
             description= "ETL and star schema project analyzing UAT students’ programming skills using MySQL Workbench and Talend for structured data insights."
             tags={["MySQL", "ETL", "Talend", "Data Warehouse", "Star Schema", "Data Analysis"]}
             status="Completed"
@@ -405,6 +406,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
