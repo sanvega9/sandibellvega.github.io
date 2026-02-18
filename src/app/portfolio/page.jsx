@@ -228,8 +228,8 @@ const Portfolio = () => {
           <ProjectCard 
             title="Manga Book Management System"
             image={manga}
-            description= "A fully functional C++ management system that simulates a digital manga library. Features include CRUD operations, keyword-based search, inventory tracking, borrowing/return logic, and persistent data storage using file handling. Designed with modular OOP architecture for scalability and maintainability."
-            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures"]}
+            description="A classic Pac-Man remake built with Python and Pygame featuring intelligent ghost AI, collision detection, scoring mechanics, and structured OOP design. Demonstrates game logic implementation, real-time interaction, and modular programming."
+            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures", "Data Management", "Backend Logic", ]}
             status="Completed"
             teamType="Solo"
             />
@@ -405,6 +405,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
