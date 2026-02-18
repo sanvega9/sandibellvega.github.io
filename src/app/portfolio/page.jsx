@@ -265,8 +265,15 @@ const Portfolio = () => {
           <ProjectCard
             title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
             image={star}
-            description= "ETL and star schema project analyzing UAT students’ programming skills using MySQL Workbench and Talend for structured data insights."
+            description="Designed and implemented a star schema data warehouse to analyze UAT students’ programming skills. Built ETL pipelines using Talend to extract, transform, and load data into MySQL Workbench, enabling structured insights and analytics-driven decision making."
             tags={["MySQL", "ETL", "Talend", "Data Warehouse", "Star Schema", "Data Analysis"]}
+            status="Completed"
+            teamType="Solo"
+            />
+          <ProjectCard
+            title="Database Reverse Engineering Project"
+            description= "Reverse engineered an existing database schema to rebuild its ER model, created relational tables with PK/FK constraints, and executed complex SQL queries. Documented the system to improve developer understanding of structure and relationships."
+            tags={["MySQL", "Database Design", "Reverse Engineering", "ER Modeling", "Schema Analysis"]}
             status="Completed"
             teamType="Solo"
             />
@@ -406,6 +413,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
