@@ -28,6 +28,7 @@ import aidiabetes from "../image/ai diabetes cardio.png"
 import todolist from"../image/To-Do List.png"
 import simon from "../image/simon memory.png"
 import star from "../image/STAR Schema.png"
+import schema from "../image/Schema.png"
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -272,6 +273,7 @@ const Portfolio = () => {
             />
           <ProjectCard
             title="Database Reverse Engineering Project"
+            image={schema}
             description= "Reverse engineered an existing database schema to rebuild its ER model, created relational tables with PK/FK constraints, and executed complex SQL queries. Documented the system to improve developer understanding of structure and relationships."
             tags={["MySQL", "Database Design", "Reverse Engineering", "ER Modeling", "Schema Analysis"]}
             status="Completed"
@@ -413,6 +415,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
