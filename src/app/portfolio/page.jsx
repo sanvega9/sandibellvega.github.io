@@ -168,20 +168,21 @@ const Portfolio = () => {
 
         {/* FULL STACK */}
         <Section title="Full-Stack & SWE Projects ">
-          <ProjectCard
-            title="K-POP Fan App"
-            image={kpop}
-            description= "A social platform built with React Native for K-Pop and K-Drama enthusiasts. Users can connect, share posts, like and comment, and engage with fan communities in real-time."
-            tags={["React Native", "Node.js", "Mobile App", "Frontend", "Backend", "Social Platform", "UI/UX"]}
-            status="Completed"
-            teamType="Solo"
-          />
           <ProjectCard 
-            title="Rock Paper & Scissors Web Game"
-            image={rock}
-            description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
-            tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
-            status= "Completed"
+            title="Diabetes Chatbot & Chatbot Medication AI"
+            image={appmedication} 
+            description="AI-powered mobile healthcare assistant built with React Native and Python that helps users manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction." 
+            tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]} 
+            award="Leadership Award (Production Studio Chatbot Medication AI)" 
+            status="Completed" 
+            teamType="Team Lead" 
+            />
+          <ProjectCard 
+            title="Manga Book Management System"
+            image={manga}
+            description="A classic Pac-Man remake built with Python and Pygame featuring intelligent ghost AI, collision detection, scoring mechanics, and structured OOP design. Demonstrates game logic implementation, real-time interaction, and modular programming."
+            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures", "Data Management", "Backend Logic", ]}
+            status="Completed"
             teamType="Solo"
             />
           <ProjectCard 
@@ -218,24 +219,23 @@ const Portfolio = () => {
             status="Completed"
             teamType="Solo"
             />
-           <ProjectCard 
-            title="Diabetes Chatbot & Chatbot Medication AI"
-            image={appmedication} 
-            description="AI-powered mobile healthcare assistant built with React Native and Python that helps users manage diabetes through smart medication reminders, personalized insights, and ML/DL-based risk prediction." 
-            tags={["AI", "Healthcare", "React Native", "Python", "ML", "DL", "Mobile App", "UI/UX", "Java"]} 
-            award="Leadership Award (Production Studio Chatbot Medication AI)" 
-            status="Completed" 
-            teamType="Team Lead" 
-            />
-          <ProjectCard 
-            title="Manga Book Management System"
-            image={manga}
-            description="A classic Pac-Man remake built with Python and Pygame featuring intelligent ghost AI, collision detection, scoring mechanics, and structured OOP design. Demonstrates game logic implementation, real-time interaction, and modular programming."
-            tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures", "Data Management", "Backend Logic", ]}
+          <ProjectCard
+            title="K-POP Fan App"
+            image={kpop}
+            description= "A social platform built with React Native for K-Pop and K-Drama enthusiasts. Users can connect, share posts, like and comment, and engage with fan communities in real-time."
+            tags={["React Native", "Node.js", "Mobile App", "Frontend", "Backend", "Social Platform", "UI/UX"]}
             status="Completed"
             teamType="Solo"
+          />
+          <ProjectCard 
+            title="Rock Paper & Scissors Web Game"
+            image={rock}
+            description="A dynamic web game built with HTML, CSS, and JavaScript featuring interactive gameplay and responsive design."
+            tags={["HTML", "CSS", "JavaScript", "Frontend", "Game Dev"]}
+            status= "Completed"
+            teamType="Solo"
             />
-
+           
         </Section>
         <Section title="Interactive & Game Applications Projects">
           <ProjectCard 
@@ -415,6 +415,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
