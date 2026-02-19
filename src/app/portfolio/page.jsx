@@ -29,6 +29,7 @@ import todolist from"../image/To-Do List.png"
 import simon from "../image/simon memory.png"
 import star from "../image/STAR Schema.png"
 import schema from "../image/Schema.png"
+import webtoon from "../image/webtoon.png"
 const Portfolio = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
@@ -237,6 +238,7 @@ const Portfolio = () => {
             />
           <ProjectCard
             title="Webtoon AI Tracker"
+            image={webtoon}
             description="Designed and implemented an AI based tracking platform that collects webtoon data, detects update patterns, and generates analytics to enhance monitoring and content insights."
             tags={["AI", "Tracker System", "Automation", "Data Tracking", "Python"]}            
             status="In Progress"
@@ -421,6 +423,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
