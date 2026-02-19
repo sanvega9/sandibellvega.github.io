@@ -189,7 +189,7 @@ const Portfolio = () => {
             image={aispace} 
             description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
             tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]} 
-            status="Completed" 
+            status="Completed • Award Winner"
             teamType="Solo"
             />
             <ProjectCard
@@ -319,7 +319,6 @@ const ProjectCard = ({
     Solo: "bg-blue-500/20 text-blue-300",
     Group: "bg-cyan-500/20 text-cyan-300",
     "Team Lead": "bg-orange-500/20 text-orange-300",
-    Collaborative: "bg-indigo-500/20 text-indigo-300"
   };
 
   return (
@@ -415,6 +414,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
