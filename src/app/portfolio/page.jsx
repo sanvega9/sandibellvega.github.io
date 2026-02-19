@@ -235,6 +235,13 @@ const Portfolio = () => {
             status= "Completed"
             teamType="Solo"
             />
+          <ProjectCard
+            title="Webtoon AI Tracker"
+            description="Designed and implemented an AI based tracking platform that collects webtoon data, detects update patterns, and generates analytics to enhance monitoring and content insights."
+            tags={["AI", "Tracker System", "Automation", "Data Tracking", "Python"]}            
+            status="In Progress"
+            teamType="Solo"
+            />
            
         </Section>
         <Section title="Interactive & Game Applications Projects">
@@ -414,6 +421,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
