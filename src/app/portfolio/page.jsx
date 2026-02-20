@@ -243,6 +243,7 @@ const Portfolio = () => {
             tags={["AI", "Tracker System", "Automation", "Data Tracking", "Python"]}            
             status="In Progress"
             teamType="Solo"
+            link="https://youtu.be/u_Ln8lkX5a0?si=tmYAkrYQulycv0gC"
             />
            
         </Section>
@@ -316,6 +317,7 @@ const ProjectCard = ({
   image,
   award,
   status,
+  link,
   teamType
 }) => {
   const statusColors = {
@@ -415,7 +417,14 @@ const ProjectCard = ({
 
         {/* Hover Link */}
         <span className="text-sm font-semibold text-pink-400 opacity-0 group-hover:opacity-100 transition">
-          View Project →
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-pink-400 opacity-0 group-hover:opacity-100 transition"
+          >
+             View Project →
+          </a>
         </span>
       </div>
     </div>
@@ -423,40 +432,3 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
