@@ -69,6 +69,7 @@ const Portfolio = () => {
             tags={["Machine Learning", "NLP", "Python", "Cosine Similarity", "TF-IDF", "Data Analysis", "Recommender Systems", "AI"]}
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/Dog927xBQjg?si=Tt-7Fc5LWpn6yI7C"
           />
           <ProjectCard 
             title="Kibana Dashboard Deep Learning Lung Cancer Detection" 
@@ -77,8 +78,8 @@ const Portfolio = () => {
             tags={["Data Visualization", "Kibana", "ELK Stack"]}
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/XqUTjPeS1fw?si=cNpnAasG__EO9ug8"
             />
-
           <ProjectCard
             title="Fake News Detection"
             image={fake}
@@ -86,15 +87,16 @@ const Portfolio = () => {
             tags={["Machine Learning", "NLP", "Python", "Data Science", "Data Cleaning", "AI", "Classification Models" ]}
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/rtOQrdri48s?si=k2zOuHyiKDPm4IO_"
           />
           <ProjectCard title="AI IoT Smart Garden" 
             image={AIiot} 
             description="An interactive AI-powered gardening app where users chat with a Garden Assistant, identify plants, and receive personalized care tips through curated video content and intelligent recommendations." 
-            tags={["IoT", "AI Chatbot", "React", "Node.js", "UI/UX", "Python"]}
-            status="Completed"
+            tags={["IoT", "AI Chatbot", "React", "Node.js", "UI/UX", "Python","Computer Vision"]}
+            status="In Progress"
             teamType="Solo"
+            link="https://youtu.be/vtFHaX-DPMg?si=UkeLLrqdAJSWT6aa"
             />
-
           <ProjectCard
             title="Tic-Tac-Toe AI"
             image={tictactoe}
@@ -102,6 +104,7 @@ const Portfolio = () => {
             tags={["Python", "AI", "Game Dev", "OOP"]}
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/WAJOTA_dYNY?si=digC6vs0sd4DYPJr"
           />
           <ProjectCard 
             title="Chatbot Alerting" 
@@ -110,6 +113,7 @@ const Portfolio = () => {
             tags={["Emergency System", "AI Chatbot", "C++", "File Handling"]} 
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/EBzoJ-lIBxw?si=C4Rhdm65Y62Xrfly"
             />
           <ProjectCard
             title="Save the Wilderness Chatbot" 
@@ -118,6 +122,7 @@ const Portfolio = () => {
             tags={["AI Chatbot", "Python", "Data Science", "Data Analysis", "Wildfire Analysis"]} 
             status="Completed"
             teamType="Team Lead"
+            link="https://youtu.be/MTsuxP0yUYM?si=a_-oDW8C2PlKIQN8"
             />
         </Section>
 
@@ -130,6 +135,7 @@ const Portfolio = () => {
             tags={["Robotics", "Embedded C++", "Sensors", "Control Systems", "Navigation Algorithms"]}
             status="Completed"
             teamType="Group"
+            link="https://youtu.be/7rJS7ajkQro?si=eatcAfbhCzk_AOMb"
           />
           <ProjectCard 
             title="Embedded Healthcare Monitoring System" 
@@ -138,6 +144,7 @@ const Portfolio = () => {
             tags={["Embedded Systems", "Healthcare Technology", "IoT", "Arduino", "Sensor Integration", "Microcontrollers"]} 
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/QOKUcJ8I2Ms?si=TWnm0HfO4isx9r4l"
             /> 
           <ProjectCard
             title="Simon Memory Game"
@@ -146,6 +153,7 @@ const Portfolio = () => {
             tags={["Tinkercad", "Arduino", "C++", "Memory Game", "Embedded Systems", "Circuit Design", "Game Logic", "Electronics"]}
             status="Completed"
             teamType="Solo"
+            link="https://youtu.be/KHK8GIfiEpY?si=D-vYlRlExiKfl7kY"
             />
         </Section>
         <Section title="Biomedical Engineering Projects">
@@ -156,6 +164,7 @@ const Portfolio = () => {
             tags={["Biomedical Engineering", "Computer Vision", "Diabetic Retinopathy", "Image Processing", "ML", "DL", "FFT", "Wavelet Analysis", "Python"]} 
             status="Research" 
             teamType="Solo"
+            link="https://youtu.be/E4Mj-ba0rWc?si=w8APd79H2XA8ckHN"
             />
           <ProjectCard 
             title="AI Heart Disease Prediction System" 
@@ -163,7 +172,9 @@ const Portfolio = () => {
             description="Developed an Artificial Intelligence application that predicts heart disease risk using real-world biomedical data. The system analyzes patient health metrics such as age, cholesterol levels, blood pressure, and heart rate, then applies machine learning models to deliver accurate predictions. An interactive GUI allows users to input personal health data and receive instant AI-based diagnostic feedback." 
             tags={["AI", "Biomedical Engineering", "ML", "Data Science", "GUI Application", "Python", "Data analysis"]} 
             status="Research"
-            teamType="Solo" />
+            teamType="Solo" 
+            link="https://youtu.be/YCBdO6Z9AJY?si=THC6tb5C235O8aNC"
+            />
         
         </Section>
 
@@ -177,14 +188,16 @@ const Portfolio = () => {
             award="Leadership Award (Production Studio Chatbot Medication AI)" 
             status="Completed" 
             teamType="Team Lead" 
+            link="https://youtu.be/jFO7yVDolZI"
             />
           <ProjectCard 
             title="Manga Book Management System"
             image={manga}
-            description="A classic Pac-Man remake built with Python and Pygame featuring intelligent ghost AI, collision detection, scoring mechanics, and structured OOP design. Demonstrates game logic implementation, real-time interaction, and modular programming."
+            description="A C++-based Manga Book Management System designed to organize, store, and manage manga inventory efficiently. Built with object-oriented programming principles and file handling, the system supports structured data storage, retrieval, and updates while demonstrating strong backend logic and algorithmic design."
             tags={["C++", "OOP","File I/O", "Algorithm", "Inventory System", "Software Design", "Data Structures", "Data Management", "Backend Logic", ]}
             status="Completed"
             teamType="Solo"
+            link=""
             />
           <ProjectCard 
             title="AI Space" 
@@ -432,3 +445,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
