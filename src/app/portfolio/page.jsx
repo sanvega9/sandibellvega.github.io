@@ -143,7 +143,7 @@ const Portfolio = () => {
             title="Simon Memory Game"
             image={simon}
             description="An interactive Simon-style memory game designed and simulated in Tinkercad using an Arduino microcontroller. The system utilizes LEDs, push buttons, and a buzzer to generate randomized light and sound sequences that the player must accurately replicate. With each successful round, the sequence increases in length and complexity, enhancing the game's difficulty and reinforcing memory recall skills."
-            tags={["Tinkercad", "Arduino", "Robotics", "C++", "Memory Game", "Embedded Systems", "Circuit Design", "Game Logic", "Electronics"]}
+            tags={["Tinkercad", "Arduino", "C++", "Memory Game", "Embedded Systems", "Circuit Design", "Game Logic", "Electronics"]}
             status="Completed"
             teamType="Solo"
             />
@@ -190,7 +190,7 @@ const Portfolio = () => {
             title="AI Space" 
             image={aispace} 
             description="AI Space is a mobile app built with React Native that lets future space colonists interactively explore life beyond Earth. It educates users about their health, environmental conditions, and survival."
-            tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App"]} 
+            tags={["AI", "Health Monitoring", "React Native", "Space Tech", "UI/UX", "Mobile App", "Space Exploration", "Space Education Tech"]} 
             status="Completed"
             award="Summer 2021 Mobile App Space Best Innovation"
             teamType="Solo"
@@ -423,6 +423,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
