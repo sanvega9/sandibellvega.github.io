@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Navbaricons from "../components/Navicons";
 import Image from "next/image";
@@ -31,22 +31,36 @@ import simon from "../image/simon memory.png"
 import star from "../image/STAR Schema.png"
 import schema from "../image/Schema.png"
 import webtoon from "../image/webtoon.png"
+
 const Portfolio = () => {
+  const { scrollY } = useScroll();
+  const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
+  const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
+  return (
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+       <motion.div style={{ y: ySlow }} className="absolute inset-0">
         <Image
           src={background}
           alt="Background"
           fill
           priority
-          className="object-cover"
+          className="object-cover opacity-40"
         />
-      </div>
+      </motion div>
+        <motion.div
+          style={{ y: yFast }}
+          className="absolute inset-0 bg-gradient-to-br 
+          from-cyan-500/20 
+          via-purple-600/20 
+          to-pink-500/20 
+          blur-3xl"
+        />
 
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0e0061]/80 via-black/70 to-black/90" />
-
+      </div>
       <Navbar />
 
       <div className="container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
@@ -456,6 +470,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
