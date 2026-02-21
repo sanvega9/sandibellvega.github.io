@@ -1,4 +1,6 @@
 "use client";
+
+import React from "react";
 import { motion } from "framer-motion";
 
 const VideoCard = ({ title, description, videoId }) => {
@@ -8,7 +10,7 @@ const VideoCard = ({ title, description, videoId }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-gray-900/80 backdrop-blur-lg rounded-2xl shadow-xl 
+      className="bg-gray-900/80 backdrop-blur-lg rounded-2xl shadow-xl
                  hover:shadow-pink-500/20 transition-all duration-300
                  max-w-[380px] w-full"
     >
@@ -32,7 +34,7 @@ const VideoCard = ({ title, description, videoId }) => {
           {description}
         </p>
       </div>
-    </motion.div>
+    </motion
   );
 };
 
