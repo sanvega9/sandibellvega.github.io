@@ -312,10 +312,10 @@ const Portfolio = () => {
 
 
 const Section = ({ title, children }) => (
-  < motion.section
+  <motion.section
     className="mt-28"
     initial={{ opacity:0, y:60 }}
-    wileInView={{ opacity:1,y:0 }}
+    whileInView={{ opacity:1,y:0 }}
     transition={{ duration:0.8, ease:"easeOut" }}
     viewport={{ once: true }}
     >
@@ -372,7 +372,7 @@ const ProjectCard = ({
               fill
               className="object-cover group-hover:scale-110 transition duration-500"
             />
-          </motion.div>
+          </div>
         )}
 
         {/* Status & Team */}
@@ -451,11 +451,12 @@ const ProjectCard = ({
           </a>
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 export default Portfolio;
+
 
 
 
