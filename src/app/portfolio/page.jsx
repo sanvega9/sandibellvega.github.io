@@ -37,7 +37,7 @@ const Portfolio = () => {
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
-    <div className="relative min-h-screen text-white overflow-x-hidden bg-black">
+    <div className="relative min-h-screen text-white overflow-x-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-20 overflow-hidden">
        <motion.div style={{ y: ySlow }} className="absolute inset-0">
@@ -469,6 +469,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
