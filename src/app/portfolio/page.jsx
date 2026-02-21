@@ -37,7 +37,6 @@ const Portfolio = () => {
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
-  return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -49,7 +48,7 @@ const Portfolio = () => {
           priority
           className="object-cover opacity-40"
         />
-      </motion div>
+      </motion.div>
         <motion.div
           style={{ y: yFast }}
           className="absolute inset-0 bg-gradient-to-br 
@@ -470,6 +469,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
