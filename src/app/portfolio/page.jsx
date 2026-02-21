@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Navbaricons from "../components/Navicons";
 import Image from "next/image";
@@ -311,7 +312,13 @@ const Portfolio = () => {
 
 
 const Section = ({ title, children }) => (
-  <section className="mt-28">
+  < motion.section
+    className="mt-28"
+    initial={{opacity:0, y:60}}
+    wileInView={{opacity:1,y:0}}
+    transition={{duration:0.8, ease:"easeOut"}}
+    viewport={{once: true}}
+    >
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
     </h2>
@@ -319,9 +326,8 @@ const Section = ({ title, children }) => (
     <div className="flex flex-wrap justify-center gap-10">
       {children}
     </div>
-  </section>
+  </motion.section>
 );
-
 
 const ProjectCard = ({
   title,
@@ -445,4 +451,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
