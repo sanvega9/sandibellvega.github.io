@@ -46,16 +46,16 @@ const Portfolio = () => {
           alt="Background"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover brightness-75 contrast-125"
         />
       </motion.div>
         <motion.div
           style={{ y: yFast }}
           className="absolute inset-0 bg-gradient-to-br 
-          from-cyan-500/20 
-          via-purple-600/20 
-          to-pink-500/20 
-          blur-3xl"
+          from-cyan-500/10 
+          via-purple-600/10 
+          to-pink-500/10 
+          blur-2xl"
         />
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
@@ -469,6 +469,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
