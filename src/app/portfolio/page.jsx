@@ -39,7 +39,7 @@ const Portfolio = () => {
   return (
     <div className="relative min-h-screen text-white overflow-x-hidden">
       {/* Background */}
-      <div className="fixed inset-0 -z-20 overflow-hidden">
+      <div className="relative z-10 overflow-hidden">
        <motion.div style={{ y: ySlow }} className="absolute inset-0">
         <Image
           src={background}
@@ -59,8 +59,8 @@ const Portfolio = () => {
         />
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      <Navbar/>
       </div>
-      <Navbar />
 
         <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
         <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 text-transparent bg-clip-text">
@@ -469,6 +469,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
