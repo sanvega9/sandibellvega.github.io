@@ -77,7 +77,7 @@ const Portfolio = () => {
         <Navbaricons />
 
         {/* AI PROJECTS */}
-        <Section title="AI Projects">
+        <Section title="AI Projects" depth={-40}>
           <ProjectCard
             title="AI K-Drama Recommender"
             image={kdrama}
@@ -143,7 +143,7 @@ const Portfolio = () => {
         </Section>
 
         {/* ROBOTICS */}
-        <Section title="Robotics Projects">
+        <Section title="Robotics Projects" depth={40}>
           <ProjectCard
             title="Underwater Autonomous Robot"
             image={robotics}
@@ -172,7 +172,7 @@ const Portfolio = () => {
             link="https://youtu.be/KHK8GIfiEpY?si=D-vYlRlExiKfl7kY"
             />
         </Section>
-        <Section title="Biomedical Engineering Projects">
+        <Section title="Biomedical Engineering Projects" depth={-60}>
           <ProjectCard
             title="Image Processing Diabetes Retinopathy" 
             image={processing} 
@@ -195,7 +195,7 @@ const Portfolio = () => {
         </Section>
 
         {/* FULL STACK */}
-        <Section title="Full-Stack & SWE Projects ">
+        <Section title="Full-Stack & SWE Projects" depth={60}>
           <ProjectCard 
             title="Diabetes Chatbot & Chatbot Medication AI"
             image={appmedication} 
@@ -276,7 +276,7 @@ const Portfolio = () => {
             />
            
         </Section>
-        <Section title="Interactive & Game Applications Projects">
+        <Section title="Interactive & Game Applications Projects" depth={-80}>
           <ProjectCard 
             title="Kpop Trivia Quiz" 
             image={kpopquiz} 
@@ -302,7 +302,7 @@ const Portfolio = () => {
             teamType="Solo"
             />
         </Section>
-        <Section title="Data Engineering & Analytics Projects">
+        <Section title="Data Engineering & Analytics Projects" depth={80}>
           <ProjectCard
             title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
             image={star}
@@ -326,16 +326,16 @@ const Portfolio = () => {
 };
 
 
-const Section = ({ title, children, depth=0 }) => (
-  const {scrollY}= useScroll();
-  const y = useTransform(scrollY, [0,2000], [0,depth]);
+const Section = ({ title, children, depth=0 }) => {
+  const { scrollY }= useScroll();
+  const y = useTransform(scrollY, [0, 2000], [0, depth]);
   return(
     <motion.section
       style={{ y }}
       className="mt-28"
-      initial={{ opacity:0, y:80 }}
-      whileInView={{ opacity:1, y:0 }}
-      transition={{ duration:0.8, ease:"easeOut" }}
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
@@ -346,7 +346,8 @@ const Section = ({ title, children, depth=0 }) => (
       {children}
     </div>
   </motion.section>
-);
+ );
+};
 
 const ProjectCard = ({
   title,
@@ -475,3 +476,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
