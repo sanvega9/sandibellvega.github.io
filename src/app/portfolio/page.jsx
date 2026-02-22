@@ -326,13 +326,17 @@ const Portfolio = () => {
 };
 
 
-const Section = ({ title, children }) => (
-  <motion.section
-    className="mt-28"
-    initial={{ opacity:0, y:60 }}
-    whileInView={{ opacity:1,y:0 }}
-    transition={{ duration:0.8, ease:"easeOut" }}
-    viewport={{ once: true }}
+const Section = ({ title, children, depth=0 }) => (
+  const {scrollY}= useScroll();
+  const y = useTransform(scrollY, [0,2000], [0,depth]);
+  return(
+    <motion.section
+      style={{ y }}
+      className="mt-28"
+      initial={{ opacity:0, y:80 }}
+      whileInView={{ opacity:1, y:0 }}
+      transition={{ duration:0.8, ease:"easeOut" }}
+      viewport={{ once: true }}
     >
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
@@ -471,15 +475,3 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
-
-
-
-
-
-
-
-
-
-
-
-
