@@ -77,7 +77,7 @@ const Portfolio = () => {
         <Navbaricons />
 
         {/* AI PROJECTS */}
-        <Section title="AI Projects" depth={-40}>
+        <Section title="AI Projects" depth={-60}>
           <ProjectCard
             title="AI K-Drama Recommender"
             image={kdrama}
@@ -195,7 +195,7 @@ const Portfolio = () => {
         </Section>
 
         {/* FULL STACK */}
-        <Section title="Full-Stack & SWE Projects" depth={60}>
+        <Section title="Full-Stack & SWE Projects" depth={-80}>
           <ProjectCard 
             title="Diabetes Chatbot & Chatbot Medication AI"
             image={appmedication} 
@@ -302,7 +302,7 @@ const Portfolio = () => {
             teamType="Solo"
             />
         </Section>
-        <Section title="Data Engineering & Analytics Projects" depth={80}>
+        <Section title="Data Engineering & Analytics Projects" depth={60}>
           <ProjectCard
             title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
             image={star}
@@ -328,15 +328,15 @@ const Portfolio = () => {
 
 const Section = ({ title, children, depth = 0 }) => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 2000], [0, depth]);
+  const y = useTransform(scrollY, [0, 1500], [0, depth]);
   return(
     <motion.section
       style={{ y }}
-      className="mt-23"
-      initial={{ opacity: 0, y: 60 }}
+      className="mt-24"
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      viewport={{ once: true }}
+      viewport={{ once: true, margin: "-100px" }}
     >
       <h2 className="text-4xl md:text-5xl font-extrabold mb-14 text-center
         bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-indigo-500
@@ -479,5 +479,6 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
