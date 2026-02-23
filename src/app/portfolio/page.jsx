@@ -70,8 +70,9 @@ const Portfolio = () => {
     opacity-20 blur-[120px] rounded-full"
   />
 
-  {/* Dark Overlay for readability */}
-  <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#050510]/90 via-[#0a0a1f]/80 to-[#02030a]/95" />
+      <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" />
+    </div>
 </div>
       <Navbar />
 
@@ -381,7 +382,7 @@ const ProjectCard = ({
 >      {/* Glow Border */}
       <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-60" />
 
-      <div className="relative bg-[#111] p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
+      <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
         {/* Image */}
         {image && (
@@ -476,5 +477,6 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
