@@ -72,7 +72,6 @@ const Portfolio = () => {
 
       <div className="absolute inset-0 bg-gradient-to-br from-[#050510]/90 via-[#0a0a1f]/80 to-[#02030a]/95" />
       <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" />
-    </div>
 </div>
       <Navbar />
 
@@ -477,6 +476,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
