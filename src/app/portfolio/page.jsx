@@ -325,13 +325,6 @@ const Portfolio = () => {
 
 
 const Section = ({ title, children }) => (
-  <motion.section
-    className="mt-28"
-    initial={{ opacity:0, y:60 }}
-    whileInView={{ opacity:1,y:0 }}
-    transition={{ duration:0.8, ease:"easeOut" }}
-    viewport={{ once: true }}
-    >
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
     </h2>
@@ -339,7 +332,6 @@ const Section = ({ title, children }) => (
     <div className="flex flex-wrap justify-center gap-10">
       {children}
     </div>
-  </motion.section>
 );
 
 const ProjectCard = ({
@@ -372,7 +364,7 @@ const ProjectCard = ({
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
 >      {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-80" />
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-60" />
 
       <div className="relative bg-[#111] p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
@@ -469,3 +461,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
