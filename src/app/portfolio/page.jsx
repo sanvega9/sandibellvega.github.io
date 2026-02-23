@@ -42,14 +42,14 @@ const Portfolio = () => {
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
-    className="absolute inset-0 scale-110"
+    className="absolute inset-0 w-full h-full"
   >
     <Image
       src={background}
       alt="Background"
       fill
       priority
-      className="object-cover brightness-[0.6] contrast-125 saturate-150"
+      className="object-cover w-full h-full brightness-[0.20] contrast-125 saturate-150"
     />
   </motion.div>
 
@@ -475,6 +475,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
