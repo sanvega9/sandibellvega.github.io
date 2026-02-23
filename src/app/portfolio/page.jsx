@@ -345,6 +345,7 @@ const Portfolio = () => {
 
 
 const Section = ({ title, children }) => (
+  <section className="mb-24"
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
     </h2>
@@ -352,6 +353,7 @@ const Section = ({ title, children }) => (
     <div className="flex flex-wrap justify-center gap-10">
       {children}
     </div>
+  </section
 );
 
 const ProjectCard = ({
@@ -481,5 +483,6 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
