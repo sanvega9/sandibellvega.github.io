@@ -37,29 +37,49 @@ const Portfolio = () => {
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
-    <div className="relative min-h-screen text-white overflow-x-hidden">
-      {/* Background */}
-      <div className="fixed inset-0 -z-20 overflow-hidden">
-       <motion.div style={{ y: ySlow }} className="absolute inset-0">
-        <Image
-          src={background}
-          alt="Background"
-          fill
-          priority
-          className="object-cover brightness-75 contrast-125"
-        />
-      </motion.div>
-        <motion.div
-          style={{ y: yFast }}
-          className="absolute inset-0 bg-gradient-to-br 
-          from-cyan-500/10 
-          via-purple-600/10 
-          to-pink-500/10 
-          blur-2xl"
-        />
+    {/* Enhanced Animated Background */}
+<div className="fixed inset-0 -z-20 overflow-hidden">
 
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
-      </div>
+  {/* Base Image */}
+  <motion.div
+    style={{ y: ySlow }}
+    className="absolute inset-0 scale-110"
+  >
+    <Image
+      src={background}
+      alt="Background"
+      fill
+      priority
+      className="object-cover brightness-[0.35] contrast-125 saturate-150"
+    />
+  </motion.div>
+
+  {/* Animated Gradient Glow Orbs */}
+  <motion.div
+    animate={{ x: [0, 60, -40, 0], y: [0, -50, 40, 0] }}
+    transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+    className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px]
+    bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-400
+    opacity-20 blur-[120px] rounded-full"
+  />
+
+  <motion.div
+    animate={{ x: [0, -70, 50, 0], y: [0, 60, -40, 0] }}
+    transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+    className="absolute bottom-[-15%] right-[-10%] w-[500px] h-[500px]
+    bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600
+    opacity-20 blur-[120px] rounded-full"
+  />
+
+  {/* Subtle Grid Overlay */}
+  <div className="absolute inset-0 
+    bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),
+        linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)]
+    bg-[size:70px_70px]" />
+
+  {/* Dark Overlay for readability */}
+  <div className="absolute inset-0 bg-black/60" />
+</div>
       <Navbar />
 
         <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
@@ -461,4 +481,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
