@@ -326,23 +326,25 @@ const Portfolio = () => {
 };
 
 
-const Section = ({ title, children, depth=0 }) => {
-  const { scrollY }= useScroll();
+const Section = ({ title, children, depth = 0 }) => {
+  const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 2000], [0, depth]);
   return(
     <motion.section
       style={{ y }}
-      className="mt-28"
-      initial={{ opacity: 0, y: 80 }}
+      className="mt-23"
+      initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-    <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-14 text-center
+        bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-indigo-500
+        text-transparent bg-clip-text drop-shadow-lg">
       {title}
     </h2>
 
-    <div className="flex flex-wrap justify-center gap-10">
+    <div className="flex flex-wrap justify-center gap-12">
       {children}
     </div>
   </motion.section>
@@ -360,9 +362,9 @@ const ProjectCard = ({
   teamType
 }) => {
   const statusColors = {
-    "Completed": "bg-green-500/20 text-green-300",
-    "In Progress": "bg-yellow-500/20 text-yellow-300",
-    "Research": "bg-indigo-500/20 text-indigo-300",
+    "Completed": "bg-emerald-400/10 text-emerald-300 border border-emerald-400/30",
+    "In Progress": "bg-amber-400/10 text-amber-300 border border-amber-400/30",
+    "Research": "bg-violet-400/10 text-violet-300 border border-violet-400/30",
   };
 
   const teamColors = {
@@ -373,24 +375,25 @@ const ProjectCard = ({
 
   return (
 <motion.div
-  className="group relative w-full sm:w-[48%] lg:w-[30%]"
-  initial={{ opacity: 0, y: 80 }}
+  className="group relative w-full sm:w-[47%] lg:w-[30%]"
+  initial={{ opacity: 0, y: 60 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
->      {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-80" />
+>      
+  {/* Glow Border */}
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-20 blur-lg group-hover:opacity-70 transition duration-500" />
 
       <div className="relative bg-[#111] p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
         {/* Image */}
         {image && (
-          <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
+          <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover group-hover:scale-110 transition duration-500"
+              className="object-cover transition duration-700 group-hover:scale-110"
             />
           </div>
         )}
@@ -476,4 +479,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
