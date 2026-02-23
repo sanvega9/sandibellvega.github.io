@@ -36,7 +36,6 @@ const Portfolio = () => {
   const { scrollY } = useScroll();
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
-    {/* Enhanced Animated Background */}
   <div className="relative min-h-screen overflow-hidden">
     <div className="fixed inset-0 -z-20 overflow-hidden">
 
@@ -339,7 +338,7 @@ const Portfolio = () => {
 
 
 const Section = ({ title, children }) => (
-  <section className="mb-24"
+  <section className="mb-24"></section>
     <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
     </h2>
@@ -477,3 +476,4 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
