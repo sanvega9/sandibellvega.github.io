@@ -38,7 +38,7 @@ const Portfolio = () => {
   const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
     {/* Enhanced Animated Background */}
-<div className="fixed inset-0 -z-20 overflow-hidden">
+  <div className="relative min-h-screen overflow-hidden">
     
   {/* Base Image */}
   <motion.div
@@ -80,8 +80,7 @@ const Portfolio = () => {
   {/* Dark Overlay for readability */}
   <div className="absolute inset-0 bg-black/60" />
 </div>
-    </div
-    );
+  
       <Navbar />
 
         <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
@@ -485,6 +484,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
