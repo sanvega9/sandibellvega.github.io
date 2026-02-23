@@ -49,7 +49,7 @@ const Portfolio = () => {
       alt="Background"
       fill
       priority
-      className="object-cover brightness-[0.35] contrast-125 saturate-150"
+      className="object-cover"
     />
   </motion.div>
 
@@ -476,6 +476,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
