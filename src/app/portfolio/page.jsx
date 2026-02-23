@@ -34,12 +34,12 @@ import webtoon from "../image/webtoon.png"
 
 const Portfolio = () => {
   const { scrollY } = useScroll();
-  const ySlow = useTransform(scrollY, [0, 1000], [0, -100]);
-  const yFast = useTransform(scrollY, [0, 1000], [0, -200]);
+  const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
+  const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
-  <div className="relative w-full min-h-screen text-white overflow-x-hidden">      
-     {/* Background */}
-      <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="relative min-h-screen text-white overflow-x-hidden">
+      {/* Background */}
+      <div className="fixed inset-0 -z-20 overflow-hidden">
        <motion.div style={{ y: ySlow }} className="absolute inset-0">
         <Image
           src={background}
@@ -60,11 +60,9 @@ const Portfolio = () => {
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
       </div>
-      <div className="relative z-50">
       <Navbar />
-      </div>
 
-        <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-24 text-center">
+        <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
         <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Portfolio
         </h1>
@@ -77,7 +75,7 @@ const Portfolio = () => {
         <Navbaricons />
 
         {/* AI PROJECTS */}
-        <Section title="AI Projects" depth={-60}>
+        <Section title="AI Projects">
           <ProjectCard
             title="AI K-Drama Recommender"
             image={kdrama}
@@ -143,7 +141,7 @@ const Portfolio = () => {
         </Section>
 
         {/* ROBOTICS */}
-        <Section title="Robotics Projects" depth={40}>
+        <Section title="Robotics Projects">
           <ProjectCard
             title="Underwater Autonomous Robot"
             image={robotics}
@@ -172,7 +170,7 @@ const Portfolio = () => {
             link="https://youtu.be/KHK8GIfiEpY?si=D-vYlRlExiKfl7kY"
             />
         </Section>
-        <Section title="Biomedical Engineering Projects" depth={-60}>
+        <Section title="Biomedical Engineering Projects">
           <ProjectCard
             title="Image Processing Diabetes Retinopathy" 
             image={processing} 
@@ -195,7 +193,7 @@ const Portfolio = () => {
         </Section>
 
         {/* FULL STACK */}
-        <Section title="Full-Stack & SWE Projects" depth={-80}>
+        <Section title="Full-Stack & SWE Projects ">
           <ProjectCard 
             title="Diabetes Chatbot & Chatbot Medication AI"
             image={appmedication} 
@@ -276,7 +274,7 @@ const Portfolio = () => {
             />
            
         </Section>
-        <Section title="Interactive & Game Applications Projects" depth={-80}>
+        <Section title="Interactive & Game Applications Projects">
           <ProjectCard 
             title="Kpop Trivia Quiz" 
             image={kpopquiz} 
@@ -302,7 +300,7 @@ const Portfolio = () => {
             teamType="Solo"
             />
         </Section>
-        <Section title="Data Engineering & Analytics Projects" depth={60}>
+        <Section title="Data Engineering & Analytics Projects">
           <ProjectCard
             title="UAT Student Programming Skill Analysis (Star Schema & ETL)"
             image={star}
@@ -326,30 +324,23 @@ const Portfolio = () => {
 };
 
 
-const Section = ({ title, children, depth = 0 }) => {
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 1500], [0, depth]);
-  return(
-    <motion.section
-      style={{ y }}
-      className="mt-24"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      viewport={{ once: true, margin: "-100px" }}
+const Section = ({ title, children }) => (
+  <motion.section
+    className="mt-28"
+    initial={{ opacity:0, y:60 }}
+    whileInView={{ opacity:1,y:0 }}
+    transition={{ duration:0.8, ease:"easeOut" }}
+    viewport={{ once: true }}
     >
-      <h2 className="text-4xl md:text-5xl font-extrabold mb-14 text-center
-        bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-indigo-500
-        text-transparent bg-clip-text drop-shadow-lg">
+    <h2 className="text-4xl font-extrabold mb-12 bg-gradient-to-r from-blue-400 via-pink-400 to-purple-500 text-transparent bg-clip-text">
       {title}
     </h2>
 
-    <div className="flex flex-wrap justify-center gap-12">
+    <div className="flex flex-wrap justify-center gap-10">
       {children}
     </div>
   </motion.section>
- );
-};
+);
 
 const ProjectCard = ({
   title,
@@ -362,9 +353,9 @@ const ProjectCard = ({
   teamType
 }) => {
   const statusColors = {
-    "Completed": "bg-emerald-400/10 text-emerald-300 border border-emerald-400/30",
-    "In Progress": "bg-amber-400/10 text-amber-300 border border-amber-400/30",
-    "Research": "bg-violet-400/10 text-violet-300 border border-violet-400/30",
+    "Completed": "bg-green-500/20 text-green-300",
+    "In Progress": "bg-yellow-500/20 text-yellow-300",
+    "Research": "bg-indigo-500/20 text-indigo-300",
   };
 
   const teamColors = {
@@ -375,25 +366,24 @@ const ProjectCard = ({
 
   return (
 <motion.div
-  className="group relative w-full sm:w-[47%] lg:w-[30%]"
-  initial={{ opacity: 0, y: 60 }}
+  className="group relative w-full sm:w-[48%] lg:w-[30%]"
+  initial={{ opacity: 0, y: 80 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
->      
-  {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-20 blur-lg group-hover:opacity-70 transition duration-500" />
+>      {/* Glow Border */}
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-80" />
 
       <div className="relative bg-[#111] p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
 
         {/* Image */}
         {image && (
-          <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
+          <div className="relative w-full h-44 mb-6 rounded-xl overflow-hidden">
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover transition duration-700 group-hover:scale-110"
+              className="object-cover group-hover:scale-110 transition duration-500"
             />
           </div>
         )}
@@ -479,6 +469,3 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
-
-
-
