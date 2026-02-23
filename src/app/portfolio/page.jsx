@@ -35,11 +35,11 @@ import webtoon from "../image/webtoon.png"
 const Portfolio = () => {
   const { scrollY } = useScroll();
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
-  const yFast = useTransform(scrollY, [0, 1000], [0, -400]);
   return (
     {/* Enhanced Animated Background */}
   <div className="relative min-h-screen overflow-hidden">
-    
+    <div className="fixed inset-0 -z-20 overflow-hidden">
+
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
@@ -71,16 +71,9 @@ const Portfolio = () => {
     opacity-20 blur-[120px] rounded-full"
   />
 
-  {/* Subtle Grid Overlay */}
-  <div className="absolute inset-0 
-    bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),
-        linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)]
-    bg-[size:70px_70px]" />
-
   {/* Dark Overlay for readability */}
   <div className="absolute inset-0 bg-black/60" />
 </div>
-  
       <Navbar />
 
         <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
@@ -468,7 +461,7 @@ const ProjectCard = ({
         )}
 
         {/* Hover Link */}
-        <span className="text-sm font-semibold text-pink-400 opacity-0 group-hover:opacity-100 transition">
+        {link && (
           <a
             href={link}
             target="_blank"
@@ -477,15 +470,10 @@ const ProjectCard = ({
           >
              View Project →
           </a>
-        </span>
+        )}
       </div>
     </motion.div>
   );
 };
 
 export default Portfolio;
-
-
-
-
-
