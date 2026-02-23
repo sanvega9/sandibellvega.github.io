@@ -49,7 +49,7 @@ const Portfolio = () => {
       alt="Background"
       fill
       priority
-      className="object-cover brightness-[0.35] contrast-125 saturate-150"
+      className="object-cover brightness-[0.6] contrast-125 saturate-150"
     />
   </motion.div>
 
@@ -69,8 +69,7 @@ const Portfolio = () => {
     bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600
     opacity-20 blur-[120px] rounded-full"
   />
-
-      <div className="absolute inset-0 bg-gradient-to-br from-[#050510]/90 via-[#0a0a1f]/80 to-[#02030a]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-400 opacity-30" />
       <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" />
 </div>
       <Navbar />
@@ -476,6 +475,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
