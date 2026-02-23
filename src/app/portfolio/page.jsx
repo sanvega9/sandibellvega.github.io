@@ -36,13 +36,13 @@ const Portfolio = () => {
   const { scrollY } = useScroll();
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
-  <div className="relative min-h-screen w-full">
-    <div className="absolute inset-0 -z-20">
+  <div className="relative min-h-screen w-full bg-black">
+    <div className="absolute inset-0 w-screen -z-20 overflow-hidden">
 
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
-    className="w-full h-full"
+    className="absolute inset-0"
   >
     <Image
       src={background}
@@ -475,4 +475,5 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
