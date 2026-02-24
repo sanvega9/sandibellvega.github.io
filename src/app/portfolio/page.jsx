@@ -329,7 +329,6 @@ const Portfolio = () => {
             teamType="Solo"
             />
         </Section>
-      </div>
     </div>
   );
 };
@@ -474,6 +473,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
