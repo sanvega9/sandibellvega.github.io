@@ -70,7 +70,7 @@ const Portfolio = () => {
     opacity-20 blur-[120px] rounded-full"
   />
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-cyan-400/20" />
-      <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" />
+      {/* <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" /> */}
 </div>
       <Navbar />      
     <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
@@ -474,6 +474,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
