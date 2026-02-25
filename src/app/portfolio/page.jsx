@@ -37,8 +37,7 @@ const Portfolio = () => {
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden bg-black">
-      <div className="fixed inset-0 -z-10">
-
+     <div className="absolute inset-0 -z-10 overflow-hidden">
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
@@ -75,8 +74,6 @@ const Portfolio = () => {
 </div>
       <Navbar />      
     <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
-
-        <div className="relative z-10 container mx-auto px-6 lg:px-20 py-16 mt-20 text-center">
         <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Portfolio
         </h1>
@@ -477,6 +474,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
