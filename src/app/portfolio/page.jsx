@@ -37,7 +37,7 @@ const Portfolio = () => {
   const ySlow = useTransform(scrollY, [0, 1000], [0, -200]);
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden bg-black">
-     <div className="absolute inset-0 -z-10 overflow-hidden">
+     <div className="fixed inset-0 -z-10">
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
@@ -69,7 +69,7 @@ const Portfolio = () => {
     bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600
     opacity-20 blur-[120px] rounded-full"
   />
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-400 opacity-30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-cyan-400/20" />
       <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-[radial-gradient(white_1px,transparent_1px)] [background-size:30px_30px]" />
 </div>
       <Navbar />      
@@ -474,6 +474,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
