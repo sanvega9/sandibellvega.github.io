@@ -41,7 +41,7 @@ const Portfolio = () => {
   {/* Base Image */}
   <motion.div
     style={{ y: ySlow }}
-    className="relative w-full h-full"
+    className="relative w-full h-screen"
   >
     <Image
       src={background}
@@ -474,6 +474,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
