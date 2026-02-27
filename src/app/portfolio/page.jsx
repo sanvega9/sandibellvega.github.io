@@ -39,10 +39,10 @@ const Portfolio = () => {
     <div className="relative min-h-screen w-full flex flex-col">
      <div className="fixed inset-0 -z-20">
   {/* Base Image */}
-  <motion.div
+  /* {/* <motion.div
     style={{ y: ySlow }}
     className="relative w-full h-screen"
-  >
+  > */} */
     <Image
       src={background}
       alt="Background"
@@ -50,7 +50,7 @@ const Portfolio = () => {
       priority
       className="object-cover"
     />
-  </motion.div>
+  {/* </motion.div> */}
 
   {/* Animated Gradient Glow Orbs */}
   <motion.div
@@ -473,6 +473,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
