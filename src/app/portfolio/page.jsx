@@ -357,28 +357,48 @@ const ProjectCard = ({
   teamType
 }) => {
   const statusColors = {
-    "Completed": "bg-green-500/20 text-green-300",
-    "In Progress": "bg-yellow-500/20 text-yellow-300",
-    "Research": "bg-indigo-500/20 text-indigo-300",
+    "Completed": "bg-emerald-500/20 text-emerald-300 border-emerald-400/40",
+    "In Progress": "bg-amber-500/20 text-amber-300 border-amber-400/40",
+    "Research": "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-400/40",
   };
 
   const teamColors = {
-    Solo: "bg-blue-500/20 text-blue-300",
-    Group: "bg-cyan-500/20 text-cyan-300",
-    "Team Lead": "bg-orange-500/20 text-orange-300",
+    Solo: "bg-blue-500/20 text-blue-300 border-blue-400/40",
+    Group: "bg-cyan-500/20 text-cyan-300 border-cyan-400/40",
+    "Team Lead": "bg-orange-500/20 text-orange-300 border-orange-400/40",
   };
 
   return (
 <motion.div
   className="group relative w-full sm:w-[48%] lg:w-[30%]"
-  initial={{ opacity: 0, y: 80 }}
+  initial={{ opacity: 0, y: 60 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
->      {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur transition group-hover:opacity-60" />
+  viewport={{ once: true }}>      
+  {/* Glow Border */}
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur-2xl group-hover:opacity-60 transition duration-500" />
+       <div className="absolute -inset-[1px] rounded-3xl
+                      bg-gradient-to-br from-white/20 via-transparent to-white/10
+                      opacity-40 pointer-events-none" />
+  
+      {/* MAIN GLASS CARD */}
+      <div className="relative rounded-3xl p-7 overflow-hidden
+                      bg-white/5 backdrop-blur-2xl
+                      border border-white/10
+                      shadow-2xl
+                      transition-all duration-500
+                      group-hover:-translate-y-3
+                      group-hover:shadow-[0_0_60px_rgba(236,72,153,0.35)]">
 
-      <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-xl transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-pink-500/40">
+        {/* DEPTH LAYERED GRADIENT BACKLIGHT */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100
+                        transition duration-700
+                        bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-400/10" />
+
+        {/* SOFT INNER LIGHT REFLECTION */}
+        <div className="absolute top-0 left-0 w-full h-1/2
+                        bg-gradient-to-b from-white/10 to-transparent
+                        pointer-events-none rounded-t-3xl" />
 
         {/* Image */}
         {image && (
@@ -473,6 +493,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
