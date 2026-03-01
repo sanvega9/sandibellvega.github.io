@@ -376,26 +376,26 @@ const ProjectCard = ({
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}>      
   {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur-2xl group-hover:opacity-60 transition duration-500" />
-       <div className="absolute -inset-[1px] rounded-3xl
-                      bg-gradient-to-br from-white/20 via-transparent to-white/10
-                      opacity-40 pointer-events-none" />
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-20 blur-2xl group-hover:opacity-60 transition duration-500" />
   
       {/* MAIN GLASS CARD */}
       <div className="relative rounded-3xl p-7 overflow-hidden
-                      bg-white/5 backdrop-blur-2xl
+                      bg-white/5 backdrop-blur-3xl
                       border border-white/10
-                      shadow-2xl
+                      shadow-[0_20px_80px_rgba(0,0,0,0,6)]
                       transition-all duration-500
-                      group-hover:-translate-y-3
-                      group-hover:shadow-[0_0_60px_rgba(236,72,153,0.35)]">
+                      group-hover:-translate-y-4
+                      group-hover:scale-[1.02]
+                      group-hover:shadow-[0_0_80px_rgba(236,72,153,0.45)]">
 
-        {/* DEPTH LAYERED GRADIENT BACKLIGHT */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100
-                        transition duration-700
-                        bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-cyan-400/10" />
+        {/* Shimmer Sweep */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
+                          translate-x-[-100%] group-hover:translate-x-[100%]
+                          transition-transform duration-1000" />
+        </div>
 
-        {/* SOFT INNER LIGHT REFLECTION */}
+        {/* Top Light Reflection */}
         <div className="absolute top-0 left-0 w-full h-1/2
                         bg-gradient-to-b from-white/10 to-transparent
                         pointer-events-none rounded-t-3xl" />
@@ -493,6 +493,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
