@@ -376,7 +376,7 @@ const ProjectCard = ({
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}>      
   {/* Glow Border */}
-      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-20 blur-2xl group-hover:opacity-60 transition duration-500" />
+      <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-violet-500 via-purple-600 to-fuchsia-500 opacity-20 blur-2xl group-hover:opacity-60 transition duration-500" />
   
       {/* MAIN GLASS CARD */}
       <div className="relative rounded-3xl p-7 overflow-hidden
@@ -493,6 +493,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
