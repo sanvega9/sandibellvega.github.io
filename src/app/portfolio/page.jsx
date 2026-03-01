@@ -77,7 +77,7 @@ const Portfolio = () => {
           Portfolio
         </h1>
 
-        <p className="text-gray-300 max-w-3xl mx-auto mb-12 text-lg">
+        <p className="text-black-300 max-w-3xl mx-auto mb-12 text-lg">
           A curated collection of my work in Artificial Intelligence, Robotics,
           Embedded Systems, and innovative software solutions.
         </p>
@@ -493,6 +493,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
