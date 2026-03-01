@@ -451,7 +451,7 @@ const ProjectCard = ({
         </h3>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm mb-6">
+        <p className="text-gray-600 text-sm mb-6">
           {description}
         </p>
 
@@ -493,6 +493,7 @@ const ProjectCard = ({
 };
 
 export default Portfolio;
+
 
 
 
