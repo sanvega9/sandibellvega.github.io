@@ -147,6 +147,7 @@ const About = () => {
         <div className="mt-9">
           <Navbaricons/>
         </div>
+        
 
         {/* Degrees */}
         <section className="mb-12 flex flex-col items-center">
@@ -159,6 +160,126 @@ const About = () => {
           </div>
           </div>
          
+        </section>
+        <section className="mb-20 mt-16>
+          <h2 className= "text-3xl lg:text-4xl font-extrabold text-center text-emerald-400 mb-4">
+        Experience
+        </h2>
+      <p className="text-center text-gray-500 text-sm mb-12">
+        via{" "}
+        <a
+          href="https://www.linkedin.com/in/sandibell-vega-953889180/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-emerald-400 hover:text-emerald-300 transition underline underline-offset-2"
+          >
+        LinkedIn
+        </a>
+      </p>
+      <div className="relative max-w-3 xl mx-auto">
+        <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10"
+          <div className="flex flex-col gap-10"
+            {experienceData.map((exp, index) =>(
+              <div key={index} className="relative pl-16">
+                <div className={ `absolute left-[18px] top-6 w-3.5 h-3.5 rounded-full border-2 border-[#121212] ${exp.dot}`}
+                  />
+                <div 
+                  className={`rounded-2xl bg-[#1e1e1e] border border-white/10 p-6 shadow-lg
+
+                      hover:-translate-y-1 transition-all duration-300 hover:shadow-emerald-500/10 relative overflow-hidden`}
+
+                  >
+
+                    {/* Gradient glow layer */}
+
+                    <div className={`absolute inset-0 bg-gradient-to-br ${exp.color} opacity-0 hover:opacity-100 transition-opacity rounded-2xl`} />
+
+ 
+
+                    <div className="relative z-10">
+                      {/* Header row */}
+
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-3">
+
+                        <div>
+
+                          <h3 className="text-xl font-bold text-white leading-tight">{exp.role}</h3>
+
+                          <p className={`text-sm font-semibold ${exp.accent}`}>{exp.company}</p>
+
+                          <p className="text-xs text-gray-500 mt-0.5">{exp.type}</p>
+
+                        </div>
+
+                        <div className="text-right shrink-0">
+
+                          <span className="text-xs text-gray-400 font-medium block">{exp.period}</span>
+
+                          <span className="text-xs text-gray-500 block mt-0.5">{exp.location}</span>
+
+                        </div>
+
+                      </div>
+
+
+                      {/* Description */}
+
+                      <p className="text-gray-300 text-sm leading-relaxed mb-4">{exp.description}</p>
+
+ 
+
+                      {/* Footer: tags + LinkedIn link */}
+
+                      <div className="flex justify-between items-center mt-4">
+
+                        <div className="flex flex-wrap gap-2">
+
+                          {exp.tags.map(tag => (
+
+                            <span
+
+                              key={tag}
+
+                              className="text-xs px-2.5 py-1 rounded-md bg-white/10 text-gray-300 font-medium"
+
+                            >
+
+                              {tag}
+
+                            </span>
+
+                          ))}
+
+                        </div>
+
+                        <a
+
+                          href={exp.linkedin_url}
+
+                          target="_blank"
+
+                          rel="noopener noreferrer"
+
+                          className="text-xs text-gray-400 font-medium hover:text-emerald-400 transition shrink-0 ml-4"
+
+                        >
+
+                          View on LinkedIn
+
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              ))}
+              </div>
+      </div>
+        
         </section>
 
         {/* Skills Section */}
