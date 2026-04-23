@@ -202,8 +202,9 @@ const About = () => {
           LinkedIn
           </a>
         </p>
+          
       <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10">
+        <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10"/>
           <div className="flex flex-col gap-10">
             {experienceData.map((exp, index) =>(
               <div key={index} className="relative pl-16">
