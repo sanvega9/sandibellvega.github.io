@@ -161,8 +161,8 @@ const About = () => {
           </div>
          
         </section>
-        <section className="mb-20 mt-16>
-          <h2 className= "text-3xl lg:text-4xl font-extrabold text-center text-emerald-400 mb-4">
+        <section className="mb-20 mt-16">
+        <h2 className= "text-3xl lg:text-4xl font-extrabold text-center text-emerald-400 mb-4">
         Experience
         </h2>
       <p className="text-center text-gray-500 text-sm mb-12">
@@ -176,9 +176,9 @@ const About = () => {
         LinkedIn
         </a>
       </p>
-      <div className="relative max-w-3 xl mx-auto">
-        <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10"
-          <div className="flex flex-col gap-10"
+      <div className="relative max-w-3xl mx-auto">
+        <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10">
+          <div className="flex flex-col gap-10">
             {experienceData.map((exp, index) =>(
               <div key={index} className="relative pl-16">
                 <div className={ `absolute left-[18px] top-6 w-3.5 h-3.5 rounded-full border-2 border-[#121212] ${exp.dot}`}
