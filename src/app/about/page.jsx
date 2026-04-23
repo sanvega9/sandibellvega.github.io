@@ -91,7 +91,34 @@ const achievements = [
     tag:"AI • Innovation",
   }
 ];
-
+const experienceData = [
+  {
+    role: "Code Tech Fellow",
+    company: "CodePath",
+    type: "Fellowship",
+    period: "2025 – Present",
+    location: "Remote",
+    description: "Teaching assistant and technical mentor for AND101 and WEB101 courses, supporting students in Android and web development.",
+    tags: ["Teaching", "Leadership", "Android", "Web"],
+    dot: "bg-emerald-400",
+    accent: "text-emerald-400",
+    color: "from-emerald-500/10 to-transparent",
+    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
+  },
+  {
+    role: "AI & Robotics Engineer",
+    company: "University of Advancing Technology",
+    type: "Academic / Research",
+    period: "2019 – 2021",
+    location: "Tempe, AZ",
+    description: "Developed AI-powered systems and robotics projects, including an award-winning AI chatbot medication system.",
+    tags: ["AI", "Robotics", "Python", "OpenCV"],
+    dot: "bg-pink-400",
+    accent: "text-pink-400",
+    color: "from-pink-500/10 to-transparent",
+    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
+  },
+];
 const roles = [
   "All", "AI", "ML", "Robotics", "IoT", "UI/UX", "Frontend", "Backend", "Full-Stack",
   "Web Development", "Data Science", "Software Engineering", "Software Developer",
@@ -107,9 +134,8 @@ const About = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if(entry.isIntersecting){
+        if(entry.isIntersecting)
           setVisible(true);
-        }
       },
       { threshold: 0.2 }
     );
@@ -162,40 +188,31 @@ const About = () => {
          
         </section>
         <section className="mb-20 mt-16">
-        <h2 className= "text-3xl lg:text-4xl font-extrabold text-center text-emerald-400 mb-4">
-        Experience
-        </h2>
-      <p className="text-center text-gray-500 text-sm mb-12">
-        via{" "}
-        <a
-          href="https://www.linkedin.com/in/sandibell-vega-953889180/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-emerald-400 hover:text-emerald-300 transition underline underline-offset-2"
-          >
-        LinkedIn
-        </a>
-      </p>
+          <h2 className= "text-3xl lg:text-4xl font-extrabold text-center text-emerald-400 mb-4">
+           Experience
+          </h2>
+          <p className="text-center text-gray-500 text-sm mb-12">
+            via{" "}
+            <a
+              href="https://www.linkedin.com/in/sandibell-vega-953889180/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:text-emerald-300 transition underline underline-offset-2"
+              >
+          LinkedIn
+          </a>
+        </p>
       <div className="relative max-w-3xl mx-auto">
         <div className="absolute left-6 top-0 bottom-0 w-px bg-white/10">
           <div className="flex flex-col gap-10">
             {experienceData.map((exp, index) =>(
               <div key={index} className="relative pl-16">
-                <div className={ `absolute left-[18px] top-6 w-3.5 h-3.5 rounded-full border-2 border-[#121212] ${exp.dot}`}
-                  />
-                <div 
-                  className={`rounded-2xl bg-[#1e1e1e] border border-white/10 p-6 shadow-lg
-
-                      hover:-translate-y-1 transition-all duration-300 hover:shadow-emerald-500/10 relative overflow-hidden`}
-
-                  >
+                <div className={ `absolute left-[18px] top-6 w-3.5 h-3.5 rounded-full border-2 border-[#121212] ${exp.dot}`}/>
+                <div className={"rounded-2xl bg-[#1e1e1e] border border-white/10 p-6 shadow-lg hover:-translate-y-1 transition-all duration-300 hover:shadow-emerald-500/10 relative overflow-hidden"}>
 
                     {/* Gradient glow layer */}
 
                     <div className={`absolute inset-0 bg-gradient-to-br ${exp.color} opacity-0 hover:opacity-100 transition-opacity rounded-2xl`} />
-
- 
-
                     <div className="relative z-10">
                       {/* Header row */}
 
@@ -236,13 +253,7 @@ const About = () => {
 
                           {exp.tags.map(tag => (
 
-                            <span
-
-                              key={tag}
-
-                              className="text-xs px-2.5 py-1 rounded-md bg-white/10 text-gray-300 font-medium"
-
-                            >
+                            <span key={tag} className="text-xs px-2.5 py-1 rounded-md bg-white/10 text-gray-300 font-medium">
 
                               {tag}
 
@@ -278,8 +289,7 @@ const About = () => {
 
               ))}
               </div>
-      </div>
-        
+            </div>
         </section>
 
         {/* Skills Section */}
