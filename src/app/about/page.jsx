@@ -93,6 +93,19 @@ const achievements = [
 ];
 const experienceData = [
   {
+    role: "Robotics Instructor",
+    company: "Iona University STEP Program",
+    type: "Instructor",
+    period: "Jul 2025 – Present",
+    location: "On-site",
+    description: "Led hands-on coding and robotics lessons for middle school students, designing interactive STEM activities using Tinkercad, Scratch, Python, and robotics kits while fostering creativity and interest in technology careers.",
+    tags: ["Robotics", "Python", "Scratch", "Tinkercad", "STEM Education", "Mentorship"],
+    dot: "bg-red-400",
+    accent: "text-red-400",
+    color: "from-yellow-500/10 to-transparent",
+    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
+  },
+  {
     role: "WEB 101 Tech Fellow",
     company: "Code path",
     type: "TF",
@@ -129,6 +142,19 @@ const experienceData = [
     dot: "bg-emerald-400",
     accent: "text-emerald-400",
     color: "from-emerald-500/10 to-transparent",
+    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
+  },
+   {
+    role: "CAD Instructor",
+    company: "Duro Workforce FunFab",
+    type: "Part-time",
+    period: "Jan 2024 – Feb 2024",
+    location: "Hybrid",
+    description: "Taught 3D CAD in Spanish to high school students, guiding them in creating projects and pitch decks using Tinkercad while building foundational STEM and design skills.",
+    tags: ["CAD", "Tinkercad", "Teaching", "STEM Education", "Bilingual", "3D Design"],
+    dot: "bg-green-400",
+    accent: "text-green-400",
+    color: "from-green-500/10 to-transparent",
     linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
   },
    {
@@ -169,19 +195,6 @@ const experienceData = [
         accent: "text-pink-400",
         color: "from-pink-500/10 to-transparent",
         linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
-  },
-    {
-    role: "CAD Instructor",
-    company: "Duro Workforce FunFab",
-    type: "Part-time",
-    period: "Jan 2024 – Feb 2024",
-    location: "Hybrid",
-    description: "Taught 3D CAD in Spanish to high school students, guiding them in creating projects and pitch decks using Tinkercad while building foundational STEM and design skills.",
-    tags: ["CAD", "Tinkercad", "Teaching", "STEM Education", "Bilingual", "3D Design"],
-    dot: "bg-green-400",
-    accent: "text-green-400",
-    color: "from-green-500/10 to-transparent",
-    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
   },
 ];
 const roles = [
