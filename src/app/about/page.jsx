@@ -170,6 +170,19 @@ const experienceData = [
         color: "from-pink-500/10 to-transparent",
         linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
   },
+    {
+    role: "CAD Instructor",
+    company: "Duro Workforce FunFab",
+    type: "Part-time",
+    period: "Jan 2024 – Feb 2024",
+    location: "Hybrid",
+    description: "Taught 3D CAD in Spanish to high school students, guiding them in creating projects and pitch decks using Tinkercad while building foundational STEM and design skills.",
+    tags: ["CAD", "Tinkercad", "Teaching", "STEM Education", "Bilingual", "3D Design"],
+    dot: "bg-green-400",
+    accent: "text-green-400",
+    color: "from-green-500/10 to-transparent",
+    linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
+  },
 ];
 const roles = [
   "All", "AI", "ML", "Robotics", "IoT", "UI/UX", "Frontend", "Backend", "Full-Stack",
