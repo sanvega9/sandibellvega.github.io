@@ -164,7 +164,7 @@ const experienceData = [
         period: "Sep 2021 – Dec 2021",
         location: "Remote",
         description: "Developed chatbot features using Python and implemented sentiment analysis to understand user behavior, contributing to improved engagement and user experience.",
-        tags: ["AI", "Data Science"],
+        tags: ["AI", "Data Science","Python", "NLP", "Sentiment Analysis"],
         dot: "bg-pink-400",
         accent: "text-pink-400",
         color: "from-pink-500/10 to-transparent",
