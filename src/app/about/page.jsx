@@ -100,11 +100,7 @@ const experienceData = [
     period: "Feb 2026 – Present",
     location: "On-site",
     description: 
-      "Deliver engaging, hands-on STEM instruction through project-based learning and creative technology activities.",
-      "Teach programs including Drone Coding, Gardening & Environmental Science, Video Game Development, Household Science experiments, and Graphic Design.",
-      "Design interactive lessons connecting STEM concepts to real-world applications.",
-      "Foster students’ critical thinking, creativity, collaboration, and problem-solving skills.",
-      "Support students in exploring STEM careers and building confidence in technology."
+      "Deliver engaging, hands-on STEM instruction through project-based learning and creative technology activities. Teach programs including Drone Coding, Gardening & Environmental Science, Video Game Development, Household Science experiments, and Graphic Design. Design interactive lessons connecting STEM concepts to real-world applications. Foster students’ critical thinking, creativity, collaboration, and problem-solving skills. Support students in exploring STEM careers and building confidence in technology."
     tags: [
       "STEM Education",
       "Python",
@@ -113,7 +109,7 @@ const experienceData = [
       "Environmental Science",
       "Graphic Design"
     ],
-    dot: "bg-o-400",
+    dot: "bg-orange-400",
     accent: "text-orange-400",
     color: "from-orange-500/10 to-transparent"
   },
