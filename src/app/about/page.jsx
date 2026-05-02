@@ -92,7 +92,7 @@ const achievements = [
   }
 ];
 const experienceData = [
-  export const experience = [
+  export const experience = []
   {
     role: "STEM Instructor",
     company: "Concorde Education",
@@ -209,7 +209,6 @@ const experienceData = [
         color: "from-pink-500/10 to-transparent",
         linkedin_url: "https://www.linkedin.com/in/sandibell-vega-953889180/",
   },
-]
 ];
 const roles = [
   "All", "AI", "ML", "Robotics", "IoT", "UI/UX", "Frontend", "Backend", "Full-Stack",
