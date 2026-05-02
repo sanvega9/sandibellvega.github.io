@@ -92,7 +92,6 @@ const achievements = [
   }
 ];
 const experienceData = [
-  export const experience = []
   {
     role: "STEM Instructor",
     company: "Concorde Education",
