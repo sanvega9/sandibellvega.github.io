@@ -239,7 +239,14 @@ const About = () => {
   useEffect(() => {
   fetch('https://api.github.com/users/sanvega9/repos?sort=updated&per_page=9')
     .then(res => res.json())
-    .then(data => setGithubRepos(data))
+    .then(data => {
+      const filtered = data.filter(repo =>
+        !repo.fork &&
+        repo.description &&
+        repo.stargazers_count >= 0
+        );
+      setGithubRepos(filtered);
+    })
     .catch(err => console.error(err));
 }, []);
   const filteredSkills =
