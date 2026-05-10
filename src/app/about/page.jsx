@@ -237,24 +237,24 @@ const About = () => {
     };
   }, []);
   useEffect(() => {
-  fetch('https://api.github.com/users/sanvega9/repos?sort=updated&per_page=9')
+  fetch("https://api.github.com/users/sanvega9/repos?sort=updated&per_page=20")
     .then((res) => res.json())
     .then((data) => {
+      if (!Array.isArray(data)) {
+        console.error("GitHub API Error:", data);
+        return;
+      }
+
       const filtered = data
-        .filter(
-          (repo) =>
-        !repo.fork &&
-        repo.description &&
-        repo.size >= 20
-        )
-        .sort((a,b)=>{
-          return(
+        .filter((repo) => !repo.fork)
+        .sort(
+          (a, b) =>
             b.stargazers_count +
             b.forks_count -
             (a.stargazers_count + a.forks_count)
-            );
-    })
-      .slice(0,6);
+        )
+        .slice(0, 6);
+
       setGithubRepos(filtered);
     })
     .catch((err) => console.error(err));
