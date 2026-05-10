@@ -238,10 +238,11 @@ const About = () => {
   }, []);
   useEffect(() => {
   fetch('https://api.github.com/users/sanvega9/repos?sort=updated&per_page=9')
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       const filtered = data
-        .filter(repo =>
+        .filter(
+          (repo) =>
         !repo.fork &&
         repo.description &&
         repo.size >= 20
@@ -254,6 +255,9 @@ const About = () => {
             );
     })
       .slice(0,6);
+      setGithubRepos(filtered);
+    })
+    .catch((err) => console.error(err));
 }, []);
   const filteredSkills =
     activeRole === "All"
