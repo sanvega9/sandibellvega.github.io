@@ -240,14 +240,20 @@ const About = () => {
   fetch('https://api.github.com/users/sanvega9/repos?sort=updated&per_page=9')
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(repo =>
+      const filtered = data
+        .filter(repo =>
         !repo.fork &&
         repo.description &&
-        repo.stargazers_count >= 0
-        );
-      setGithubRepos(filtered);
+        repo.size >= 20
+        )
+        .sort((a,b)=>{
+          return(
+            b.stargazers_count +
+            b.forks_count -
+            (a.stargazers_count + a.forks_count)
+            );
     })
-    .catch(err => console.error(err));
+      .slice(0,6);
 }, []);
   const filteredSkills =
     activeRole === "All"
