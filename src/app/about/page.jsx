@@ -548,6 +548,11 @@ const About = () => {
             >
               View on GitHub
             </a>
+            <img
+  src="https://ghchart.rshah.org/sanvega9"
+  alt="GitHub Contributions"
+  className="rounded-xl w-full"
+/>
           </div>
         </div>
       </div>
