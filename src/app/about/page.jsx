@@ -280,6 +280,23 @@ const About = () => {
         <div className="mt-9">
           <Navbaricons/>
         </div>
+        <section className="mb-16">
+  <h2 className="text-3xl font-extrabold text-center text-purple-400 mb-8">
+    Impact in Education
+  </h2>
+
+  <div className="bg-[#1e1e1e] p-8 rounded-2xl border border-white/10 max-w-4xl mx-auto">
+    <p className="text-gray-300 text-sm leading-relaxed">
+      I have taught and mentored students across K–12 and college-level programs in coding, robotics, and STEM.  
+      My teaching style focuses on breaking down complex technical concepts into hands-on, project-based learning experiences.
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed mt-4">
+      I’ve designed curriculum for AI, drones, game development, robotics, and web development, helping students move from curiosity 
+      to confidence in technology careers.
+    </p>
+  </div>
+</section>
         
 
         {/* Degrees */}
