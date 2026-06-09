@@ -548,17 +548,25 @@ const About = () => {
             >
               View on GitHub
             </a>
-            <img
-  src="https://ghchart.rshah.org/sanvega9"
-  alt="GitHub Contributions"
-  className="rounded-xl w-full"
-/>
           </div>
         </div>
       </div>
     ))}
   </div>
 </section>
+        <section>
+        <div className="bg-[#111827]/70 backdrop-blur-lg p-6 rounded-3xl border border-purple-500/20 shadow-2xl">
+  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+    GitHub Contributions
+  </h3>
+
+  <img
+    src="https://ghchart.rshah.org/sanvega9"
+    alt="GitHub Contributions"
+    className="rounded-xl w-full"
+  />
+</div>
+        </section>
 
       </div>
     </div>
