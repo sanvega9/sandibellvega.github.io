@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className="relative min-h-screen flex flex-col">
-
       {/* Background Image */}
       <div className="fixed inset-0 -z-20">
         <Image
@@ -28,7 +27,8 @@ export default function Home() {
       <div className="container mx-auto px-5 py-4 mt-24 flex-grow">
         <HeroSection />
       </div>
-      <Footer/>
+
+      <Footer />
     </main>
   );
 }
