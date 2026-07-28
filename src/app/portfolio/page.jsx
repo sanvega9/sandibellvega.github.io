@@ -80,7 +80,7 @@ const Portfolio = () => {
         <p className="text-white max-w-3xl mx-auto mb-12 text-lg">
           A curated collection of my work in Artificial Intelligence, Robotics,
           Embedded Systems, and innovative software solutions.
-        </p>c
+        </p>
 
         <Navbaricons />
 
