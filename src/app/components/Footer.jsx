@@ -1,5 +1,4 @@
 "use client";
-
 import { FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
       {/* Wave ONLY */}
       <svg
         viewBox="0 0 1440 120"
-        className="block w-full h-[120px]"
+        className="block w-full h-[120px] relative z-10"
         preserveAspectRatio="none"
       >
         <path
@@ -20,16 +19,14 @@ export default function Footer() {
       </svg>
 
       {/* Footer Content */}
-      <div className="bg-black">
+      <div className="bg-black -mt-px">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Get Involved</h2>
-
           <p className="text-gray-300 max-w-3xl mx-auto mb-8">
-            Have questions about technology or coding? Don’t hesitate to reach out!{" "}
+            Have questions about technology or coding? Don&apos;t hesitate to reach out!{" "}
             <span className="font-semibold text-pink-300">AI Bell Vega</span>{" "}
             is here to support you every step of the way.
           </p>
-
           <div className="flex justify-center gap-6 text-3xl mb-8">
             <a
               href="https://www.youtube.com/@aibellvega"
@@ -46,7 +43,6 @@ export default function Footer() {
               <FaLinkedin className="hover:text-pink-400 cursor-pointer" />
             </a>
           </div>
-
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()} by AI Bell Vega
           </p>
